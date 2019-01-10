@@ -1,0 +1,6 @@
+const v = {
+	
+	initialize() {
+		
+	},
+}
