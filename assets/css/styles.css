@@ -1,0 +1,42 @@
+nav{
+	height: 120px;
+}
+
+.sidenav{
+	width: 180px;
+}
+
+#logo-container{
+	height: 120px;
+	width: 180px;
+}
+
+#content{
+	width: 65%;
+}
+
+#header{
+	width: fit-content;
+	padding: 5px;
+	border-left: 3px solid #29b6f6;
+	border-bottom: 3px solid #29b6f6;
+}
+
+.productName {
+	
+	padding: 24px 24px 5px 24px;
+}
+
+/**
+ * Overwrite Materialize's styles.
+ */
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+	
+	margin-right: 0;
+}
+
+.card .card-content {
+	
+	padding: 0;
+}
