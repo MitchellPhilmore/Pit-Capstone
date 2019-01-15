@@ -1,26 +1,9 @@
-#pitSwapTitle{
-	font-size: 3.5rem;
-	font-family: 'Faster One', cursive;
-}
-
 nav{
 	height: 120px;
 }
 
-#navContainer{
-	padding-left: 25px;
-	padding-left: 25px;
-}
-
-#searchBar{
-	padding-left: 10px;
-	width: 170px;
-}
-
-#searchIcon{
-	position: absolute;
-	right: 5px;
-	top: 17%;
+.sidenav{
+	width: 180px;
 }
 
 #logo-container{
@@ -56,11 +39,4 @@ nav{
 .card .card-content {
 	
 	padding: 0;
-}
-
-@media only screen and ( max-width: 992px ) {
-	
-	nav .brand-logo.left {
-		
-	}
 }
