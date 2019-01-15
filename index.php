@@ -44,7 +44,7 @@ require_once( './assets/php/class.db.php' );
 				<li><a href="#">Sellers</a></li>
 				<li><a href="#">About Us</a></li>
 				<li><a href="#">Login/Sign Up</a></li>
-				<hr id="mobileSidenavHr">
+				<hr>
 			</ul>
 			<div id="content" class="container">
 				<h1 id="header" class="light-blue-text text-lighten-1">Recent Products</h1>
