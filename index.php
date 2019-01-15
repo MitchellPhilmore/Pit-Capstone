@@ -17,16 +17,18 @@ require_once( './assets/php/class.db.php' );
 		<script src="./assets/js/m.js?v=<?php echo date( "U" );?>"></script>
 		<script src="./assets/js/v.js?v=<?php echo date( "U" );?>"></script>
 		<script src="./assets/js/c.js?v=<?php echo date( "U" );?>"></script>
+		<script src="./assets/js/materialize.js?v=<?php echo date( "U" );?>"></script>
+		<script src="./assets/js/L.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	</head>
 		<body class="grey lighten-4">
 			<nav class="light-blue lighten-1 nav-wrapper" role="navigation">
-				<a id="logo-container" href="/" class="brand-logo">
+				<a id="logo-container" href="index.php" class="brand-logo">
 			    	<img src="assets/images/capstoneLogoPlaceholder.jpg">
 			    </a>
 				<div class="container" id="navContainer">
-					<a href="#" class="brand-logo" id="pitSwapTitle">Pit Swap</a>
-					<a href="#" class="sidebar-trigger hide-on-med-and-up">
+					<a href="index.php" class="brand-logo" id="pitSwapTitle">Pit Swap</a>
+					<a href="#" class="sidenav-trigger hide-on-large-and-up" data-target="mobile-links">
 						<i class="material-icons">menu</i>
 					</a>
 					<ul class="right hide-on-med-and-down">
@@ -37,6 +39,13 @@ require_once( './assets/php/class.db.php' );
 					</ul>
 				</div>
 			</nav>
+			<ul class="sidenav" id="mobile-links">
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Sellers</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Login/Sign Up</a></li>
+				<hr id="mobileSidenavHr">
+			</ul>
 			<div id="content" class="container">
 				<h1 id="header" class="light-blue-text text-lighten-1">Recent Products</h1>
 				<div class="row">
@@ -105,15 +114,6 @@ require_once( './assets/php/class.db.php' );
 					//$mongo->;
 				?>
 				</p>
-		<!--</div>
-			<ul class="sidenav sidenav-fixed">
-			    <a id="logo-container" href="/" class="brand-logo">
-			    	<img src="assets/images/capstoneLogoPlaceholder.jpg">
-			    </a>
-			    <li><input type="text" id="searchBar"><i id="searchIcon" class="material-icons">search</i></li>
-			    //Reminder comment to js the search icon to disappear once search field has content
-			</ul>
-		</div>-->
-		<script src="./assets/js/materialize.js?v=<?php echo date( "U" );?>"></script>
+		<script>/*global c*/ window.onload = c.initialize</script>
 	</body>
 </html>
