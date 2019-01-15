@@ -2,6 +2,7 @@
 	font-size: 3.5rem;
 	font-family: 'Faster One', cursive;
 	user-select: none;
+	text-align: center;
 }
 
 nav{
@@ -16,6 +17,10 @@ nav{
 #logo-container{
 	height: 120px;
 	width: 180px;
+}
+
+#menuIcon{
+	font-size: 64px;
 }
 
 #content{

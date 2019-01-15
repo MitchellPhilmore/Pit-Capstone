@@ -26,11 +26,11 @@ require_once( './assets/php/class.db.php' );
 				<a id="logo-container" href="index.php" class="brand-logo">
 			    	<img src="assets/images/capstoneLogoPlaceholder.jpg">
 			    </a>
+			    <a href="#" class="sidenav-trigger hide-on-large-and-up" data-target="mobile-links">
+						<i class="material-icons" id="menuIcon">menu</i>
+				</a>
 				<div class="container" id="navContainer">
 					<a href="index.php" class="brand-logo" id="pitSwapTitle">Pit Swap</a>
-					<a href="#" class="sidenav-trigger hide-on-large-and-up" data-target="mobile-links">
-						<i class="material-icons">menu</i>
-					</a>
 					<ul class="right hide-on-med-and-down">
 						<li><a href="#">Products</a></li>
 						<li><a href="#">Sellers</a></li>
