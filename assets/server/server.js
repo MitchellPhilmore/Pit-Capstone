@@ -15,7 +15,7 @@ let express = require('express'),
 	
 	//Test Db Connection
 	let newProduct = new Products({
-		productName:'Brownies',
+		productName: 'Brownies',
 		price: '5.99',
 		timePosted:Date.now(),
 		sold:false

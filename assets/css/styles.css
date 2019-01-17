@@ -7,6 +7,11 @@
 
 nav{
 	height: 120px;
+	z-index: 1;
+}
+
+nav ul a{
+	font-size: 1.5rem;
 }
 
 #navContainer{
@@ -21,6 +26,14 @@ nav{
 
 #menuIcon{
 	font-size: 64px;
+}
+
+.sidenavLargeScreen{
+	z-index: 0;
+	width: 180px;
+	min-width: 180px;
+	top: 120px;
+	transition: all 1s auto;
 }
 
 #content{
@@ -51,6 +64,11 @@ nav{
 .card .card-content {
 	
 	padding: 0;
+}
+
+#searchBar {
+	
+	padding-left: 10px;
 }
 
 @media only screen and ( max-width: 992px ) {
