@@ -2,18 +2,22 @@
 const c = {
 	
 	initialize() {
+		
 		L.attachAllElementsById( v );
 		
 		let elems = document.querySelectorAll( '.sidenav' );
 		let instances = M.Sidenav.init( elems );
 		
-		v.searchBar.addEventListener( 'focus', this.growSideBar );
-		v.searchBar.addEventListener( 'blur', this.shrinkSideBar );
+		console.log(this);
+		
+		//v.searchBar.addEventListener( 'focus', c.growSideBar, true );
+		//v.searchBar.addEventListener( 'blur', c.shrinkSideBar, true );
 	},
 	
+	/*
 	growSideBar( e ) {
 		
-		console.log( e, e.target.parentNode.parentNode );
+		//console.log( e, e.target.parentNode.parentNode );
 		e.target.parentNode.parentNode.style.width = '240px';
 	},
 	
@@ -21,4 +25,7 @@ const c = {
 		
 		e.target.parentNode.parentNode.style.width = '180px';
 	},
+	*/
+	
+	
 };

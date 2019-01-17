@@ -14,18 +14,18 @@ require_once( './assets/php/class.db.php' );
 		<link rel="stylesheet" type="text/css" href="./assets/css/styles.css?v=<?php echo date( "U" );?>">
 		<link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="./assets/js/L.js"></script>
 		<script src="./assets/js/m.js?v=<?php echo date( "U" );?>"></script>
 		<script src="./assets/js/v.js?v=<?php echo date( "U" );?>"></script>
 		<script src="./assets/js/c.js?v=<?php echo date( "U" );?>"></script>
 		<script src="./assets/js/materialize.js?v=<?php echo date( "U" );?>"></script>
-		<script src="./assets/js/L.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>PIT Swap</title>
 	</head>
 	<body class="grey lighten-4">
 		<nav class="light-blue lighten-1 nav-wrapper" role="navigation">
 			<a id="logo-container" href="index.php" class="brand-logo">
-			<img src="assets/images/capstoneLogoPlaceholder.jpg">
+				<img src="assets/images/capstoneLogoPlaceholder.jpg">
 			</a>
 			<a href="#" class="sidenav-trigger hide-on-large-and-up" data-target="mobile-links">
 			<i class="material-icons" id="menuIcon">menu</i>
@@ -51,7 +51,10 @@ require_once( './assets/php/class.db.php' );
 			<ul class="sidenavLargeScreen sidenav-fixed hide-on-med-and-down">
 				<li>
 					<!--<label id="" for="searchBar"></label>-->
-					<input type="search" id="searchBar" placeholder="TYPE HERE">
+					<input type="search" id="searchBar" placeholder="&#128269;">
+				</li>
+				<li>
+					<h5 id="filtersHeader">Filters</h5>
 				</li>
 			</ul>
 			<h1 id="header" class="light-blue-text text-lighten-1">Recent Products</h1>

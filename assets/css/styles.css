@@ -7,7 +7,7 @@
 
 nav{
 	height: 120px;
-	z-index: 1;
+	z-index: 5;
 }
 
 nav ul a{
@@ -22,6 +22,7 @@ nav ul a{
 #logo-container{
 	height: 120px;
 	width: 180px;
+	z-index: 5;
 }
 
 #menuIcon{
@@ -29,11 +30,22 @@ nav ul a{
 }
 
 .sidenavLargeScreen{
-	z-index: 0;
-	width: 180px;
-	min-width: 180px;
-	top: 120px;
-	transition: all 1s auto;
+	position: fixed;
+    width: 180px;
+    left: 0;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    padding-bottom: 60px;
+    padding-top: 120px;
+    background-color: #fff;
+    z-index: 0;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    transition: .5s ease all;
+}
+
+#filtersHeader{
+	padding-left: 10px;
 }
 
 #content{
@@ -67,8 +79,12 @@ nav ul a{
 }
 
 #searchBar {
-	
+	width: 180px;
 	padding-left: 10px;
+	box-sizing: border-box;
+	/*border-top: 2px solid #29b6f6;
+	border-bottom: 2px solid #29b6f6;*/
+	border: 2px solid #29b6f6;
 }
 
 @media only screen and ( max-width: 992px ) {

@@ -8,6 +8,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
             
 		
 	</head>
@@ -21,16 +22,36 @@
 		left:35%;
 		background:white;
 		width:500px;
-		height:500px;
+		height:400px;
 		text-align:center;
 		opacity:0.5;
+		
+	}
+	.logo{
+		border: 5px solid gray;
+		border-radius:50%;
+		height:100px;
+		width:100px;
+		background:black;
+		color:white;
+		opacity:0.8;
+		line-height: 100px;
+		font-family: 'Faster One', cursive;
+		font-size:300%;
+		
+		
+
 		
 	}
 </style>
 
 <body>
  <div>
- 		<div class="row login">
+    <div class="row">
+ 	<div class="login">
+ 		<div class="col s4"></div>
+ 			<div class="logo col s4">PS</div>
+ 			<div class=" col s4"></div>
     <form class="col s12">
       <div class="row">
         <div class="input-field col s12">
@@ -45,13 +66,14 @@
           <label for="password">Password</label>
         </div>
         </div>
-         <button class="btn waves-effect waves-light red darken-2 btn-large " type="submit" name="action">Login
+         <button class="btn waves-effect waves-light red darken-2 btn-large z-depth-5 " type="submit" name="action">Login
    
   </button>
       </div>
     </form>
   </div>
 	
+ </div>
  </div>
 </body>
 </html>

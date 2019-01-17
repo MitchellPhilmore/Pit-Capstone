@@ -32,7 +32,7 @@ let express = require('express'),
     //---------- Routes--------------------------------------------//
     
     app.get('/',(request,response)=>{
-    	response.sendFile(path.join(__dirname,'/public/index.html'))
+    	response.sendFile(path.join(__dirname,'/public/login.html'))
     })
     
     // Will add actual pages when they are build
