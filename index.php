@@ -24,7 +24,7 @@ require_once( './assets/php/class.db.php' );
 	</head>
 	<body class="grey lighten-4">
 		<nav class="nav-wrapper pit-blue" role="navigation">
-			<a id="logo-container" href="index.php" class="brand-logo">
+			<a id="logo-container" href="index.php" class="brand-logo pit-blue">
 				<img src="assets/images/capstoneLogoPlaceholder.jpg" class="hide-on-med-and-down">
 			</a>
 			<a href="#" class="sidenav-trigger hide-on-large-and-up" data-target="mobile-links">
@@ -57,15 +57,74 @@ require_once( './assets/php/class.db.php' );
 					<h5 id="filtersHeader">Filters</h5>
 				</li>
 			</ul>
+			<!--------------------------------------------------------------->
 			<h1 id="header" class="pit-blue-text">Recent Products</h1>
-			<div class="row scrolling-wrapper">
-				<div class="col l4">
+			<!--------------------------------------------------------------->
+			<div class="row">
+				<!-- PRODUCT CARD -->
+				<div class="col l5 xl4 m6">
 					<div class="card pit-blue">
-						<div class="productNameAndPrice row">
-							<span class="card-title pit-gold-text col l8 m8 s8">Product Name</span>
-							<span class="card-title pit-gold-text col l4 m4 s4 right-align">$10.00</span>
+						
+						<div class="productNameAndPrice">
+							<span class="card-title pit-gold-text flow-text">Green Planet</span>
 						</div>
 						<a href="#"><img src="assets/images/green_planet2.jpg" class="responsive-img card-image"></a>
+						<div class="productNameAndPrice">
+							<span class="card-title pit-gold-text flow-text">$1,000,000.00</span>
+						</div>
+						
+					</div>
+				</div>
+				<!-- -->
+				<!-- PRODUCT CARD -->
+				<div class="col l5 xl4 m6">
+					<div class="card pit-blue">
+						
+						<div class="productNameAndPrice">
+							<span class="card-title pit-gold-text flow-text">Psychiatry Textbook</span>
+						</div>
+						<a href="#"><img src="assets/images/verticalTextbookExample.jpg" class="responsive-img card-image"></a>
+						<div class="productNameAndPrice">
+							<span class="card-title pit-gold-text flow-text">$40.00</span>
+						</div>
+						
+					</div>
+				</div>
+				<!-- -->
+				<!-- PRODUCT CARD -->
+				<div class="col l5 xl4 m6">
+					<div class="card pit-blue">
+						
+						<div class="productNameAndPrice">
+							<span class="card-title pit-gold-text flow-text">Integrated Iridology Textbook</span>
+						</div>
+						<a href="#"><img src="assets/images/textbookExample.jpg" class="responsive-img card-image"></a>
+						<div class="productNameAndPrice">
+							<span class="card-title pit-gold-text flow-text">$35.50</span>
+						</div>
+					</div>
+				</div>
+				<!-- -->
+			
+			</div>
+			<!--------------------------------------------------------------->
+			<h1 id="header" class="pit-blue-text">Recent Purchases</h1>
+			<!--------------------------------------------------------------->
+			<div class="row">
+				<div class="col l5 xl4 m6">
+					
+				</div>
+			</div>
+			<!--------------------------------------------------------------->
+			<h1 id="header" class="pit-blue-text">New Sellers</h1>
+			<!--------------------------------------------------------------->
+			<div class="row">
+				<div class="col l5 xl4 m6">
+					<div class="card pit-blue">
+						<div class="productNameAndPrice">
+							<span class="card-title pit-gold-text flow-text">Frank Smith</span>
+						</div>
+						<a href="#"><img src="assets/images/frankSinatra.jpg" class="responsive-img seller-card-image card-image"></a>
 					</div>
 				</div>
 			</div>
