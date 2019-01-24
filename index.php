@@ -23,15 +23,15 @@ require_once( './assets/php/class.db.php' );
 		<title>PIT Swap</title>
 	</head>
 	<body class="grey lighten-4">
-		<nav class="light-blue lighten-1 nav-wrapper" role="navigation">
+		<nav class="nav-wrapper pit-blue" role="navigation">
 			<a id="logo-container" href="index.php" class="brand-logo">
-				<img src="assets/images/capstoneLogoPlaceholder.jpg">
+				<img src="assets/images/capstoneLogoPlaceholder.jpg" class="hide-on-med-and-down">
 			</a>
 			<a href="#" class="sidenav-trigger hide-on-large-and-up" data-target="mobile-links">
 			<i class="material-icons" id="menuIcon">menu</i>
 			</a>
 			<div class="container" id="navContainer">
-				<a href="index.php" class="brand-logo" id="pitSwapTitle">Pit Swap</a>
+				<a href="index.php" class="brand-logo pit-blue" id="pitSwapTitle">Pit Swap</a>
 				<ul class="right hide-on-med-and-down">
 					<li><a href="#">Products</a></li>
 					<li><a href="#">Sellers</a></li>
@@ -51,79 +51,33 @@ require_once( './assets/php/class.db.php' );
 			<ul class="sidenavLargeScreen sidenav-fixed hide-on-med-and-down">
 				<li>
 					<!--<label id="" for="searchBar"></label>-->
-					<input type="search" id="searchBar" placeholder="&#128269;">
+					<input type="search" id="searchBar" placeholder="🔍">
 				</li>
 				<li>
 					<h5 id="filtersHeader">Filters</h5>
 				</li>
 			</ul>
-			<h1 id="header" class="light-blue-text text-lighten-1">Recent Products</h1>
-			<div class="row">
+			<h1 id="header" class="pit-blue-text">Recent Products</h1>
+			<div class="row scrolling-wrapper">
 				<div class="col l4">
-					<div class="card blue-grey darken-1">
-						<div class="card-content white-text">
-							<div class="productName">
-								<span class="card-title">Product Name</span>
-							</div>
-							<img src="assets/images/green_planet2.jpg" class="responsive-img">
+					<div class="card pit-blue">
+						<div class="productNameAndPrice row">
+							<span class="card-title pit-gold-text col l8 m8 s8">Product Name</span>
+							<span class="card-title pit-gold-text col l4 m4 s4 right-align">$10.00</span>
 						</div>
-						<div class="card-action">
-							<div><a href="#">This is a link</a></div>
-							<div><a href="#">This is a link</a></div>
-						</div>
-					</div>
-				</div>
-				<div class="col l4">
-					<div class="card blue-grey darken-1">
-						<div class="card-content white-text">
-							<div class="productName">
-								<span class="card-title">Product Name</span>
-							</div>
-							<img src="assets/images/green_planet2.jpg" class="responsive-img">
-						</div>
-						<div class="card-action">
-							<div><a href="#">This is a link</a></div>
-							<div><a href="#">This is a link</a></div>
-						</div>
-					</div>
-				</div>
-				<div class="col l4">
-					<div class="card blue-grey darken-1">
-						<div class="card-content white-text">
-							<div class="productName">
-								<span class="card-title">Product Name</span>
-							</div>
-							<img src="assets/images/green_planet2.jpg" class="responsive-img">
-						</div>
-						<div class="card-action">
-							<div><a href="#">This is a link</a></div>
-							<div><a href="#">This is a link</a></div>
-						</div>
-					</div>
-				</div>
-				<div class="col l4">
-					<div class="card blue-grey darken-1">
-						<div class="card-content white-text">
-							<div class="productName">
-								<span class="card-title">Product Name</span>
-							</div>
-							<img src="assets/images/green_planet2.jpg" class="responsive-img">
-						</div>
-						<div class="card-action">
-							<div><a href="#">This is a link</a></div>
-							<div><a href="#">This is a link</a></div>
-						</div>
+						<a href="#"><img src="assets/images/green_planet2.jpg" class="responsive-img card-image"></a>
 					</div>
 				</div>
 			</div>
 			<p>
-				<?php
-				$db = new db();
+				<?php $db = new db();
 				$mongo = $db->connect();
 				//$mongo->;
 				?>
 			</p>
 		</div>
 		<script>/*global c*/ window.onload = c.initialize</script>
+		<div class="sidenav-overlay"></div>
+		<div class="drag-target"></div>
 	</body>
 </html>

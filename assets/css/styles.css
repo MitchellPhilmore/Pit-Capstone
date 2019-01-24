@@ -5,6 +5,22 @@
 	text-align: center;
 }
 
+.pit-blue{
+	background-color: #3161ac;
+}
+
+.pit-gold{
+	background-color: #f7cc07;
+}
+
+.pit-blue-text{
+	color: #3161ac;
+}
+
+.pit-gold-text{
+	color: #f7cc07;
+}
+
 nav{
 	height: 120px;
 	z-index: 5;
@@ -55,27 +71,40 @@ nav ul a{
 #header{
 	width: fit-content;
 	padding: 5px;
-	border-left: 3px solid #29b6f6;
-	border-bottom: 3px solid #29b6f6;
+	border-left: 3px solid #3161ac;
+	border-bottom: 3px solid #3161ac;
 }
 
-.productName {
-	
-	padding: 24px 24px 5px 24px;
+.productNameAndPrice {
+	padding: 18px 18px 18px 18px;
+	margin-bottom: 0;
 }
 
 /**
  * Overwrite Materialize's styles.
  */
+ 
+ .card .card-action{
+ 	border-top: none;
+ }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
 	
 	margin-right: 0;
 }
 
+.card .card-title{
+	font-weight: 600;
+}
+
 .card .card-content {
 	
 	padding: 0;
+}
+
+.card-image{
+	vertical-align: bottom;
+	border-radius: 0 0 2px 2px;
 }
 
 #searchBar {
@@ -84,7 +113,7 @@ nav ul a{
 	box-sizing: border-box;
 	/*border-top: 2px solid #29b6f6;
 	border-bottom: 2px solid #29b6f6;*/
-	border: 2px solid #29b6f6;
+	border: 2px solid #3161ac;
 }
 
 @media only screen and ( max-width: 992px ) {
