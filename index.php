@@ -33,17 +33,17 @@ require_once( './assets/php/class.db.php' );
 			<div class="container" id="navContainer">
 				<a href="index.php" class="brand-logo pit-blue" id="pitSwapTitle">Pit Swap</a>
 				<ul class="right hide-on-med-and-down">
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Sellers</a></li>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Sign Out</a></li>
+					<li><a href="./pages/allProducts.php">Products</a></li>
+					<li><a href="./pages/allSellers.php">Sellers</a></li>
+					<li><a href="./pages/aboutUs.php">About Us</a></li>
+					<li><a href="">Sign Out</a></li>
 				</ul>
 			</div>
 		</nav>
 		<ul class="sidenav" id="mobile-links">
-			<li><a href="#">Products</a></li>
-			<li><a href="#">Sellers</a></li>
-			<li><a href="#">About Us</a></li>
+			<li><a href="./pages/allProducts.php">Products</a></li>
+			<li><a href="./pages/allSellers.php">Sellers</a></li>
+			<li><a href="./pages/aboutUs.php">About Us</a></li>
 			<li><a href="#">Sign Out</a></li>
 			<hr>
 		</ul>
