@@ -49,19 +49,20 @@ nav ul a{
 	font-size: 64px;
 }
 
-.sidenavLargeScreen{
+.sidenavLargeScreen {
+	
+	background-color: #fff;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+	height: 100%;
+	left: 0;
+	margin: 0;
+	padding-bottom: 60px;
+	padding-top: 120px;
 	position: fixed;
-    width: 180px;
-    left: 0;
-    top: 0;
-    margin: 0;
-    height: 100%;
-    padding-bottom: 60px;
-    padding-top: 120px;
-    background-color: #fff;
-    z-index: 0;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-    transition: .5s ease all;
+	top: 0;
+	transition: .5s ease all;
+	width: 180px;
+	z-index: 0;
 }
 
 .sidenav{
@@ -72,15 +73,20 @@ nav ul a{
 	padding-left: 10px;
 }
 
-#content{
-	width: 65%;
-}
-
 #header{
 	width: fit-content;
 	padding: 5px;
 	border-left: 3px solid #3161ac;
 	border-bottom: 3px solid #3161ac;
+}
+
+.productCol{
+	
+	white-space: initial;
+	display: inline-block;
+	min-width: 300px;
+	margin: 0 20px;
+	vertical-align: top;
 }
 
 .productNameAndPrice{
@@ -91,6 +97,17 @@ nav ul a{
 /**
  * Overwrite Materialize's styles.
  */
+ 
+ .productRow {
+ 	
+ 	overflow-x: auto;
+ 	white-space: nowrap;
+ 	-webkit-overflow-scrolling: touch;
+ }
+ 
+ .card{
+ 	max-width: 300px;
+ }
  
  .card .card-action{
  	border-top: none;
@@ -110,6 +127,26 @@ nav ul a{
 	padding: 0;
 }
 
+.productImage{
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 250px;
+	width: 100%;
+}
+/*****************/
+#greenPlanet{
+	background-image: url("../images/green_planet2.jpg");
+}
+
+#psychiatryTextbook{
+	background-image: url("../images/textbookExample.jpg");
+}
+
+.integratedIridologyTextbook{
+	background-image: url("../images/verticalTextbookExample.jpg");
+}
+/*****************/
 .seller-card-image{
 	vertical-align: bottom;
 	border-radius: 0 0 2px 2px;

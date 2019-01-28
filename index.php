@@ -24,8 +24,8 @@ require_once( './assets/php/class.db.php' );
 	</head>
 	<body class="grey lighten-4">
 		<nav class="nav-wrapper pit-blue" role="navigation">
-			<a id="logo-container" href="index.php" class="brand-logo pit-blue">
-				<img src="assets/images/capstoneLogoPlaceholder.jpg" class="hide-on-med-and-down">
+			<a id="logo-container" href="index.php" class="brand-logo pit-blue hide-on-med-and-down">
+				<img src="assets/images/capstoneLogoPlaceholder.jpg">
 			</a>
 			<a href="#" class="sidenav-trigger hide-on-large-and-up" data-target="mobile-links">
 			<i class="material-icons" id="menuIcon">menu</i>
@@ -60,15 +60,15 @@ require_once( './assets/php/class.db.php' );
 			<!--------------------------------------------------------------->
 			<h1 id="header" class="pit-blue-text">Recent Products</h1>
 			<!--------------------------------------------------------------->
-			<div class="row">
+			<div class="productRow">
 				<!-- PRODUCT CARD -->
-				<div class="col l5 xl4 m6">
+				<div class="productCol col l5 xl4 m6">
 					<div class="card pit-blue">
 						
 						<div class="productNameAndPrice">
 							<span class="card-title pit-gold-text flow-text">Green Planet</span>
 						</div>
-						<a href="#"><img src="assets/images/green_planet2.jpg" class="responsive-img card-image"></a>
+						<div class="productImage" id="greenPlanet"></div>
 						<div class="productNameAndPrice">
 							<span class="card-title pit-gold-text flow-text">$1,000,000.00</span>
 						</div>
@@ -77,13 +77,13 @@ require_once( './assets/php/class.db.php' );
 				</div>
 				<!-- -->
 				<!-- PRODUCT CARD -->
-				<div class="col l5 xl4 m6">
+				<div class="productCol col l5 xl4 m6">
 					<div class="card pit-blue">
 						
 						<div class="productNameAndPrice">
 							<span class="card-title pit-gold-text flow-text">Psychiatry Textbook</span>
 						</div>
-						<a href="#"><img src="assets/images/verticalTextbookExample.jpg" class="responsive-img card-image"></a>
+						<div class="productImage" id="psychiatryTextbook"></div>
 						<div class="productNameAndPrice">
 							<span class="card-title pit-gold-text flow-text">$40.00</span>
 						</div>
@@ -92,26 +92,67 @@ require_once( './assets/php/class.db.php' );
 				</div>
 				<!-- -->
 				<!-- PRODUCT CARD -->
-				<div class="col l5 xl4 m6">
+				<div class="productCol col l5 xl4 m6">
 					<div class="card pit-blue">
 						
 						<div class="productNameAndPrice">
 							<span class="card-title pit-gold-text flow-text">Integrated Iridology Textbook</span>
 						</div>
-						<a href="#"><img src="assets/images/textbookExample.jpg" class="responsive-img card-image"></a>
+						<div class="productImage integratedIridologyTextbook"></div>
 						<div class="productNameAndPrice">
 							<span class="card-title pit-gold-text flow-text">$35.50</span>
 						</div>
 					</div>
 				</div>
 				<!-- -->
-			
+				<!-- PRODUCT CARD -->
+				<div class="productCol col l5 xl4 m6">
+					<div class="card pit-blue">
+						
+						<div class="productNameAndPrice">
+							<span class="card-title pit-gold-text flow-text">Integrated Iridology Textbook</span>
+						</div>
+						<div class="productImage integratedIridologyTextbook"></div>
+						<div class="productNameAndPrice">
+							<span class="card-title pit-gold-text flow-text">$35.50</span>
+						</div>
+					</div>
+				</div>
+				<!-- -->
+				<!-- PRODUCT CARD -->
+				<div class="productCol col l5 xl4 m6">
+					<div class="card pit-blue">
+						
+						<div class="productNameAndPrice">
+							<span class="card-title pit-gold-text flow-text">Integrated Iridology Textbook</span>
+						</div>
+						<div class="productImage integratedIridologyTextbook"></div>
+						<div class="productNameAndPrice">
+							<span class="card-title pit-gold-text flow-text">$35.50</span>
+						</div>
+					</div>
+				</div>
+				<!-- -->
+				<!-- PRODUCT CARD -->
+				<div class="productCol col l5 xl4 m6">
+					<div class="card pit-blue">
+						
+						<div class="productNameAndPrice">
+							<span class="card-title pit-gold-text flow-text">Integrated Iridology Textbook</span>
+						</div>
+						<div class="productImage integratedIridologyTextbook"></div>
+						<div class="productNameAndPrice">
+							<span class="card-title pit-gold-text flow-text">$35.50</span>
+						</div>
+					</div>
+				</div>
+				<!-- -->
 			</div>
 			<!--------------------------------------------------------------->
 			<h1 id="header" class="pit-blue-text">Recent Purchases</h1>
 			<!--------------------------------------------------------------->
 			<div class="row">
-				<div class="col l5 xl4 m6">
+				<div class="productCol col l5 xl4 m6">
 					
 				</div>
 			</div>
@@ -129,14 +170,14 @@ require_once( './assets/php/class.db.php' );
 				</div>
 			</div>
 			<p>
-				<?php $db = new db();
-				$mongo = $db->connect();
-				//$mongo->;
+				<?php //$db = new db();
+				//$mongo = $db->connect();
+				///$mongo->;
 				?>
 			</p>
 		</div>
-		<script>/*global c*/ window.onload = c.initialize</script>
 		<div class="sidenav-overlay"></div>
 		<div class="drag-target"></div>
+		<script>/*global c*/ window.onload = c.indexInitialize</script>
 	</body>
 </html>

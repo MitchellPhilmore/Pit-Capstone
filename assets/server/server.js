@@ -1,5 +1,6 @@
 let express = require('express'),
     app = express(),
+    https = require('https'),
     port = 60005,
     path = require('path'),
     mongoose = require('mongoose'),
@@ -23,7 +24,8 @@ let express = require('express'),
 	.catch(err=>{
 		console.log(JSON.stringify(err))
 	})
-	    
+	
+	
    
     //Serve static files(html,css,images etc..)
  
@@ -54,6 +56,14 @@ let express = require('express'),
     
     app.get('/sellers',(request,response)=>{
     	response.send('sellers')
+    })
+    
+  
+    
+    app.get('/api/products',(reqest,response)=>{
+    	Products.find({},(err,data)=>{
+    		response.json(data)
+    	})
     })
     //-----------------------------------------------------------------//
     

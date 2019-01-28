@@ -24,8 +24,8 @@ require_once( '../assets/php/class.db.php' );
 	</head>
 	<body class="grey lighten-4">
 		<nav class="nav-wrapper pit-blue" role="navigation">
-			<a id="logo-container" href="../index.php" class="brand-logo pit-blue">
-				<img src="../assets/images/capstoneLogoPlaceholder.jpg" class="hide-on-med-and-down">
+			<a id="logo-container" href="index.php" class="brand-logo pit-blue hide-on-med-and-down">
+				<img src="assets/images/capstoneLogoPlaceholder.jpg">
 			</a>
 			<a href="#" class="sidenav-trigger hide-on-large-and-up" data-target="mobile-links">
 			<i class="material-icons" id="menuIcon">menu</i>
@@ -61,5 +61,6 @@ require_once( '../assets/php/class.db.php' );
 			<h1 id="header" class="pit-blue-text">About The PIT Swap Project</h1>
 			<!--------------------------------------------------------------->
 		</div>
+		<script>/*Global c*/window.onload = c.aboutUsInitialize</script>
 	</body>
 </html>

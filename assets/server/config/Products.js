@@ -19,7 +19,8 @@ let productSchema = new Schema({
 		type:Boolean,
 		required:true
 		
-	}
+	},
+	
 })
 
 module.exports = Products = mongoose.model('products',productSchema) 
