@@ -16,6 +16,14 @@ $result = $connection->createCollection('users', [
     ],
 ]);
 
+$result = $connection->createCollection('users', [
+    'validator' => [
+        'username' => ['$type' => 'string'],
+        'password' => ['$type' => 'string'],
+        'email' => ['$type' => 'string'],
+    ],
+]);
+
 $bulk = new MongoDB\Driver\BulkWrite;
 $document1 = [
     'username' => 'test', 
