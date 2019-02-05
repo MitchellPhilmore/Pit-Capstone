@@ -29,7 +29,7 @@ const c = {
 	async allProductsInitialize() {
 		
 		c.baseInitialize();
-		v.products.innerHTML = await c.getLoading();
+		v.products.innerHTML = await c.loading();
 		
 		m.allProducts = await c.grabAllProducts();
 		console.log(m.allProducts);
@@ -44,7 +44,7 @@ const c = {
 		c.baseInitialize();
 	},
 	
-	async getLoading() {
+	async loading() {
 		
 		return new Promise( function( resolve, reject ) {
 			
