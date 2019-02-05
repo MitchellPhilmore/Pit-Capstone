@@ -29,7 +29,7 @@ const c = {
 	async allProductsInitialize() {
 		
 		c.baseInitialize();
-		v.products.innerHTML = c.getLoading();
+		v.products.innerHTML = await c.getLoading();
 		
 		m.allProducts = await c.grabAllProducts();
 		console.log(m.allProducts);
@@ -46,10 +46,24 @@ const c = {
 	
 	async getLoading() {
 		
-		let loadingR = await fetch( 'https://aaserver.abbas411.com/code/workspace/e-commerce_capstone2019/assets/php/loading.php?color=3161ac' );
-		let loading = await loadingR.text();
-		return loading;
-	}
+		return new Promise( function( resolve, reject ) {
+			
+			let ajax = new XMLHttpRequest();
+			ajax.open( 'GET', 'https://aaserver.abbas411.com/code/workspace/e-commerce_capstone2019/assets/php/loading.php?color=3161ac' );
+			ajax.send();
+			
+			ajax.onload = function() {
+				
+				if ( ajax.status != 200 ) {
+					
+					reject( ajax.status + ': ' + ajax.statusText );
+				} else {
+					
+					resolve( ajax.responseText );
+				}
+			};
+		});
+	},
 	
 	/////////////////////////////////////////////////////////////////////
 	async grabFiveProducts() {
