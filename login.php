@@ -1,10 +1,6 @@
 <?php
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-require_once( "./assets/php/class.db.php" );
+require_once('./assets/php/includes.php');
 
 if( isset( $_POST["username"] ) && isset( $_POST["password"] ) ) {
 	

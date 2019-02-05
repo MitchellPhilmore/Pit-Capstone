@@ -6,7 +6,6 @@ $connection = db::connect();
 $query = new MongoDB\Driver\Query(
 	array(),
 	array(
-		"limit" => 5,
 		"sort" => array(
 			'timePosted' => -1
 		)
