@@ -44,6 +44,30 @@ const c = {
 		c.baseInitialize();
 	},
 	
+	postProduct(name, price, timePosted=Date.now(), sold=false){
+		let postman = new XMLHttpRequest();
+		let productData = new FormData();
+		
+		productData.append('productName', name);
+		productData.append('productPrice', price);
+		productData.append('datePosted', timePosted);
+		productData.append('productSold', sold);
+		
+		postman.open('POST', 'https://aaserver.abbas411.com:60005/postProduct');
+		postman.send(productData);
+		
+		postman.onload = function(){
+			if ( postman.status !== 200 ){
+				const message = `problem sending product: ${postman.status}`;
+				console.log(message);
+			}
+		}
+		postman.onerror = function(){
+			const message = `problem connecting to server: ${postman.status}`;
+			console.log(message);
+		}
+	},
+	
 	async loading() {
 		
 		return new Promise( function( resolve, reject ) {
@@ -107,7 +131,7 @@ const c = {
 				
 				allProductsRow.appendChild(prodCardCol);
 			})
-		}, 5000);
+		}, 500);
 	},
 	
 	displayLatestFivePurch(allProducts){
