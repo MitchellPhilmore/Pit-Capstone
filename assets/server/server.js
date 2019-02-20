@@ -1,7 +1,7 @@
 /**
  * URL for this server.
  * 
- * https://aaserver.abbas411.com:60005/
+ * https://aaserver.abbas411.com:60005/api/products
  * 
  * to run this server either run
  * 
@@ -14,6 +14,7 @@
 
 
 let express = require('express'),
+cors = require('cors')
 fs = require('fs'),
 options = {
 	key:    fs.readFileSync( "/etc/letsencrypt/live/aaserver.abbas411.com/privkey.pem" ),
@@ -27,6 +28,10 @@ path = require('path'),
 mongoose = require('mongoose'),
 db = require('./config/db'),
 Products = require('./config/Products')
+
+// Middleware that allows cors
+app.use(cors())
+
 
 var httpsServer = https.createServer(options, app);
 
@@ -58,30 +63,30 @@ app.use(express.static('public'))
 
 //---------- Routes--------------------------------------------//
 
-app.get('/',(request,response)=>{
-	response.sendFile(path.join(__dirname,'/public/login.html'))
-})
+// app.get('/',(request,response)=>{
+// 	response.sendFile(path.join(__dirname,'/public/login.html'))
+// })
 
-// Will add actual pages when they are build
-app.get('/about',(request,response)=>{
-	response.send('About')
-})
+// // Will add actual pages when they are build
+// app.get('/about',(request,response)=>{
+// 	response.send('About')
+// })
 
-app.get('/signup',(request,response)=>{
-	response.send('Signup')
-})
+// app.get('/signup',(request,response)=>{
+// 	response.send('Signup')
+// })
 
-app.get('/login',(request,response)=>{
-	response.send('Login')
-})
+// app.get('/login',(request,response)=>{
+// 	response.send('Login')
+// })
 
-app.get('/products',(request,response)=>{
-	response.send('products')
-})
+// app.get('/products',(request,response)=>{
+// 	response.send('products')
+// })
 
-app.get('/sellers',(request,response)=>{
-	response.send('sellers')
-})
+// app.get('/sellers',(request,response)=>{
+// 	response.send('sellers')
+// })
 
 
 app.get('/api/products',(request,response)=>{
@@ -89,6 +94,16 @@ app.get('/api/products',(request,response)=>{
 		response.json(data)
 	})
 })
+// Return most the five most recent products
+
+app.get('/api/most-recent',(request,response)=>{
+	Products.find().sort( { timePosted: -1 } )
+	.then(data=>{
+	  let mostRecentFive =	[...data.splice(0,6)]
+	  response.json(MostRecentFive)
+	})
+})
+
 
 //attempt to have server recieve postproduct request
 app.post('/postProduct', (request, response)=>{

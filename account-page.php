@@ -47,9 +47,10 @@ require_once( "./assets/php/includes.php" );
 				</li>
 			</ul> -->
 			<!--------------------------------------------------------------->
-			<h1 class="myHeader pit-blue-text">About The PIT Swap Project</h1>
+			<h1 class="myHeader pit-blue-text">Account</h1>
+				
 			<!--------------------------------------------------------------->
 		</div>
-		<script>/*Global c*/window.onload = c.aboutUsInitialize</script>
+		<script>/*Global c*/window.onload = c.accountPageInitialize</script>
 	</body>
 </html>

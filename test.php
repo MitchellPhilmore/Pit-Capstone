@@ -4,26 +4,9 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-require_once( "./assets/php/class.db.php" );
+require_once( "./assets/php/includes.php" );
 
-$connection = db::connect();
-
-$result = $connection->createCollection('users', [
-    'validator' => [
-        'username' => ['$type' => 'string'],
-        'password' => ['$type' => 'string'],
-        'email' => ['$type' => 'string'],
-    ],
-]);
-
-$result = $connection->createCollection('users', [
-    'validator' => [
-        'username' => ['$type' => 'string'],
-        'password' => ['$type' => 'string'],
-        'email' => ['$type' => 'string'],
-    ],
-]);
-
+$connection = $common->db->connect();
 $bulk = new MongoDB\Driver\BulkWrite;
 $document1 = [
     'username' => 'test', 
@@ -36,6 +19,4 @@ $result = $connection->executeBulkWrite('e-commerce.users', $bulk);
 
 
 var_dump($result);
-
-echo var_dump($result, $connection->users->find([]) ); 
 ?>

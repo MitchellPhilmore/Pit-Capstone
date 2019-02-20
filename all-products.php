@@ -47,10 +47,11 @@ require_once( "./assets/php/includes.php" );
 				</li>
 			</ul>
 			<!--------------------------------------------------------------->
-			<h1 id="header" class="pit-blue-text">All Products</h1>
-				<div id="products" class="row allProductsRow">
-					
-				</div>
+			
+			<h1 class="myHeader pit-blue-text">All Products</h1>
+			<div id="products" class="row allProductsRow">
+				
+			</div>
 			<!--------------------------------------------------------------->
 		</div>
 		<script>/*Global c*/window.onload = c.allProductsInitialize</script>

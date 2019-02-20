@@ -88,7 +88,7 @@ nav ul a{
 	width: 250px;
 }
 
-#header{
+.myHeader{
 	width: fit-content;
 	padding: 5px;
 	border-left: 3px solid #3161ac;
@@ -185,3 +185,36 @@ nav ul a{
 		
 	}
 }
+
+@media only screen and (max-width: 1300px){
+	.navLinks > li > a {
+		font-size: 14px;
+	}
+}
+
+#postProductBtn{
+	height: 100px;
+	width: 100px;
+}
+
+#postProductBtn:hover{
+	background-color: #3161ac;
+}
+
+#postProductBtn:active{
+	background-color: #3161ac;
+}
+
+#addProductIcon{
+	line-height: 100px;
+	font-size: 3.6rem;
+}
+
+.btn:hover{
+	background-color: #3161ac;
+}
+
+.btn:active{
+	background-color: #3161ac;
+}
+

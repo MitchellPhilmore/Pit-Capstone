@@ -15,7 +15,7 @@ const c = {
 		
 		c.baseInitialize();
 		m.latestFiveProds = await c.grabFiveProducts();
-		console.log('all products: ' + m.latestFiveProds);
+		console.log('all 5 products: ' + m.latestFiveProds);
 		c.displayLatestFive(m.latestFiveProds);
 		//c.displayLatestFivePurch(m.allProducts);
 		//c.displayLatestThreeSellers();
@@ -41,6 +41,20 @@ const c = {
 	},
 	
 	productInitialize(){
+		c.baseInitialize();
+		
+		//grab name of product that was clicked in order to be redirected here
+		let product;
+		
+		//v.productPageTitle.innerText = product.something
+		//c.createProdCardCol(product)
+	},
+	
+	accountPageInitialize(){
+		c.baseInitialize();
+	},
+	
+	postProductInitialize(){
 		c.baseInitialize();
 	},
 	
@@ -92,7 +106,8 @@ const c = {
 	/////////////////////////////////////////////////////////////////////
 	async grabFiveProducts() {
 		
-		let productsJSON = await fetch('https://aaserver.abbas411.com/code/workspace/e-commerce_capstone2019/assets/php/api.php');
+		let productsJSON = await fetch('https://aaserver.abbas411.com:60005/api/most-recent',{
+		method: "GET"});
 		let products = await productsJSON.json();
 		
 		console.log(products)
@@ -100,7 +115,7 @@ const c = {
 	},
 	
 	async grabAllProducts(){
-		let productsJSON = await fetch('https://aaserver.abbas411.com/code/workspace/e-commerce_capstone2019/assets/php/apiAllProducts.php');
+		let productsJSON = await fetch('https://aaserver.abbas411.com:60005/api/products');
 		let products = await productsJSON.json();
 		
 		console.log(products);
@@ -161,10 +176,18 @@ const c = {
 						prodNameSpan.classList.add(...m.nameAndPriceSpanClasses);
 						prodNameSpan.innerText = product.productName;
 						
-					let prodImageDiv = document.createElement('div');
-					prodImageDiv.classList.add('productImage');
-					console.log(product.imageUrl);
-					prodImageDiv.style.backgroundImage = `url(${product.imageUrl})`;
+					let prodLink = document.createElement('a');
+					let prodLinkHref = document.createAttribute('href');
+					prodLinkHref.value = './product.php';
+					let prodLinkId = document.createAttribute('data-productId');
+					prodLinkId.value = product._id.$oid;
+					prodLink.setAttributeNode(prodLinkHref);
+					prodLink.setAttributeNode(prodLinkHref);
+						
+						let prodImageDiv = document.createElement('div');
+						prodImageDiv.classList.add('productImage');
+						console.log(product.imageUrl);
+						prodImageDiv.style.backgroundImage = `url(${product.imageUrl})`;
 					
 					let prodPriceDiv = document.createElement('div');
 					prodPriceDiv.classList.add('productNameAndPrice');
@@ -176,7 +199,8 @@ const c = {
 		colDiv.appendChild(cardDiv);
 			cardDiv.appendChild(prodNameDiv);
 				prodNameDiv.appendChild(prodNameSpan);
-			cardDiv.appendChild(prodImageDiv);
+			cardDiv.appendChild(prodLink);
+				prodLink.appendChild(prodImageDiv);
 			cardDiv.appendChild(prodPriceDiv);
 				prodPriceDiv.appendChild(prodPriceSpan);
 		return colDiv;

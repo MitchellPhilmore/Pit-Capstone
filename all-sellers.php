@@ -9,7 +9,7 @@ require_once( "./assets/php/includes.php" );
 	<body class="grey lighten-4">
 		<?php require_once( "./includes/menu.php" );?>
 		<div id="content" class="container">
-			<ul class="sidenavLargeScreen sidenav-fixed hide-on-med-and-down">
+			<!--<ul class="sidenavLargeScreen sidenav-fixed hide-on-med-and-down">
 				<li>
 					<h5 id="categoriesHeader">Categories</h5>
 				</li>
@@ -45,7 +45,7 @@ require_once( "./assets/php/includes.php" );
 						</label>
 					</p>
 				</li>
-			</ul>
+			</ul> -->
 		</div>
 		<script>/*Global c*/window.onload = c.allSellersInitialize</script>
 	</body>

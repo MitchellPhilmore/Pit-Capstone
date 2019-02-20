@@ -9,7 +9,7 @@ require_once( "./assets/php/includes.php" );
 	<body class="grey lighten-4">
 		<?php require_once( "./includes/menu.php" );?>
 		<div id="content" class="container">
-			<ul class="sidenavLargeScreen sidenav-fixed hide-on-med-and-down">
+			<!--<ul class="sidenavLargeScreen sidenav-fixed hide-on-med-and-down">
 				<li>
 					<h5 id="categoriesHeader">Categories</h5>
 				</li>
@@ -45,9 +45,9 @@ require_once( "./assets/php/includes.php" );
 						</label>
 					</p>
 				</li>
-			</ul>
+			</ul> -->
 			<!--------------------------------------------------------------->
-			<h1 id="header" class="pit-blue-text">Recent Products</h1>
+			<h1 class="myHeader pit-blue-text">Recent Products</h1>
 			<!--------------------------------------------------------------->
 			<div class="productRow">
 				<!-- PRODUCT CARD -->
@@ -57,9 +57,11 @@ require_once( "./assets/php/includes.php" );
 						<div class="productNameAndPrice">
 							<span class="card-title pit-gold-text flow-text">Green Planet</span>
 						</div>
-						<div class="productImage" id="greenPlanet"></div>
+						<a data-productId="Green Planet" href="./product.php">
+							<div class="productImage" id="greenPlanet"></div>
+						</a>
 						<div class="productNameAndPrice">
-							<span class="card-title pit-gold-text flow-text">$1,000,000.00</span>
+							<span class="card-title pit-gold-text flow-text">$45,000,000,000,000.00</span>
 						</div>
 						
 					</div>
@@ -138,7 +140,7 @@ require_once( "./assets/php/includes.php" );
 				<!-- -->
 			</div>
 			<!--------------------------------------------------------------->
-			<h1 id="header" class="pit-blue-text">Recent Purchases</h1>
+			<h1 class="myHeader pit-blue-text">Recent Purchases</h1>
 			<!--------------------------------------------------------------->
 			<div class="row">
 				<div class="productCol col l5 xl4 m6">
@@ -146,7 +148,7 @@ require_once( "./assets/php/includes.php" );
 				</div>
 			</div>
 			<!--------------------------------------------------------------->
-			<h1 id="header" class="pit-blue-text">New Sellers</h1>
+			<h1 class="myHeader pit-blue-text">New Sellers</h1>
 			<!--------------------------------------------------------------->
 			<div class="row">
 				<div class="col l5 xl4 m6">

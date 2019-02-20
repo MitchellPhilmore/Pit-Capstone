@@ -2,23 +2,7 @@
 
 require_once('./assets/php/includes.php');
 
-if( isset( $_POST["username"] ) && isset( $_POST["password"] ) ) {
-	
-	$username = $_POST["username"];
-	$password = sha1( md5( $_POST["password"] ) );
-	
-	
-	
-	$connection = db::connect();
-	$result = $connection->users->find([ 'username' => (string)$username, 'password' => (string)$password ]);
-	
-	echo var_dump( $result );
-	
-	if( empty( $result ) ) {
-		
-		
-	}
-}
+$common->login();
 
 ?>
 <html>

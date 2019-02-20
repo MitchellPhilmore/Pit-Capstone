@@ -9,6 +9,7 @@
 		<div class="row">
 			<a href="index.php" class="brand-logo pit-blue" id="pitSwapTitle">Pit Swap</a>
 			<ul class="right hide-on-med-and-down navLinks">
+				<li><a href="./account-page.php">Account</a></li>
 				<li><a href="./all-products.php">Products</a></li>
 				<li><a href="./all-sellers.php">Sellers</a></li>
 				<li><a href="./about-us.php">About Us</a></li>
@@ -25,9 +26,15 @@
 	</div>
 </nav>
 <ul class="sidenav" id="mobile-links">
+	<li><a href="./account-page.php">Account</a></li>
 	<li><a href="./all-products.php">Products</a></li>
 	<li><a href="./all-sellers.php">Sellers</a></li>
 	<li><a href="./about-us.php">About Us</a></li>
-	<li><a href="#">Sign Out</a></li>
+	<li><a href="">Sign Out</a></li>
 	<hr>
 </ul>
+<div class="fixed-action-btn">
+	<a id="postProductBtn" class="btn-floating btn-large pit-blue" href="./post-product.php">
+		<i id="addProductIcon" class="large material-icons">add</i>
+	</a>
+</div>
