@@ -100,7 +100,7 @@ app.get('/api/most-recent',(request,response)=>{
 	Products.find().sort( { timePosted: -1 } )
 	.then(data=>{
 	  let mostRecentFive =	[...data.splice(0,6)]
-	  response.json(MostRecentFive)
+	  response.json(mostRecentFive)
 	})
 })
 

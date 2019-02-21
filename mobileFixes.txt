@@ -1,0 +1,6 @@
+Here are some chanegs that need to be made fr the site to be more mobile friendly
++ FAB for post-product.php needs to be smaller when viewed on mobile
++ Account page is work in progress as it is, but need to keep mobile in mind when
+	dealing with col classes
++ search has weird border-radius on ipad pro and search palceholder is pushed down
+	almost out of view
