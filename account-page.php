@@ -47,21 +47,24 @@ require_once( "./assets/php/includes.php" );
 				</li>
 			</ul> -->
 			<!--------------------------------------------------------------->
-			<h1 class="myHeader pit-blue-text">Frank Sinatra<!-- Insert Person's name here --></h1>
+			<h1 id="nameHeader" class="myHeader pit-blue-text">Frank Sinatra<!-- Insert Person's name here --></h1>
 			<div class="row">
 				<div class="col s12 m12 l5 xl5">
-					<h3>Your Username: FrankSinatra555
-					<h3>Your Email: frankSinatra@fakeEmail.com
+					<h3 class="pit-gold-text">Username
+					<h4 id="usernameHeader">FrankSinatra555
+					<h3 class="pit-gold-text">Email
+					<h4 id="emailHeader">FSinatra@fakeemail.com
 				</div>
-				<div class="col s12 m12 l5 xl5">
+				<div class="col s12 m12 l5 xl5 right">
 					<div class="card pit-blue">
 						<div class="productNameAndPrice">
 							<span class="card-title pit-gold-text flow-text">Frank Smith</span>
 						</div>
-						<a href="/account-page.php"><img src="assets/images/frankSinatra.jpg" class="responsive-img seller-card-image card-image"></a>
+						<div class="productImage frankSinatra"></div>
 					</div>
 				</div>
 			</div>
+			<h1 class="myHeader pit-blue-text">Recent Purchases</h1>
 			<!--------------------------------------------------------------->
 		</div>
 		<script>/*Global c*/window.onload = c.accountPageInitialize</script>

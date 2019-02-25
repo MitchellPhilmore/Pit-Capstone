@@ -25,6 +25,7 @@ app = express(),
 https = require('https'),
 port = 60005,
 path = require('path'),
+bodyParser = require('body-parser'),
 mongoose = require('mongoose'),
 db = require('./config/db'),
 Products = require('./config/Products')
@@ -32,6 +33,9 @@ Products = require('./config/Products')
 // Middleware that allows cors
 app.use(cors())
 
+// Middleware to parse form data
+app.use(bodyParser.urlencoded({extended:true}))
+app.use(bodyParser.json())
 
 var httpsServer = https.createServer(options, app);
 
@@ -42,61 +46,19 @@ mongoose.connect(db.URI).then(() => {
   console.log(JSON.stringify(err))
 })
 
-//Test Db Connection
-/*
-let newProduct = new Products({
-	productName: 'Brownies',
-	price: '5.99',
-	timePosted:Date.now(),
-	sold:false
-}).save()
-.catch(err=>{
-	console.log(JSON.stringify(err))
-})
-*/
-
-
-
 //Serve static files(html,css,images etc..)
 
 app.use(express.static('public'))
 
-//---------- Routes--------------------------------------------//
 
-// app.get('/',(request,response)=>{
-// 	response.sendFile(path.join(__dirname,'/public/login.html'))
-// })
-
-// // Will add actual pages when they are build
-// app.get('/about',(request,response)=>{
-// 	response.send('About')
-// })
-
-// app.get('/signup',(request,response)=>{
-// 	response.send('Signup')
-// })
-
-// app.get('/login',(request,response)=>{
-// 	response.send('Login')
-// })
-
-// app.get('/products',(request,response)=>{
-// 	response.send('products')
-// })
-
-// app.get('/sellers',(request,response)=>{
-// 	response.send('sellers')
-// })
-
-
-app.get('/api/products',(request,response)=>{
+app.get('/api/products', (request,response)=>{
 	Products.find({},(err,data)=>{
 		response.json(data)
 	})
 })
-// Return most the five most recent products
+// Return  the five most recent products
 
-app.get('/api/most-recent',(request,response)=>{
+app.get('/api/most-recent', (request,response)=>{
 	Products.find().sort( { timePosted: -1 } )
 	.then(data=>{
 	  let mostRecentFive =	[...data.splice(0,6)]
@@ -104,10 +66,15 @@ app.get('/api/most-recent',(request,response)=>{
 	})
 })
 
+app.get('api/user', (request, response)=>{
+	let user = request.header('user');
+	//grab user from database
+})
+
 
 //attempt to have server recieve postproduct request
-app.post('/postProduct', (request, response)=>{
-	console.log(request);
+app.post('/postproduct', (request, response)=>{
+	console.log(request.body);
 	/*
 	let myProduct = new Products(request)
 	myProduct.save()
@@ -118,6 +85,11 @@ app.post('/postProduct', (request, response)=>{
 		error.send(error.status)
 	})
 	*/
+})
+
+app.post('/postImage', (request, response)=>{
+	// console.log(request);
+	console.log(request.body);
 })
 
 //-----------------------------------------------------------------//

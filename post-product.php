@@ -47,7 +47,7 @@ require_once( "./assets/php/includes.php" );
 				</li>
 			</ul> -->
 			<!--------------------------------------------------------------->
-			<h1 class="myHeader pit-blue-text">Post a product</h1>
+			<h1 class="myHeader pit-blue-text">Post A Product</h1>
 			<!--------------------------------------------------------------->
 			<div class="row">
 				<div class="col s12 m12 l5 xl5">
@@ -64,7 +64,7 @@ require_once( "./assets/php/includes.php" );
 						</li>
 					</ul>
 					<h3 class="pit-gold-text">Please fill out this form</h3>
-					<form>
+					<form  id="postProductForm">
 						<div class="input-field">
 							<input id="productName" name="productName" type="text" class="validate" required>
 							<label for="productName">Product Name</label>
@@ -78,7 +78,7 @@ require_once( "./assets/php/includes.php" );
 						<div class="file-field input-field">
 							<div class="btn pit-blue">
 								<span>Image</span>
-								<input type="file" accept="image/*">
+								<input id="imageChooser" type="file" name="image" accept="image/*">
 							</div>
 							<div class="file-path-wrapper">
 								<input class="file-path validate" type="text">
@@ -87,12 +87,12 @@ require_once( "./assets/php/includes.php" );
 						<br>
 						<h5>Please describe your product, detailing any information the buyer will need to know</h5>
 						<div class="input-field">
-							<textarea id="textarea1" class="materialize-textarea"></textarea>
+							<textarea id="textarea1" class="materialize-textarea" name="description"></textarea>
 							<label for="textarea1">Description</label>
 						</div>
 						<br><br>
-						<button class="btn waves-effect waves-light pit-blue" type="submit" name="action">Submit Product
-							<i id="postProductIcon" class="material-icons right">wb_iridescent</i>
+						<button id="submitProduct" class="btn waves-effect waves-light pit-blue" type="submit" name="action">
+							Submit Product <i id="postProductIcon" class="material-icons right">wb_iridescent</i>
 						</button>
 					</form>
 				</div>

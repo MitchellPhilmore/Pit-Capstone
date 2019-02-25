@@ -1,5 +1,5 @@
 <?php
-
+/*
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -18,5 +18,7 @@ $result = $connection->executeBulkWrite('e-commerce.users', $bulk);
 
 
 
-var_dump($result);
+var_dump($result);*/
+
+exit( json_encode($_POST ) );
 ?>

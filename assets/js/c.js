@@ -4,6 +4,7 @@ const c = {
 	/////////////////////////////////////////////////////////////////////
 	baseInitialize() {
 		
+		m.image = false;
 		//the initialization that every page must go through
 		L.attachAllElementsById( v );
 		
@@ -36,10 +37,6 @@ const c = {
 		c.displayAllProducts(m.allProducts);
 	},
 	
-	allSellersInitialize() {
-		c.baseInitialize();
-	},
-	
 	productInitialize(){
 		c.baseInitialize();
 		
@@ -50,36 +47,106 @@ const c = {
 		//c.createProdCardCol(product)
 	},
 	
-	accountPageInitialize(){
+	 async postToNode(){
+		let url = 'https://aaserver.abbas411.com:60005/postproduct'
+		let response = await fetch('GET',url)
+		let data = await response.json()
+		
+		console.log(data)
+	},
+	
+	async accountPageInitialize(){
 		c.baseInitialize();
+		
+		//grab the currently logged in user
+		let requestedUser;
+		
+		//pass c.grabOneAccount() the account
+		let userAccount = await c.grabOneAccount(requestedUser);
+		c.fillAccountPage(userAccount);
+		c.createUserCard(userAccount);
 	},
 	
 	postProductInitialize(){
 		c.baseInitialize();
+		
+		v.submitProduct.addEventListener('click', c.postProduct);
+		v.imageChooser.addEventListener('change', c.postImage);
+		
 	},
 	
-	postProduct(name, price, timePosted=Date.now(), sold=false){
-		let postman = new XMLHttpRequest();
-		let productData = new FormData();
+	postProduct(eventObject){
+		eventObject.preventDefault();
 		
-		productData.append('productName', name);
-		productData.append('productPrice', price);
+		let timePosted = Date.now();
+		let sold = false;
+		let postman = new XMLHttpRequest();
+		let productData = new FormData(v.postProductForm);
+		
 		productData.append('datePosted', timePosted);
 		productData.append('productSold', sold);
+		productData.delete('image');
 		
-		postman.open('POST', 'https://aaserver.abbas411.com:60005/postProduct');
-		postman.send(productData);
+		for( let entry of productData.entries() ) {
+			
+			console.log(entry[0]+ ', '+ entry[1]); 
+		}
+		if(m.image){
+			productData.append('image', m.imageString)
+			
+			postman.open('POST', './test.php');
+			postman.send(productData);
+			m.image = false;
+		}
+		else{
+			//ensure to let the user know that they need to select an image
+			console.log('An image has not been uploaded, please upload an image');
+		}
 		
-		postman.onload = function(){
+		
+		postman.onload = function(eventObject){
+			
+			console.log('message was sent: ' + postman.responseText);
 			if ( postman.status !== 200 ){
 				const message = `problem sending product: ${postman.status}`;
-				console.log(message);
 			}
 		}
-		postman.onerror = function(){
+		postman.onerror = function(eventObject){
 			const message = `problem connecting to server: ${postman.status}`;
 			console.log(message);
 		}
+	},
+	
+	postImage(){
+		let postman = new XMLHttpRequest();
+		let formData = new FormData();
+		let reader = new FileReader();
+		
+		let image = v.imageChooser.files[0];
+		let imageName = image.name;
+		reader.readAsDataURL(image);
+		reader.onload = function(){
+			m.imageString = reader.result;
+			formData.append('image', m.imageString);
+			formData.append('imageName', imageName);
+		
+			postman.open('POST', './test.php');
+			postman.send(formData);
+			
+			postman.onload = function(eo){
+				if ( postman.status !== 200 ){
+					const message = `problem sending image: ${postman.status}`;
+					console.log(message);
+				}
+				console.log('message was sent: ' + postman.responseText);
+				m.image = true;
+			}
+			postman.onerror = function(eo){
+				const message = `problem connecting to server: ${postman.status}`;
+				console.log(message);
+			}
+		};
+		
 	},
 	
 	async loading() {
@@ -121,6 +188,23 @@ const c = {
 		console.log(products);
 		return products;
 	},
+	
+	async grabOneAccount(requestedUser){
+		////////////////////////////////////////////////////////////
+		
+		let requestedUserData = {
+			method: 'GET',
+			headers: {
+				user: requestedUser
+			},
+		}
+		let userJSON = await fetch('https://aaserver.abbas411.com:60005/api/user', requestedUserData);
+		let user = await userJSON.json();
+		
+		console.log(user);
+		return user;
+	},
+	
 	
 	displayLatestFive(allFiveProducts){
 		let productRow = document.querySelector('.productRow');
@@ -177,16 +261,15 @@ const c = {
 						prodNameSpan.innerText = product.productName;
 						
 					let prodLink = document.createElement('a');
-					let prodLinkHref = document.createAttribute('href');
-					prodLinkHref.value = './product.php';
-					let prodLinkId = document.createAttribute('data-productId');
-					prodLinkId.value = product._id.$oid;
+						let prodLinkHref = document.createAttribute('href');
+						prodLinkHref.value = './product.php';
+						let prodLinkId = document.createAttribute('data-productId');
+						prodLinkId.value = product._id.$oid;
 					prodLink.setAttributeNode(prodLinkHref);
-					prodLink.setAttributeNode(prodLinkHref);
+					prodLink.setAttributeNode(prodLinkId);
 						
 						let prodImageDiv = document.createElement('div');
 						prodImageDiv.classList.add('productImage');
-						console.log(product.imageUrl);
 						prodImageDiv.style.backgroundImage = `url(${product.imageUrl})`;
 					
 					let prodPriceDiv = document.createElement('div');
@@ -196,6 +279,7 @@ const c = {
 						prodPriceSpan.classList.add(...m.nameAndPriceSpanClasses);
 						prodPriceSpan.innerText = product.price;
 		
+		////////////////////////////////////////////
 		colDiv.appendChild(cardDiv);
 			cardDiv.appendChild(prodNameDiv);
 				prodNameDiv.appendChild(prodNameSpan);
@@ -204,5 +288,40 @@ const c = {
 			cardDiv.appendChild(prodPriceDiv);
 				prodPriceDiv.appendChild(prodPriceSpan);
 		return colDiv;
+	},
+	
+	fillAccountPage(user){
+		v.nameHeader.innerText = "";
+		v.nameHeader.innerText = `${user.firstname} ${user.lastname}`;
+		
+		v.usernameHeader.innerText = "";
+		v.usernameHeader.innerText = `${user.username}`;
+		
+		v.emailHeader.innerText = "";
+		v.emailHeader.innerText = `${user.email}`;
+	},
+	
+	createUserCard(user){
+		let cardDiv = document.createElement('div');
+		cardDiv.classList.add(...m.cardClasses);
+		
+		let userNameDiv = document.createElement('div');
+		userNameDiv.classList.add('productNameAndPrice');
+			
+			let userNameSpan = document.createElement('span');
+			userNameSpan.classList.add(...m.nameAndPriceSpanClasses);
+			userNameSpan.innerText = `${user.firstname} ${user.lastname} \n ${user.email}`;
+				
+		let userImageDiv = document.createElement('div');
+		userImageDiv.classList.add('productImage');
+		//our database doesnt currently have a column for user image
+		userImageDiv.style.backgroundImage = `url(./assets/images/defaultFace.png)`;
+		
+		////////////////////////////////////////////
+		colDiv.appendChild(cardDiv);
+			cardDiv.appendChild(prodNameDiv);
+				prodNameDiv.appendChild(prodNameSpan);
+			cardDiv.appendChild(prodImageDiv);
+		return cardDiv;
 	},
 };

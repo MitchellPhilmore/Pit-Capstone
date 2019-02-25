@@ -135,6 +135,7 @@ require_once( "./assets/php/includes.php" );
 						<div class="productNameAndPrice">
 							<span class="card-title pit-gold-text flow-text">$35.50</span>
 						</div>
+						
 					</div>
 				</div>
 				<!-- -->
@@ -156,7 +157,7 @@ require_once( "./assets/php/includes.php" );
 						<div class="productNameAndPrice">
 							<span class="card-title pit-gold-text flow-text">Frank Smith</span>
 						</div>
-						<a href="account-page.php"><img src="assets/images/frankSinatra.jpg" class="responsive-img seller-card-image card-image"></a>
+						<div class="productImage frankSinatra"></div>
 					</div>
 				</div>
 			</div>

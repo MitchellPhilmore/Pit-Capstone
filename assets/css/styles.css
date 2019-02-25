@@ -165,14 +165,11 @@ nav ul a{
 .integratedIridologyTextbook{
 	background-image: url("../images/verticalTextbookExample.jpg");
 }
-/*****************/
-.seller-card-image{
-	vertical-align: bottom;
-	border-radius: 0 0 2px 2px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+
+.frankSinatra{
+	background-image: url('../images/frankSinatra.jpg');
 }
+/*****************/
 
 #searchBar {
 	width: 180px;
