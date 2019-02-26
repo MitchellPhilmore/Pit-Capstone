@@ -2,6 +2,15 @@
 
 require_once( "./assets/php/includes.php" );
 
+if( isset( $_GET["product"] ) ) {
+	
+	$product = $_GET["product"];
+} else {
+	
+	$product = "";
+}
+
+
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -47,8 +56,8 @@ require_once( "./assets/php/includes.php" );
 				</li>
 			</ul> -->
 			<h1 id="productPageTitle" class="myHeader pit-blue-text"><!-- Product title goes here -->Green Planet</h1>
-			<div class="row">
-				<div class="col s12 m6 l6 xl6">
+			<div id="oneProductRow" class="row">
+				<div id="placeHolderCard" class="col s12 m6 l6 xl6">
 					<!-- insert product card here -->
 					<div class="card pit-blue">
 								
@@ -79,6 +88,13 @@ require_once( "./assets/php/includes.php" );
 				</button>
 			</div>
 		</div>
-		<script>/*Global c*/window.onload = c.productInitialize</script>
+		<script>
+			/*Global c*/
+			window.onload = function( event ) {
+				
+				m.productId = `<?php echo $product;?>`;
+				c.productInitialize();
+			}
+		</script>
 	</body>
 </html>

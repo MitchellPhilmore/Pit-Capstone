@@ -41,13 +41,30 @@ const c = {
 		c.baseInitialize();
 		
 		//grab name of product that was clicked in order to be redirected here
-		let product;
+		console.log(m.productId);
 		
-		//v.productPageTitle.innerText = product.something
-		//c.createProdCardCol(product)
+		let postman = new XMLHttpRequest();
+		postman.open('POST', 'https://aaserver.abbas411.com:60005/api/grabOneProduct');
+		postman.setRequestHeader( 'productId', m.productId );
+		postman.send();
+		postman.onload = (eo)=>{
+			if(postman.status === 200 || postman.status === 0){
+				m.currentProduct = JSON.parse(postman.responseText);
+				console.log(m.currentProduct);
+				v.productPageTitle.innerText = m.currentProduct[0].productName;
+				
+				let prodCardCol = c.createProdCardCol(m.currentProduct[0], m.productPageCardColClasses);
+				v.oneProductRow.replaceChild( prodCardCol, v.oneProductRow.children[0] );
+				//v.oneProductRow.appendChild(prodCardCol);
+			}
+		}
+		postman.onerror = (eo)=>{
+			console.log(`There was an error: ${postman.status}`);
+		}
+		
 	},
 	
-	 async postToNode(){
+	async postToNode(){
 		let url = 'https://aaserver.abbas411.com:60005/postproduct'
 		let response = await fetch('GET',url)
 		let data = await response.json()
@@ -262,11 +279,8 @@ const c = {
 						
 					let prodLink = document.createElement('a');
 						let prodLinkHref = document.createAttribute('href');
-						prodLinkHref.value = './product.php';
-						let prodLinkId = document.createAttribute('data-productId');
-						prodLinkId.value = product._id.$oid;
+						prodLinkHref.value = './product.php?product=' + product._id;
 					prodLink.setAttributeNode(prodLinkHref);
-					prodLink.setAttributeNode(prodLinkId);
 						
 						let prodImageDiv = document.createElement('div');
 						prodImageDiv.classList.add('productImage');

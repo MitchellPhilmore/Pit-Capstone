@@ -66,9 +66,18 @@ app.get('/api/most-recent', (request,response)=>{
 	})
 })
 
-app.get('api/user', (request, response)=>{
+app.get('/api/user', (request, response)=>{
 	let user = request.header('user');
 	//grab user from database
+})
+
+app.post('/api/grabOneProduct', (request, response)=>{
+	console.log('node: heres the id: ' + request.headers.productid);
+	Products.find({_id: request.headers.productid})
+	.then((data)=>{
+		console.log('node: heres the product: ' + data);
+		response.json(data);
+	})
 })
 
 

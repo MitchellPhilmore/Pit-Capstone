@@ -1,0 +1,1046 @@
+(node:18151) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+5c4b2a0535a503324a7e7b97
+5c4b3316e4ca5474b39b2d1b
+5c4b3316e4ca5474b39b2d1b
+5c4b3316e4ca5474b39b2d1b
+5c4b3316e4ca5474b39b2d1b
+5c3cb28627e03b4d9a13acc3
+5c4b2c11d893773646f14734
+5c4b2c11d893773646f14734
+5c4b2c11d893773646f14734
+5c4b3316e4ca5474b39b2d1b
+(node:19638) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+Connected to database
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b2a0535a503324a7e7b97
+node: heres the product: { _id: 5c4b2a0535a503324a7e7b97,
+  productName: 'Creme Brulee',
+  price: '5.99',
+  timePosted: 2019-01-25T15:23:49.439Z,
+  imageUrl: './assets/images/testCremeBrulee.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b2f4f956d6563eb65ccce
+node: heres the product: { _id: 5c4b2f4f956d6563eb65ccce,
+  productName: 'Black Forest Cake',
+  price: '5.99',
+  timePosted: 2019-01-25T15:46:23.243Z,
+  imageUrl: './assets/images/testBlackForestCake.jpg',
+  sold: false,
+  __v: 0 }
+(node:20687) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+node: heres the id: 5c4b2f4f956d6563eb65ccce
+Connected to database
+node: heres the product: { _id: 5c4b2f4f956d6563eb65ccce,
+  productName: 'Black Forest Cake',
+  price: '5.99',
+  timePosted: 2019-01-25T15:46:23.243Z,
+  imageUrl: './assets/images/testBlackForestCake.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b2f4f956d6563eb65ccce
+node: heres the product: { _id: 5c4b2f4f956d6563eb65ccce,
+  productName: 'Black Forest Cake',
+  price: '5.99',
+  timePosted: 2019-01-25T15:46:23.243Z,
+  imageUrl: './assets/images/testBlackForestCake.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b2c11d893773646f14734
+node: heres the product: { _id: 5c4b2c11d893773646f14734,
+  productName: 'Blueberry Pie',
+  price: '5.99',
+  timePosted: 2019-01-25T15:32:33.482Z,
+  imageUrl: './assets/images/testBlueberryPie.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b28fcd565902b396b5dc8
+node: heres the product: { _id: 5c4b28fcd565902b396b5dc8,
+  productName: 'Ice Cream',
+  price: '5.99',
+  timePosted: 2019-01-25T15:19:24.245Z,
+  sold: false,
+  imageUrl: './assets/images/testIceCream.jpg',
+  __v: 0 }
+node: heres the id: 5c3cb28627e03b4d9a13acc3
+node: heres the product: { _id: 5c3cb28627e03b4d9a13acc3,
+  productName: 'Cookies',
+  price: '5.99',
+  timePosted: 2019-01-14T16:02:14.764Z,
+  sold: false,
+  imageUrl: './assets/images/testCookies.jpg',
+  __v: 0 }
+node: heres the id: 5c4b2a0535a503324a7e7b97
+node: heres the product: { _id: 5c4b2a0535a503324a7e7b97,
+  productName: 'Creme Brulee',
+  price: '5.99',
+  timePosted: 2019-01-25T15:23:49.439Z,
+  imageUrl: './assets/images/testCremeBrulee.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b298d0f811e309bfeba4d
+node: heres the product: { _id: 5c4b298d0f811e309bfeba4d,
+  productName: 'Strawberry Shortcake',
+  price: '5.99',
+  timePosted: 2019-01-25T15:21:49.104Z,
+  sold: false,
+  imageUrl: './assets/images/testStrawberryShortCake.jpg',
+  __v: 0 }
+node: heres the id: 5c4b298d0f811e309bfeba4d
+node: heres the product: { _id: 5c4b298d0f811e309bfeba4d,
+  productName: 'Strawberry Shortcake',
+  price: '5.99',
+  timePosted: 2019-01-25T15:21:49.104Z,
+  sold: false,
+  imageUrl: './assets/images/testStrawberryShortCake.jpg',
+  __v: 0 }
+node: heres the id: 5c3f3634d213d504e3950eb5
+node: heres the product: { _id: 5c3f3634d213d504e3950eb5,
+  productName: 'Fudge',
+  price: '5.99',
+  timePosted: 2019-01-16T13:48:36.530Z,
+  sold: false,
+  imageUrl: './assets/images/testFudge.jpg',
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b2bb28efded35b19a0ae5
+node: heres the product: { _id: 5c4b2bb28efded35b19a0ae5,
+  productName: 'Shoo Fly Pie',
+  price: '5.99',
+  timePosted: 2019-01-25T15:30:58.960Z,
+  sold: false,
+  imageUrl: './assets/images/testShooFlyPie.jpeg',
+  __v: 0 }
+node: heres the id: 5c4b28a822d83e2a8aa9585e
+node: heres the product: { _id: 5c4b28a822d83e2a8aa9585e,
+  productName: 'Oreos',
+  price: '5.99',
+  timePosted: 2019-01-25T15:18:00.634Z,
+  sold: false,
+  imageUrl: './assets/images/testOreo.jpg',
+  __v: 0 }
+node: heres the id: 5c4b2c11d893773646f14734
+node: heres the product: { _id: 5c4b2c11d893773646f14734,
+  productName: 'Blueberry Pie',
+  price: '5.99',
+  timePosted: 2019-01-25T15:32:33.482Z,
+  imageUrl: './assets/images/testBlueberryPie.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b2c11d893773646f14734
+node: heres the product: { _id: 5c4b2c11d893773646f14734,
+  productName: 'Blueberry Pie',
+  price: '5.99',
+  timePosted: 2019-01-25T15:32:33.482Z,
+  imageUrl: './assets/images/testBlueberryPie.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b2bb28efded35b19a0ae5
+node: heres the product: { _id: 5c4b2bb28efded35b19a0ae5,
+  productName: 'Shoo Fly Pie',
+  price: '5.99',
+  timePosted: 2019-01-25T15:30:58.960Z,
+  sold: false,
+  imageUrl: './assets/images/testShooFlyPie.jpeg',
+  __v: 0 }
+node: heres the id: 5c4b2bb28efded35b19a0ae5
+node: heres the product: { _id: 5c4b2bb28efded35b19a0ae5,
+  productName: 'Shoo Fly Pie',
+  price: '5.99',
+  timePosted: 2019-01-25T15:30:58.960Z,
+  sold: false,
+  imageUrl: './assets/images/testShooFlyPie.jpeg',
+  __v: 0 }
+node: heres the id: 5c3f3634d213d504e3950eb5
+node: heres the product: { _id: 5c3f3634d213d504e3950eb5,
+  productName: 'Fudge',
+  price: '5.99',
+  timePosted: 2019-01-16T13:48:36.530Z,
+  sold: false,
+  imageUrl: './assets/images/testFudge.jpg',
+  __v: 0 }
+node: heres the id: 5c4b22a1406723199c85929e
+node: heres the product: { _id: 5c4b22a1406723199c85929e,
+  productName: 'Tiramisu',
+  price: '5.99',
+  timePosted: 2019-01-25T14:52:17.772Z,
+  sold: false,
+  imageUrl: './assets/images/testTiramisu.jpeg',
+  __v: 0 }
+node: heres the id: 5c3cb28627e03b4d9a13acc3
+node: heres the product: { _id: 5c3cb28627e03b4d9a13acc3,
+  productName: 'Cookies',
+  price: '5.99',
+  timePosted: 2019-01-14T16:02:14.764Z,
+  sold: false,
+  imageUrl: './assets/images/testCookies.jpg',
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 
+(node:20687) UnhandledPromiseRejectionWarning: CastError: Cast to ObjectId failed for value "" at path "_id" for model "products"
+    at new CastError (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/error/cast.js:29:11)
+    at ObjectId.cast (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/schema/objectid.js:232:11)
+    at ObjectId.SchemaType.applySetters (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/schematype.js:845:12)
+    at ObjectId.SchemaType._castForQuery (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/schematype.js:1248:15)
+    at ObjectId.SchemaType.castForQuery (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/schematype.js:1238:15)
+    at ObjectId.SchemaType.castForQueryWrapper (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/schematype.js:1217:15)
+    at cast (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/cast.js:307:32)
+    at model.Query.Query.cast (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/query.js:4262:12)
+    at model.Query.Query._castConditions (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/query.js:1724:10)
+    at model.Query.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/query.js:1739:8)
+    at model.Query._wrappedThunk [as _find] (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/helpers/query/wrapThunk.js:16:8)
+    at process.nextTick (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/kareem/index.js:369:33)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+(node:20687) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:20687) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c3cb28627e03b4d9a13acc3
+node: heres the product: { _id: 5c3cb28627e03b4d9a13acc3,
+  productName: 'Cookies',
+  price: '5.99',
+  timePosted: 2019-01-14T16:02:14.764Z,
+  sold: false,
+  imageUrl: './assets/images/testCookies.jpg',
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c3cb28627e03b4d9a13acc3
+node: heres the product: { _id: 5c3cb28627e03b4d9a13acc3,
+  productName: 'Cookies',
+  price: '5.99',
+  timePosted: 2019-01-14T16:02:14.764Z,
+  sold: false,
+  imageUrl: './assets/images/testCookies.jpg',
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c40a5a5fe766d6ca888add8
+node: heres the product: { _id: 5c40a5a5fe766d6ca888add8,
+  productName: 'Brownies',
+  price: '5.99',
+  timePosted: 2019-01-17T15:56:21.482Z,
+  sold: false,
+  imageUrl: './assets/images/testBrownies.jpeg',
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
+node: heres the id: 
+(node:20687) UnhandledPromiseRejectionWarning: CastError: Cast to ObjectId failed for value "" at path "_id" for model "products"
+    at new CastError (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/error/cast.js:29:11)
+    at ObjectId.cast (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/schema/objectid.js:232:11)
+    at ObjectId.SchemaType.applySetters (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/schematype.js:845:12)
+    at ObjectId.SchemaType._castForQuery (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/schematype.js:1248:15)
+    at ObjectId.SchemaType.castForQuery (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/schematype.js:1238:15)
+    at ObjectId.SchemaType.castForQueryWrapper (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/schematype.js:1217:15)
+    at cast (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/cast.js:307:32)
+    at model.Query.Query.cast (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/query.js:4262:12)
+    at model.Query.Query._castConditions (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/query.js:1724:10)
+    at model.Query.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/query.js:1739:8)
+    at model.Query._wrappedThunk [as _find] (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/helpers/query/wrapThunk.js:16:8)
+    at process.nextTick (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/kareem/index.js:369:33)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+(node:20687) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 2)
+node: heres the id: 5c4b3316e4ca5474b39b2d1b
+node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
+  productName: 'Cannoli',
+  price: '5.99',
+  timePosted: 2019-01-25T16:02:30.401Z,
+  imageUrl: './assets/images/testCannoli.jpg',
+  sold: false,
+  __v: 0 }
