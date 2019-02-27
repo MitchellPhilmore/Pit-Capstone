@@ -55,7 +55,7 @@ require_once( "./assets/php/includes.php" );
 					<h3 class="pit-gold-text">Email
 					<h4 id="emailHeader">FSinatra@fakeemail.com
 				</div>
-				<div class="col s12 m12 l5 xl5 right">
+				<div id="userCardRow" class="col s12 m12 l5 xl5 right">
 					<div class="card pit-blue">
 						<div class="productNameAndPrice">
 							<span class="card-title pit-gold-text flow-text">Frank Smith</span>
@@ -67,6 +67,9 @@ require_once( "./assets/php/includes.php" );
 			<h1 class="myHeader pit-blue-text">Recent Purchases</h1>
 			<!--------------------------------------------------------------->
 		</div>
-		<script>/*Global c*/window.onload = c.accountPageInitialize</script>
+		<script>/*Global c*/window.onload = ()=>{
+			m.token = `<?php echo 'jdakfjjk323k3849359384589935483'; ?>`
+			c.accountPageInitialize()
+		}</script>
 	</body>
 </html>

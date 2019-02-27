@@ -1044,3 +1044,6 @@ node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
   imageUrl: './assets/images/testCannoli.jpg',
   sold: false,
   __v: 0 }
+(node:1554) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database

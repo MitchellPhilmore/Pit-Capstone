@@ -14,7 +14,7 @@
 
 
 let express = require('express'),
-cors = require('cors')
+cors = require('cors'),
 fs = require('fs'),
 options = {
 	key:    fs.readFileSync( "/etc/letsencrypt/live/aaserver.abbas411.com/privkey.pem" ),
@@ -28,7 +28,8 @@ path = require('path'),
 bodyParser = require('body-parser'),
 mongoose = require('mongoose'),
 db = require('./config/db'),
-Products = require('./config/Products')
+Products = require('./config/Products'),
+Users = require('./config/Users')
 
 // Middleware that allows cors
 app.use(cors())
@@ -51,24 +52,27 @@ mongoose.connect(db.URI).then(() => {
 app.use(express.static('public'))
 
 
-app.get('/api/products', (request,response)=>{
+app.get('/api/products', (request, response)=>{
 	Products.find({},(err,data)=>{
 		response.json(data)
 	})
 })
-// Return  the five most recent products
 
-app.get('/api/most-recent', (request,response)=>{
+app.get('/api/most-recent', (request, response)=>{
 	Products.find().sort( { timePosted: -1 } )
 	.then(data=>{
-	  let mostRecentFive =	[...data.splice(0,6)]
-	  response.json(mostRecentFive)
+		let mostRecentFive = [...data.splice(0,6)]
+		response.json(mostRecentFive)
 	})
 })
 
 app.get('/api/user', (request, response)=>{
-	let user = request.header('user');
+	let userToken = request.headers.usertoken;
 	//grab user from database
+	Users.find({token: userToken})
+	.then( (data) =>{
+		response.json(data);
+	})
 })
 
 app.post('/api/grabOneProduct', (request, response)=>{

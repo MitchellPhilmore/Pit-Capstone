@@ -72,16 +72,16 @@ const c = {
 		console.log(data)
 	},
 	
-	async accountPageInitialize(){
+	accountPageInitialize(){
 		c.baseInitialize();
 		
-		//grab the currently logged in user
-		let requestedUser;
-		
-		//pass c.grabOneAccount() the account
-		let userAccount = await c.grabOneAccount(requestedUser);
-		c.fillAccountPage(userAccount);
-		c.createUserCard(userAccount);
+		c.grabOneAccount().then((response)=>{
+			let parsedUser = JSON.parse(response)[0];
+			console.log(parsedUser);
+			c.fillAccountPage(parsedUser);
+			let userCardCol = c.createUserCard(parsedUser);
+			v.userCardRow.replaceChild( userCardCol, v.userCardRow.children[0] );
+		})
 	},
 	
 	postProductInitialize(){
@@ -206,20 +206,24 @@ const c = {
 		return products;
 	},
 	
-	async grabOneAccount(requestedUser){
-		////////////////////////////////////////////////////////////
-		
-		let requestedUserData = {
-			method: 'GET',
-			headers: {
-				user: requestedUser
-			},
-		}
-		let userJSON = await fetch('https://aaserver.abbas411.com:60005/api/user', requestedUserData);
-		let user = await userJSON.json();
-		
-		console.log(user);
-		return user;
+	grabOneAccount(){
+		return new Promise((resolve, reject)=>{
+			let postman = new XMLHttpRequest();
+			postman.open('GET', 'https://aaserver.abbas411.com:60005/api/user');
+			postman.setRequestHeader( 'usertoken', m.token );
+			postman.send();
+			postman.onload = (eo)=>{
+				if(postman.status === 200 || postman.status === 0){
+					let currentUser = postman.responseText;
+					console.log('currentUser from c.grabOneAccount: ' + currentUser);
+					resolve(currentUser);
+				}
+			}
+			postman.onerror = (eo)=>{
+				console.log(`There was an error: ${postman.status}`);
+				reject(postman.status);
+			}
+		})
 	},
 	
 	
@@ -316,26 +320,29 @@ const c = {
 	},
 	
 	createUserCard(user){
-		let cardDiv = document.createElement('div');
-		cardDiv.classList.add(...m.cardClasses);
+		let colDiv = document.createElement('div');
+		colDiv.classList.add(...m.accountPageCardColClasses);
 		
-		let userNameDiv = document.createElement('div');
-		userNameDiv.classList.add('productNameAndPrice');
+			let cardDiv = document.createElement('div');
+			cardDiv.classList.add(...m.cardClasses);
 			
-			let userNameSpan = document.createElement('span');
-			userNameSpan.classList.add(...m.nameAndPriceSpanClasses);
-			userNameSpan.innerText = `${user.firstname} ${user.lastname} \n ${user.email}`;
+			let userNameDiv = document.createElement('div');
+			userNameDiv.classList.add('productNameAndPrice');
 				
-		let userImageDiv = document.createElement('div');
-		userImageDiv.classList.add('productImage');
-		//our database doesnt currently have a column for user image
-		userImageDiv.style.backgroundImage = `url(./assets/images/defaultFace.png)`;
+				let userNameSpan = document.createElement('span');
+				userNameSpan.classList.add(...m.nameAndPriceSpanClasses);
+				userNameSpan.innerText = `${user.firstname} ${user.lastname}`;
+					
+			let userImageDiv = document.createElement('div');
+			userImageDiv.classList.add('productImage');
+			//our database doesnt currently have a column for user image
+			userImageDiv.style.backgroundImage = `url(./assets/images/defaultFace.png)`;
 		
 		////////////////////////////////////////////
 		colDiv.appendChild(cardDiv);
-			cardDiv.appendChild(prodNameDiv);
-				prodNameDiv.appendChild(prodNameSpan);
-			cardDiv.appendChild(prodImageDiv);
-		return cardDiv;
+			cardDiv.appendChild(userNameDiv);
+				userNameDiv.appendChild(userNameSpan);
+			cardDiv.appendChild(userImageDiv);
+		return colDiv;
 	},
 };
