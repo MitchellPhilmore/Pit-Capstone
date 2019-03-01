@@ -4,7 +4,6 @@ const c = {
 	/////////////////////////////////////////////////////////////////////
 	baseInitialize() {
 		
-		m.image = false;
 		//the initialization that every page must go through
 		L.attachAllElementsById( v );
 		
@@ -79,8 +78,8 @@ const c = {
 			let parsedUser = JSON.parse(response)[0];
 			console.log(parsedUser);
 			c.fillAccountPage(parsedUser);
-			let userCardCol = c.createUserCard(parsedUser);
-			v.userCardRow.replaceChild( userCardCol, v.userCardRow.children[0] );
+			let userCard = c.createUserCard(parsedUser);
+			v.userCardCol.replaceChild( userCard, v.userCardCol.children[0] );
 		})
 	},
 	
@@ -88,8 +87,6 @@ const c = {
 		c.baseInitialize();
 		
 		v.submitProduct.addEventListener('click', c.postProduct);
-		v.imageChooser.addEventListener('change', c.postImage);
-		
 	},
 	
 	postProduct(eventObject){
@@ -97,73 +94,46 @@ const c = {
 		
 		let timePosted = Date.now();
 		let sold = false;
-		let postman = new XMLHttpRequest();
-		let productData = new FormData(v.postProductForm);
-		
-		productData.append('datePosted', timePosted);
-		productData.append('productSold', sold);
-		productData.delete('image');
-		
-		for( let entry of productData.entries() ) {
-			
-			console.log(entry[0]+ ', '+ entry[1]); 
-		}
-		if(m.image){
-			productData.append('image', m.imageString)
-			
-			postman.open('POST', './test.php');
-			postman.send(productData);
-			m.image = false;
-		}
-		else{
-			//ensure to let the user know that they need to select an image
-			console.log('An image has not been uploaded, please upload an image');
-		}
-		
-		
-		postman.onload = function(eventObject){
-			
-			console.log('message was sent: ' + postman.responseText);
-			if ( postman.status !== 200 ){
-				const message = `problem sending product: ${postman.status}`;
-			}
-		}
-		postman.onerror = function(eventObject){
-			const message = `problem connecting to server: ${postman.status}`;
-			console.log(message);
-		}
-	},
-	
-	postImage(){
-		let postman = new XMLHttpRequest();
-		let formData = new FormData();
 		let reader = new FileReader();
+		let postman = new XMLHttpRequest();
 		
 		let image = v.imageChooser.files[0];
 		let imageName = image.name;
-		reader.readAsDataURL(image);
-		reader.onload = function(){
-			m.imageString = reader.result;
-			formData.append('image', m.imageString);
-			formData.append('imageName', imageName);
+		let productName = v.productName.value;
+		let productPrice =  v.productPrice.value;
+		let productDesc = v.productDesc.value;
 		
-			postman.open('POST', './test.php');
-			postman.send(formData);
+		
+		reader.readAsDataURL(image);
+		reader.onload = ()=>{
+			let imageString = reader.result;
 			
-			postman.onload = function(eo){
-				if ( postman.status !== 200 ){
-					const message = `problem sending image: ${postman.status}`;
-					console.log(message);
-				}
+			postman.open('POST', 'https://aaserver.abbas411.com:60005/api/postProduct');
+			
+			postman.setRequestHeader('productName', productName);
+			postman.setRequestHeader('productPrice', productPrice);
+			postman.setRequestHeader('imageString', imageString);
+			postman.setRequestHeader('imageName', imageName);
+			postman.setRequestHeader('productDesc', productDesc);
+			
+			postman.send();
+			
+			postman.onload = function(eventObject){
+				
 				console.log('message was sent: ' + postman.responseText);
-				m.image = true;
+				if ( postman.status !== 200 ){
+					const message = `problem sending product: ${postman.status}`;
+				}
+				//popup a confirmation modal, and then redirect to thank you page
+				location.reload();
 			}
-			postman.onerror = function(eo){
+			postman.onerror = function(eventObject){
 				const message = `problem connecting to server: ${postman.status}`;
 				console.log(message);
+				//popup a confirmation modal, and then redirect to thank you page
+				location.reload();
 			}
-		};
-		
+		}
 	},
 	
 	async loading() {
@@ -320,29 +290,25 @@ const c = {
 	},
 	
 	createUserCard(user){
-		let colDiv = document.createElement('div');
-		colDiv.classList.add(...m.accountPageCardColClasses);
+		let cardDiv = document.createElement('div');
+		cardDiv.classList.add(...m.cardClasses);
 		
-			let cardDiv = document.createElement('div');
-			cardDiv.classList.add(...m.cardClasses);
+		let userNameDiv = document.createElement('div');
+		userNameDiv.classList.add('productNameAndPrice');
 			
-			let userNameDiv = document.createElement('div');
-			userNameDiv.classList.add('productNameAndPrice');
+			let userNameSpan = document.createElement('span');
+			userNameSpan.classList.add(...m.nameAndPriceSpanClasses);
+			userNameSpan.innerText = `${user.firstname} ${user.lastname}`;
 				
-				let userNameSpan = document.createElement('span');
-				userNameSpan.classList.add(...m.nameAndPriceSpanClasses);
-				userNameSpan.innerText = `${user.firstname} ${user.lastname}`;
-					
-			let userImageDiv = document.createElement('div');
-			userImageDiv.classList.add('productImage');
-			//our database doesnt currently have a column for user image
-			userImageDiv.style.backgroundImage = `url(./assets/images/defaultFace.png)`;
+		let userImageDiv = document.createElement('div');
+		userImageDiv.classList.add('productImage');
+		//our database doesnt currently have a column for user image
+		userImageDiv.style.backgroundImage = `url(./assets/images/defaultFace.png)`;
 		
 		////////////////////////////////////////////
-		colDiv.appendChild(cardDiv);
-			cardDiv.appendChild(userNameDiv);
-				userNameDiv.appendChild(userNameSpan);
-			cardDiv.appendChild(userImageDiv);
-		return colDiv;
+		cardDiv.appendChild(userNameDiv);
+			userNameDiv.appendChild(userNameSpan);
+		cardDiv.appendChild(userImageDiv);
+		return cardDiv;
 	},
 };

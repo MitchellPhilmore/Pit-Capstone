@@ -21,16 +21,19 @@ $common->login();
 			background:url('./assets/images/loginBackground.jpg');
 		}
 		.login {
-			background:white;
+			
+			background:rgba( 255, 255, 255, 0.75 );
 			height:400px;
 			left:35%;
-			opacity:0.5;
 			position:absolute;
 			text-align:center;
+			padding: 20px;
 			top:20%;
 			width:500px;
+			border-radius: 10px;
 		}
 		.logo {
+			
 			background:black;
 			border-radius:50%;
 			border: 5px solid gray;
@@ -42,22 +45,23 @@ $common->login();
 			opacity:0.8;
 			width:100px;
 		}
-		.register {
-			background:white;
+		.signup {
+			
+			background:rgba( 255, 255, 255, 0.75 );
 			display: none;
-			height:400px;
 			left:35%;
-			opacity:0.5;
+			padding: 20px;
 			position:absolute;
 			text-align:center;
-			top:20%;
+			top:5%;
 			width:500px;
+			border-radius: 10px;
 		}
 	</style>
 	<body>
 		<div>
 			<div class="row">
-				<div id="login" class="login">
+				<div id="login_container" class="login">
 					<div class="col s4"></div>
 					<div class="logo col s4">PS</div>
 					<div class=" col s4"></div>
@@ -76,10 +80,11 @@ $common->login();
 								</div>
 							</div>
 							<button class="btn waves-effect waves-light red darken-2 btn-large z-depth-5 " type="submit" name="action">Login</button>
+							<a id="signup" class="btn waves-effect waves-light red darken-2 btn-large z-depth-5">Sign Up</a>
 						</div>
 					</form>
 				</div>
-				<div id="register" class="register">
+				<div id="signup_container" class="signup">
 					<div class="col s4"></div>
 					<div class="logo col s4">PS</div>
 					<div class=" col s4"></div>
@@ -119,11 +124,35 @@ $common->login();
 									<label for="password">Retype Password</label>
 								</div>
 							</div>
-							<button class="btn waves-effect waves-light red darken-2 btn-large z-depth-5 " type="submit" name="action">Login</button>
+							<button class="btn waves-effect waves-light red darken-2 btn-large z-depth-5 " type="submit" name="action">Sign Up</button>
+							<a id="login" class="btn waves-effect waves-light red darken-2 btn-large z-depth-5">Login In</a>
 						</div>
 					</form>
 				</div>
 			</div>
 		</div>
+		<script>
+			let login_button = document.getElementById( 'login' );
+			let login_container = document.getElementById( 'login_container' );
+			let signup_button = document.getElementById( 'signup' );
+			let signup_container = document.getElementById( 'signup_container' );
+			
+			signup_button.addEventListener( 'click', signup );
+			login_button.addEventListener( 'click', login );
+			
+			function login( e ) {
+				
+				e.preventDefault();
+				signup_container.style.display = "none";
+				login_container.style.display = "block";
+			}
+			
+			function signup( e ) {
+				
+				e.preventDefault();
+				login_container.style.display = "none";
+				signup_container.style.display = "block";
+			}
+		</script>
 	</body>
 </html>

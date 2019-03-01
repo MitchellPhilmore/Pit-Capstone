@@ -55,7 +55,7 @@ require_once( "./assets/php/includes.php" );
 					<h3 class="pit-gold-text">Email
 					<h4 id="emailHeader">FSinatra@fakeemail.com
 				</div>
-				<div id="userCardRow" class="col s12 m12 l5 xl5 right">
+				<div id="userCardCol" class="col s12 m12 l5 xl5 right">
 					<div class="card pit-blue">
 						<div class="productNameAndPrice">
 							<span class="card-title pit-gold-text flow-text">Frank Smith</span>

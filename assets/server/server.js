@@ -86,8 +86,40 @@ app.post('/api/grabOneProduct', (request, response)=>{
 
 
 //attempt to have server recieve postproduct request
-app.post('/postproduct', (request, response)=>{
-	console.log(request.body);
+app.post('/api/postProduct', (request, response)=>{
+	
+	let productName = request.headers.productname;
+	let productPrice = request.headers.productprice;
+	let imageString = request.headers.imagestring;
+	let imageName = request.headers.imagename;
+	let productDesc = request.headers.productdesc;
+	
+	//to ensure were getting the data okay
+	console.log(productName + productPrice + imageString + imageName + productDesc /*+ seller*/);
+	//before creating new product, we need to save the decoded image to the images directory...
+	let buff = new Buffer(imageString, 'base64');  
+	
+	
+	
+	//Create new product
+	let newProduct = new Products({
+		productName: productName,
+		price: productPrice,
+		description: productDesc,
+		timePosted: Date.now(),
+		imageUrl: `./assets/images/${imageName}`,//...and then save the path
+		sold:false,
+		//seller: a value well easily get from m.token
+	})
+	newProduct.save().then(response=>{
+		console.log('Saved!')
+	})
+	.catch(err=>{
+		console.log(JSON.stringify(err))
+	})
+	
+	
+	
 	/*
 	let myProduct = new Products(request)
 	myProduct.save()
@@ -100,11 +132,6 @@ app.post('/postproduct', (request, response)=>{
 	*/
 })
 
-app.post('/postImage', (request, response)=>{
-	// console.log(request);
-	console.log(request.body);
-})
-
 //-----------------------------------------------------------------//
 
-httpsServer.listen(port,()=>console.log(`Server is running on ${port}`))
+httpsServer.listen(port,()=>console.log(`Server is running on ${port}`));

@@ -11,6 +11,10 @@ let productSchema = new Schema({
 		type:String,
 		required:true
 	},
+	description:{
+		type:String,
+		required:true
+	},
 	timePosted:{
 		type:Date,
 		required:true
@@ -18,9 +22,8 @@ let productSchema = new Schema({
 	sold:{
 		type:Boolean,
 		required:true
-		
 	},
-	
+	//add field for who's selling
 })
 
 module.exports = Products = mongoose.model('products',productSchema) 

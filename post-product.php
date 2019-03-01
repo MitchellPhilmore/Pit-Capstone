@@ -87,8 +87,8 @@ require_once( "./assets/php/includes.php" );
 						<br>
 						<h5>Please describe your product, detailing any information the buyer will need to know</h5>
 						<div class="input-field">
-							<textarea id="textarea1" class="materialize-textarea" name="description"></textarea>
-							<label for="textarea1">Description</label>
+							<textarea id="productDesc" class="materialize-textarea" name="p"></textarea>
+							<label for="description">Description</label>
 						</div>
 						<br><br>
 						<button id="submitProduct" class="btn waves-effect waves-light pit-blue" type="submit" name="action">

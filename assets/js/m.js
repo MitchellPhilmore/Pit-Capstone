@@ -7,7 +7,6 @@ let m = {
 	productId: '',
 	token: '',
 	
-	image: false,
 	
 	currentProduct: {},
 	
