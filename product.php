@@ -71,10 +71,10 @@ if( isset( $_GET["product"] ) ) {
 						
 					</div>
 				</div>
-				<div class="flow-text col s12 m6 l6 xl6">
+				<div id="productDescDiv" class="flow-text col s12 m6 l6 xl6">
 					<!-- insert product description here -->
 					This here green planet is one of a kind! located 3 billion light years from our own solar system, this bad boi isnt even in our own galaxy.
-					Flaunting an impressive slew of resources, this one is also covered in lush forests and greenery, making for quire the spectacle, even from space.
+					Flaunting an impressive slew of resources, this one is also covered in lush forests and greenery, making for quite the spectacle, even from space.
 					The resources spoken of include enormous deposits of topaz, sapphires, and coal, as well as the forests that are teeming with wildife like deer.
 					<br>This planet is for anyone who is a sucker for paradise, buy now for only $45 Trillion! Tax not included.
 				</div>

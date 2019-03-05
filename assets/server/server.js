@@ -29,8 +29,12 @@ bodyParser = require('body-parser'),
 mongoose = require('mongoose'),
 db = require('./config/db'),
 Products = require('./config/Products'),
-Users = require('./config/Users')
+Users = require('./config/Users'),
+fileUpload = require('express-fileupload');
+//sanitize = require('sanitize-filename');
 
+//Middleware that allows file uploads
+app.use(fileUpload());
 // Middleware that allows cors
 app.use(cors())
 
@@ -40,7 +44,7 @@ app.use(bodyParser.json())
 
 var httpsServer = https.createServer(options, app);
 
-  //Make database connection
+//Make database connection
 mongoose.connect(db.URI).then(() => {
   console.log('Connected to database')
 }).catch(err => {
@@ -87,20 +91,16 @@ app.post('/api/grabOneProduct', (request, response)=>{
 
 //attempt to have server recieve postproduct request
 app.post('/api/postProduct', (request, response)=>{
-	
-	// let productName = request.headers.productname;
-	// let productPrice = request.headers.productprice;
-	// let imageString = request.headers.imagestring;
-	// let imageName = request.headers.imagename;
-	// let productDesc = request.headers.productdesc;
-	
-	// Same as above^
-	let {productName,productPrice,imageString,imageName,productDesc} = request.headers
-	
-	//before creating new product, we need to save the decoded image to the images directory...
-	let trimmedImage = imageString.split(',')[1];
-	let image = new Buffer(trimmedImage, 'base64');
-	fs.writeFileSync(`../images/${imageName}`, image);
+	console.log(request.body);
+	let {productName,productPrice,imageName,productDesc} = request.body
+	productName = decodeURIComponent(productName);
+	productPrice = decodeURIComponent(productPrice);
+	productDesc = decodeURIComponent(productDesc);
+	console.log(productName, productPrice, productDesc);
+	//let sanitizedImageName = sanitize(imageName);
+
+   let image = request.files.image
+	   image.mv(`../images/${imageName/*sanitizedImageName*/}`);
 	
 	
 	//Create new product
@@ -113,15 +113,22 @@ app.post('/api/postProduct', (request, response)=>{
 		sold:false,
 		//seller: a value we'll easily get from m.token
 	})
+	console.log(newProduct);
 	
-	newProduct.save().then(response=>{
-		console.log('Saved!');
-		response.send('product was saved to database');
-	})
-	.catch(err=>{
-		console.log(JSON.stringify(err))
-		response.send(`product was not saved, error: ${JSON.stringify(err)}`)
-	})
+	try{
+		newProduct.save()
+		.then(response=>{
+			console.log('Saved!');
+			response.send('product was saved to database');
+		})
+		.catch(err=>{
+			console.log(JSON.stringify(err))
+			response.send(`product was not saved, error: ${JSON.stringify(err)}`)
+		})
+	}
+	catch(error){
+		console.log(error);
+	}
 })
 
 //-----------------------------------------------------------------//

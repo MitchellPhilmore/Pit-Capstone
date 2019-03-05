@@ -51,10 +51,10 @@ const c = {
 				m.currentProduct = JSON.parse(postman.responseText);
 				console.log(m.currentProduct);
 				v.productPageTitle.innerText = m.currentProduct[0].productName;
+				v.productDescDiv.innerText = m.currentProduct[0].description;
 				
 				let prodCardCol = c.createProdCardCol(m.currentProduct[0], m.productPageCardColClasses);
 				v.oneProductRow.replaceChild( prodCardCol, v.oneProductRow.children[0] );
-				//v.oneProductRow.appendChild(prodCardCol);
 			}
 		}
 		postman.onerror = (eo)=>{
@@ -91,12 +91,15 @@ const c = {
 	
 	postProduct(eventObject){
 		eventObject.preventDefault();
+		v.submitProduct.disabled = true;
 		console.log('hello?');
 		
 		let timePosted = Date.now();
 		let sold = false;
+		
 		let reader = new FileReader();
 		let postman = new XMLHttpRequest();
+		let formData = new FormData();
 		
 		let image = v.imageChooser.files[0];
 		let imageName = image.name;
@@ -104,44 +107,28 @@ const c = {
 		let productPrice = escape(v.productPrice.value);
 		let productDesc = escape(v.productDesc.value);
 		
-		v.postProductForm.reset();
+		formData.append('productName', productName);
+		formData.append('productPrice', productPrice);
+		formData.append('image', image);
+		formData.append('imageName', imageName);
+		formData.append('productDesc', productDesc);
+		formData.append('timePosted', timePosted);
+		formData.append('sold', sold);
 		
-		/*v.productName.value = '';
-		v.productPrice.value = '';
-		v.imageChooser.value = '';
-		v.productDesc.value = '';*/
-		
-		reader.readAsDataURL(image);
-		reader.onload = ()=>{
-			let imageString = reader.result;
-			
-			postman.open('POST', 'https://aaserver.abbas411.com:60005/api/postProduct');
-			
-			postman.setRequestHeader('productName', productName);
-			postman.setRequestHeader('productPrice', productPrice);
-			postman.setRequestHeader('imageString', imageString);
-			postman.setRequestHeader('imageName', imageName);
-			postman.setRequestHeader('productDesc', productDesc);
-			
-			postman.send();
-			
-			postman.onload = function(eventObject){
-				
-				console.log('message was sent: ' + postman.responseText);
-				if ( postman.status !== 200 ){
-					const message = `problem sending product: ${postman.status}`;
-				}
-				//popup a confirmation modal, and then redirect to thank you page
-				console.log('thanks for posting!');
-				location.reload();
-			}
-			postman.onerror = function(eventObject){
-				const message = `problem connecting to server: ${postman.status}`;
-				console.log(message);
-				//popup a confirmation modal, and then redirect to thank you page
-				location.reload();
-			}
-		}
+		//send request using form data
+		fetch('https://aaserver.abbas411.com:60005/api/postProduct', {
+			method: 'POST',
+			body: formData,
+		})
+		.then((response)=>{
+			console.log('response.text: ' + response.text());
+			//TODO instead of redirecting to the index, redirect to a thank you page, RELATIVELY
+			window.location.assign('https://aaserver.abbas411.com/code/workspace/e-commerce_capstone2019/');
+		})
+		.catch((error)=>{
+			console.log('error.text: ' + error);
+			window.location.reload();
+		})
 	},
 	
 	async loading() {
