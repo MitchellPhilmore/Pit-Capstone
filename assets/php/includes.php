@@ -66,7 +66,7 @@ class common {
 	
 	function login() {
 		
-		if( isset( $_POST["username"] ) && isset( $_POST["password"] ) ) {
+		if( isset( $_POST["login"] ) && isset( $_POST["username"] ) && isset( $_POST["password"] ) ) {
 			
 			$username = $this->escape( $_POST["username"] );
 			$password = $this->encrypt( $_POST["password"] );
@@ -80,6 +80,45 @@ class common {
 			
 			print( "<pre>" . print_r( $result, true ) . "</pre>" );
 			die();
+			
+			if( ! empty( $result ) ) {
+				
+				$_SESSION["user"] = '';
+				$_SESSION["token"] = "";
+			} else {
+				
+				$token = mb_strtoupper( strval( bin2hex( openssl_random_pseudo_bytes( 16 ) ) ) );
+			}
+		}
+	}
+	
+	function signup() {
+		
+		if( isset( $_POST["signup"] ) && isset( $_POST["username"] ) && isset( $_POST["password"] ) ) {
+			
+			$firstName = $this->escape( $_POST["firstName"] );
+			$lastName = $this->escape( $_POST["lastName"] );
+			$email = $this->escape( $_POST["email"] );
+			$signUpPassword = $this->encrypt( $_POST["password"] );
+			$verifyPassword = $this->encrypt( $_POST["verifyPassword"] );
+			$username = $this->escape( $_POST["username"] );
+			
+			$result = array(
+				$firstName,
+				$lastName,
+				$email,
+				$signUpPassword,
+				$verifyPassword,
+				$username,
+			);
+			
+			if( ! $signUpPassword === $verifyPassword ) {
+				
+				?>
+				
+				<?php
+				return;
+			}
 			
 			if( ! empty( $result ) ) {
 				

@@ -1,224 +1,2806 @@
-(node:18151) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:29331) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::60005
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
+    at listenInCluster (net.js:1408:12)
+    at Server.listen (net.js:1492:7)
+    at Object.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:136:13)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:29552) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::60005
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
+    at listenInCluster (net.js:1408:12)
+    at Server.listen (net.js:1492:7)
+    at Object.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:136:13)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:29593) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
 Server is running on 60005
 Connected to database
-5c4b2a0535a503324a7e7b97
-5c4b3316e4ca5474b39b2d1b
-5c4b3316e4ca5474b39b2d1b
-5c4b3316e4ca5474b39b2d1b
-5c4b3316e4ca5474b39b2d1b
-5c3cb28627e03b4d9a13acc3
-5c4b2c11d893773646f14734
-5c4b2c11d893773646f14734
-5c4b2c11d893773646f14734
-5c4b3316e4ca5474b39b2d1b
-(node:19638) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:29763) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
 Server is running on 60005
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
 Connected to database
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b2a0535a503324a7e7b97
-node: heres the product: { _id: 5c4b2a0535a503324a7e7b97,
-  productName: 'Creme Brulee',
-  price: '5.99',
-  timePosted: 2019-01-25T15:23:49.439Z,
-  imageUrl: './assets/images/testCremeBrulee.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b2f4f956d6563eb65ccce
-node: heres the product: { _id: 5c4b2f4f956d6563eb65ccce,
-  productName: 'Black Forest Cake',
-  price: '5.99',
-  timePosted: 2019-01-25T15:46:23.243Z,
-  imageUrl: './assets/images/testBlackForestCake.jpg',
-  sold: false,
-  __v: 0 }
-(node:20687) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:101
+	fs.writeFileSync(`../images/${imageName}`, , (error)=>{console.log(error)});
+	                                           ^
+
+SyntaxError: Unexpected token ,
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:29818) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::60005
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
+    at listenInCluster (net.js:1408:12)
+    at Server.listen (net.js:1492:7)
+    at Object.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:137:13)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:101
+	fs.writeFileSync(`../images/${imageName}` (error)=>{console.log(error)});
+	                 ^^^^^^^^^^^^^
+
+SyntaxError: Unexpected template string
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:101
+	fs.writeFileSync(`../images/${imageName}`});
+	                                       ^^
+
+SyntaxError: missing ) after argument list
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:30092) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
 Server is running on 60005
-node: heres the id: 5c4b2f4f956d6563eb65ccce
 Connected to database
-node: heres the product: { _id: 5c4b2f4f956d6563eb65ccce,
-  productName: 'Black Forest Cake',
-  price: '5.99',
-  timePosted: 2019-01-25T15:46:23.243Z,
-  imageUrl: './assets/images/testBlackForestCake.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b2f4f956d6563eb65ccce
-node: heres the product: { _id: 5c4b2f4f956d6563eb65ccce,
-  productName: 'Black Forest Cake',
-  price: '5.99',
-  timePosted: 2019-01-25T15:46:23.243Z,
-  imageUrl: './assets/images/testBlackForestCake.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b2c11d893773646f14734
-node: heres the product: { _id: 5c4b2c11d893773646f14734,
-  productName: 'Blueberry Pie',
-  price: '5.99',
-  timePosted: 2019-01-25T15:32:33.482Z,
-  imageUrl: './assets/images/testBlueberryPie.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b28fcd565902b396b5dc8
-node: heres the product: { _id: 5c4b28fcd565902b396b5dc8,
-  productName: 'Ice Cream',
-  price: '5.99',
-  timePosted: 2019-01-25T15:19:24.245Z,
-  sold: false,
-  imageUrl: './assets/images/testIceCream.jpg',
-  __v: 0 }
-node: heres the id: 5c3cb28627e03b4d9a13acc3
-node: heres the product: { _id: 5c3cb28627e03b4d9a13acc3,
-  productName: 'Cookies',
-  price: '5.99',
-  timePosted: 2019-01-14T16:02:14.764Z,
-  sold: false,
-  imageUrl: './assets/images/testCookies.jpg',
-  __v: 0 }
-node: heres the id: 5c4b2a0535a503324a7e7b97
-node: heres the product: { _id: 5c4b2a0535a503324a7e7b97,
-  productName: 'Creme Brulee',
-  price: '5.99',
-  timePosted: 2019-01-25T15:23:49.439Z,
-  imageUrl: './assets/images/testCremeBrulee.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b298d0f811e309bfeba4d
-node: heres the product: { _id: 5c4b298d0f811e309bfeba4d,
-  productName: 'Strawberry Shortcake',
-  price: '5.99',
-  timePosted: 2019-01-25T15:21:49.104Z,
-  sold: false,
-  imageUrl: './assets/images/testStrawberryShortCake.jpg',
-  __v: 0 }
-node: heres the id: 5c4b298d0f811e309bfeba4d
-node: heres the product: { _id: 5c4b298d0f811e309bfeba4d,
-  productName: 'Strawberry Shortcake',
-  price: '5.99',
-  timePosted: 2019-01-25T15:21:49.104Z,
-  sold: false,
-  imageUrl: './assets/images/testStrawberryShortCake.jpg',
-  __v: 0 }
-node: heres the id: 5c3f3634d213d504e3950eb5
-node: heres the product: { _id: 5c3f3634d213d504e3950eb5,
-  productName: 'Fudge',
-  price: '5.99',
-  timePosted: 2019-01-16T13:48:36.530Z,
-  sold: false,
-  imageUrl: './assets/images/testFudge.jpg',
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b2bb28efded35b19a0ae5
-node: heres the product: { _id: 5c4b2bb28efded35b19a0ae5,
-  productName: 'Shoo Fly Pie',
-  price: '5.99',
-  timePosted: 2019-01-25T15:30:58.960Z,
-  sold: false,
-  imageUrl: './assets/images/testShooFlyPie.jpeg',
-  __v: 0 }
-node: heres the id: 5c4b28a822d83e2a8aa9585e
-node: heres the product: { _id: 5c4b28a822d83e2a8aa9585e,
-  productName: 'Oreos',
-  price: '5.99',
-  timePosted: 2019-01-25T15:18:00.634Z,
-  sold: false,
-  imageUrl: './assets/images/testOreo.jpg',
-  __v: 0 }
-node: heres the id: 5c4b2c11d893773646f14734
-node: heres the product: { _id: 5c4b2c11d893773646f14734,
-  productName: 'Blueberry Pie',
-  price: '5.99',
-  timePosted: 2019-01-25T15:32:33.482Z,
-  imageUrl: './assets/images/testBlueberryPie.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b2c11d893773646f14734
-node: heres the product: { _id: 5c4b2c11d893773646f14734,
-  productName: 'Blueberry Pie',
-  price: '5.99',
-  timePosted: 2019-01-25T15:32:33.482Z,
-  imageUrl: './assets/images/testBlueberryPie.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b2bb28efded35b19a0ae5
-node: heres the product: { _id: 5c4b2bb28efded35b19a0ae5,
-  productName: 'Shoo Fly Pie',
-  price: '5.99',
-  timePosted: 2019-01-25T15:30:58.960Z,
-  sold: false,
-  imageUrl: './assets/images/testShooFlyPie.jpeg',
-  __v: 0 }
-node: heres the id: 5c4b2bb28efded35b19a0ae5
-node: heres the product: { _id: 5c4b2bb28efded35b19a0ae5,
-  productName: 'Shoo Fly Pie',
-  price: '5.99',
-  timePosted: 2019-01-25T15:30:58.960Z,
-  sold: false,
-  imageUrl: './assets/images/testShooFlyPie.jpeg',
-  __v: 0 }
-node: heres the id: 5c3f3634d213d504e3950eb5
-node: heres the product: { _id: 5c3f3634d213d504e3950eb5,
-  productName: 'Fudge',
-  price: '5.99',
-  timePosted: 2019-01-16T13:48:36.530Z,
-  sold: false,
-  imageUrl: './assets/images/testFudge.jpg',
-  __v: 0 }
-node: heres the id: 5c4b22a1406723199c85929e
-node: heres the product: { _id: 5c4b22a1406723199c85929e,
-  productName: 'Tiramisu',
-  price: '5.99',
-  timePosted: 2019-01-25T14:52:17.772Z,
-  sold: false,
-  imageUrl: './assets/images/testTiramisu.jpeg',
-  __v: 0 }
-node: heres the id: 5c3cb28627e03b4d9a13acc3
-node: heres the product: { _id: 5c3cb28627e03b4d9a13acc3,
-  productName: 'Cookies',
-  price: '5.99',
-  timePosted: 2019-01-14T16:02:14.764Z,
-  sold: false,
-  imageUrl: './assets/images/testCookies.jpg',
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:30121) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::60005
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
+    at listenInCluster (net.js:1408:12)
+    at Server.listen (net.js:1492:7)
+    at Object.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:137:13)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:30137) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:30269) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::60005
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
+    at listenInCluster (net.js:1408:12)
+    at Server.listen (net.js:1492:7)
+    at Object.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:137:13)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:30500) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/config/Products.js:23
+	sold:{
+	^^^^
+
+SyntaxError: Unexpected identifier
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:31:12)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/config/Products.js:23
+	sold:{
+	^^^^
+
+SyntaxError: Unexpected identifier
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:31:12)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/config/Products.js:25
+	sold:{
+	^^^^
+
+SyntaxError: Unexpected identifier
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:31:12)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:30697) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/config/Products.js:23
+		type: strin
+		      ^
+
+ReferenceError: strin is not defined
+    at Object.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/config/Products.js:23:9)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:31:12)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/config/Products.js:23
+		type: S
+		      ^
+
+ReferenceError: S is not defined
+    at Object.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/config/Products.js:23:9)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:31:12)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:31014) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::60005
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
+    at listenInCluster (net.js:1408:12)
+    at Server.listen (net.js:1492:7)
+    at Object.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:137:13)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:31256) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::60005
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
+    at listenInCluster (net.js:1408:12)
+    at Server.listen (net.js:1492:7)
+    at Object.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:137:13)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:31279) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:31308) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::60005
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
+    at listenInCluster (net.js:1408:12)
+    at Server.listen (net.js:1492:7)
+    at Object.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:137:13)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:117
+	})
+	^
+
+SyntaxError: Unexpected token }
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:31636) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::60005
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
+    at listenInCluster (net.js:1408:12)
+    at Server.listen (net.js:1492:7)
+    at Object.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:138:13)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:31661) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:31689) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::60005
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
+    at listenInCluster (net.js:1408:12)
+    at Server.listen (net.js:1492:7)
+    at Object.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:138:13)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:32028) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::60005
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
+    at listenInCluster (net.js:1408:12)
+    at Server.listen (net.js:1492:7)
+    at Object.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:138:13)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:32192) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::60005
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
+    at listenInCluster (net.js:1408:12)
+    at Server.listen (net.js:1492:7)
+    at Object.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:138:13)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+(node:32212) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:32422) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::60005
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
+    at listenInCluster (net.js:1408:12)
+    at Server.listen (net.js:1492:7)
+    at Object.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:139:13)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:443) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::60005
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
+    at listenInCluster (net.js:1408:12)
+    at Server.listen (net.js:1492:7)
+    at Object.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:139:13)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:120
+		response.send('product was not saved, error: ' + )
+		                                                 ^
+
+SyntaxError: Unexpected token )
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:579) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::60005
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
+    at listenInCluster (net.js:1408:12)
+    at Server.listen (net.js:1492:7)
+    at Object.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:139:13)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:624) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::60005
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
+    at listenInCluster (net.js:1408:12)
+    at Server.listen (net.js:1492:7)
+    at Object.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:139:13)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:944) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[33m[nodemon] 1.18.10[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:2626) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:3065) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:3097) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:3218) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:99
+	let image = new Buffer(imageString, 'base64');
+	^^^
+
+SyntaxError: let is disallowed as a lexically bound name
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:99
+	let image = new Buffer(imageString, 'base64');
+	    ^
+
+SyntaxError: Identifier 'image' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:99
+	let image = new Buffer(imageString, 'base64');
+	    ^
+
+SyntaxError: Identifier 'image' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:3351) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:3371) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:3461) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:99
+	let trimmedImage = new Buffer(imageString, 'base64');
+	    ^^^^^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:3519) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:3539) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:3583) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:3627) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:3716) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:99
+	let image = new Buffer(trimmedImage, 'base64');
+	^^^
+
+SyntaxError: let is disallowed as a lexically bound name
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:3822) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:3842) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:3854) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:3919) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:4151) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:4178) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:4190) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:4332) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:4380) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:4402) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:4517) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:98
+	let trimmedImage = .split(',')[1];
+	                   ^
+
+SyntaxError: Unexpected token .
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:4740) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:5060) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:5079) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:5109) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:5235) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:5297) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+(node:5334) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:5353) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:5365) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:5413) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:5447) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:5483) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:5495) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:5589) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:121
+	})*/
+	   ^
+
+SyntaxError: Invalid regular expression: missing /
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:5614) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:122
+})
+^
+
+SyntaxError: Unexpected token }
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:29169) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:29299) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:100
+	let trimmedImage = imageString.split(',')[1];
+	^^^
+
+SyntaxError: let is disallowed as a lexically bound name
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:100
+	let trimmedImage = imageString.split(',')[1];
+	^^^
+
+SyntaxError: let is disallowed as a lexically bound name
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:29350) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:100
+	let trimmedImage = imageString.split(',')[1];
+	^^^
+
+SyntaxError: let is disallowed as a lexically bound name
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let productName
+	    ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let productName 
+	    ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let productName = 
+	    ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let productName = req
+	    ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let productName = request
+	    ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let productName = request.
+	    ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let productName = request.he
+	    ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let productName = request.hea
+	    ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let productName = request.head
+	    ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let productName = request.header
+	    ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let productName = request.headers
+	    ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:100
+	let trimmedImage = imageString.split(',')[1];
+	^^^
+
+SyntaxError: Unexpected identifier
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let {productName} = request.headers
+	     ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let {productName,} = request.headers
+	     ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let {productName,pro} = request.headers
+	     ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let {productName,product} = request.headers
+	     ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let {productName,productPrice,} = request.headers
+	     ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let {productName,productPrice,} = request.headers
+	     ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let {productName,productPrice,image} = request.headers
+	     ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let {productName,productPrice,imageS} = request.headers
+	     ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let {productName,productPrice,imageString} = request.headers
+	     ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let {productName,productPrice,imageString,} = request.headers
+	     ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let {productName,productPrice,imageString,image} = request.headers
+	     ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let {productName,productPrice,imageString,imageNmae} = request.headers
+	     ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let {productName,productPrice,imageString,imageName} = request.headers
+	     ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let {productName,productPrice,imageString,imageName,} = request.headers
+	     ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let {productName,productPrice,imageString,imageName,produc} = request.headers
+	     ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let {productName,productPrice,imageString,imageName,product} = request.headers
+	     ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let {productName,productPrice,imageString,imageName,productD} = request.headers
+	     ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let {productName,productPrice,imageString,imageName,productDe} = request.headers
+	     ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:97
+	let {productName,productPrice,imageString,imageName,productDesc} = request.headers
+	     ^
+
+SyntaxError: Identifier 'productName' has already been declared
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:30032) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:107
+		p productName,
+		  ^^^^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:30186) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:122
+		response.send(`product was not saved, error: ' + JSON.stringify(err))
+		              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: missing ) after argument list
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:30229) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:30241) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:30260) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:30276) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/server.js:122
+		response.send(`product was not saved, error:  ${JSON.stringify(err)`)
+		                                                ^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Missing } in template expression
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:30294) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:30306) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:30444) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:30456) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:30468) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:31142) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
 node: heres the id: 
-(node:20687) UnhandledPromiseRejectionWarning: CastError: Cast to ObjectId failed for value "" at path "_id" for model "products"
+(node:31142) UnhandledPromiseRejectionWarning: CastError: Cast to ObjectId failed for value "" at path "_id" for model "products"
     at new CastError (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/error/cast.js:29:11)
     at ObjectId.cast (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/schema/objectid.js:232:11)
     at ObjectId.SchemaType.applySetters (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/schematype.js:845:12)
@@ -233,817 +2815,13 @@ node: heres the id:
     at process.nextTick (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/kareem/index.js:369:33)
     at _combinedTickCallback (internal/process/next_tick.js:131:7)
     at process._tickCallback (internal/process/next_tick.js:180:9)
-(node:20687) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
-(node:20687) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
+(node:31142) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:31142) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+node: heres the id: 5c4b2a0535a503324a7e7b97
+node: heres the product: { _id: 5c4b2a0535a503324a7e7b97,
+  productName: 'Creme Brulee',
   price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
+  timePosted: 2019-01-25T15:23:49.439Z,
+  imageUrl: './assets/images/testCremeBrulee.jpg',
   sold: false,
   __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c3cb28627e03b4d9a13acc3
-node: heres the product: { _id: 5c3cb28627e03b4d9a13acc3,
-  productName: 'Cookies',
-  price: '5.99',
-  timePosted: 2019-01-14T16:02:14.764Z,
-  sold: false,
-  imageUrl: './assets/images/testCookies.jpg',
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c3cb28627e03b4d9a13acc3
-node: heres the product: { _id: 5c3cb28627e03b4d9a13acc3,
-  productName: 'Cookies',
-  price: '5.99',
-  timePosted: 2019-01-14T16:02:14.764Z,
-  sold: false,
-  imageUrl: './assets/images/testCookies.jpg',
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c40a5a5fe766d6ca888add8
-node: heres the product: { _id: 5c40a5a5fe766d6ca888add8,
-  productName: 'Brownies',
-  price: '5.99',
-  timePosted: 2019-01-17T15:56:21.482Z,
-  sold: false,
-  imageUrl: './assets/images/testBrownies.jpeg',
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-node: heres the id: 
-(node:20687) UnhandledPromiseRejectionWarning: CastError: Cast to ObjectId failed for value "" at path "_id" for model "products"
-    at new CastError (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/error/cast.js:29:11)
-    at ObjectId.cast (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/schema/objectid.js:232:11)
-    at ObjectId.SchemaType.applySetters (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/schematype.js:845:12)
-    at ObjectId.SchemaType._castForQuery (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/schematype.js:1248:15)
-    at ObjectId.SchemaType.castForQuery (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/schematype.js:1238:15)
-    at ObjectId.SchemaType.castForQueryWrapper (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/schematype.js:1217:15)
-    at cast (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/cast.js:307:32)
-    at model.Query.Query.cast (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/query.js:4262:12)
-    at model.Query.Query._castConditions (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/query.js:1724:10)
-    at model.Query.<anonymous> (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/query.js:1739:8)
-    at model.Query._wrappedThunk [as _find] (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/mongoose/lib/helpers/query/wrapThunk.js:16:8)
-    at process.nextTick (/var/www/html/code/workspace/e-commerce_capstone2019/assets/server/node_modules/kareem/index.js:369:33)
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-    at process._tickCallback (internal/process/next_tick.js:180:9)
-(node:20687) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 2)
-node: heres the id: 5c4b3316e4ca5474b39b2d1b
-node: heres the product: { _id: 5c4b3316e4ca5474b39b2d1b,
-  productName: 'Cannoli',
-  price: '5.99',
-  timePosted: 2019-01-25T16:02:30.401Z,
-  imageUrl: './assets/images/testCannoli.jpg',
-  sold: false,
-  __v: 0 }
-(node:1554) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
-Server is running on 60005
-Connected to database

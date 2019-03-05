@@ -19,6 +19,10 @@ let productSchema = new Schema({
 		type:Date,
 		required:true
 	},
+	imageUrl:{
+		type:String,
+		required:true
+	},
 	sold:{
 		type:Boolean,
 		required:true

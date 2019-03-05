@@ -88,48 +88,40 @@ app.post('/api/grabOneProduct', (request, response)=>{
 //attempt to have server recieve postproduct request
 app.post('/api/postProduct', (request, response)=>{
 	
-	let productName = request.headers.productname;
-	let productPrice = request.headers.productprice;
-	let imageString = request.headers.imagestring;
-	let imageName = request.headers.imagename;
-	let productDesc = request.headers.productdesc;
+	// let productName = request.headers.productname;
+	// let productPrice = request.headers.productprice;
+	// let imageString = request.headers.imagestring;
+	// let imageName = request.headers.imagename;
+	// let productDesc = request.headers.productdesc;
 	
-	//to ensure were getting the data okay
-	console.log(productName + productPrice + imageString + imageName + productDesc /*+ seller*/);
+	// Same as above^
+	let {productName,productPrice,imageString,imageName,productDesc} = request.headers
+	
 	//before creating new product, we need to save the decoded image to the images directory...
-	let buff = new Buffer(imageString, 'base64');  
-	
+	let trimmedImage = imageString.split(',')[1];
+	let image = new Buffer(trimmedImage, 'base64');
+	fs.writeFileSync(`../images/${imageName}`, image);
 	
 	
 	//Create new product
 	let newProduct = new Products({
-		productName: productName,
+	    productName,
 		price: productPrice,
 		description: productDesc,
 		timePosted: Date.now(),
 		imageUrl: `./assets/images/${imageName}`,//...and then save the path
 		sold:false,
-		//seller: a value well easily get from m.token
+		//seller: a value we'll easily get from m.token
 	})
+	
 	newProduct.save().then(response=>{
-		console.log('Saved!')
+		console.log('Saved!');
+		response.send('product was saved to database');
 	})
 	.catch(err=>{
 		console.log(JSON.stringify(err))
+		response.send(`product was not saved, error: ${JSON.stringify(err)}`)
 	})
-	
-	
-	
-	/*
-	let myProduct = new Products(request)
-	myProduct.save()
-	.then((response)=>{
-		response.send()
-	})
-	.catch((error)=>{
-		error.send(error.status)
-	})
-	*/
 })
 
 //-----------------------------------------------------------------//

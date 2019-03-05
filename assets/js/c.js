@@ -91,6 +91,7 @@ const c = {
 	
 	postProduct(eventObject){
 		eventObject.preventDefault();
+		console.log('hello?');
 		
 		let timePosted = Date.now();
 		let sold = false;
@@ -99,10 +100,16 @@ const c = {
 		
 		let image = v.imageChooser.files[0];
 		let imageName = image.name;
-		let productName = v.productName.value;
-		let productPrice =  v.productPrice.value;
-		let productDesc = v.productDesc.value;
+		let productName = escape(v.productName.value);
+		let productPrice = escape(v.productPrice.value);
+		let productDesc = escape(v.productDesc.value);
 		
+		v.postProductForm.reset();
+		
+		/*v.productName.value = '';
+		v.productPrice.value = '';
+		v.imageChooser.value = '';
+		v.productDesc.value = '';*/
 		
 		reader.readAsDataURL(image);
 		reader.onload = ()=>{
@@ -125,6 +132,7 @@ const c = {
 					const message = `problem sending product: ${postman.status}`;
 				}
 				//popup a confirmation modal, and then redirect to thank you page
+				console.log('thanks for posting!');
 				location.reload();
 			}
 			postman.onerror = function(eventObject){
@@ -258,7 +266,10 @@ const c = {
 						
 						let prodImageDiv = document.createElement('div');
 						prodImageDiv.classList.add('productImage');
-						prodImageDiv.style.backgroundImage = `url(${product.imageUrl})`;
+						if(product.imageUrl != undefined){
+							prodImageDiv.style.backgroundImage = `url(${product.imageUrl})`;
+						}
+						
 					
 					let prodPriceDiv = document.createElement('div');
 					prodPriceDiv.classList.add('productNameAndPrice');

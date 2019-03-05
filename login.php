@@ -3,6 +3,7 @@
 require_once('./assets/php/includes.php');
 
 $common->login();
+$common->signup();
 
 ?>
 <html>
@@ -82,6 +83,7 @@ $common->login();
 							<button class="btn waves-effect waves-light red darken-2 btn-large z-depth-5 " type="submit" name="action">Login</button>
 							<a id="signup" class="btn waves-effect waves-light red darken-2 btn-large z-depth-5">Sign Up</a>
 						</div>
+						<input name="login" type="hidden" value="true">
 					</form>
 				</div>
 				<div id="signup_container" class="signup">
@@ -92,38 +94,39 @@ $common->login();
 						<div class="row">
 							<div class="input-field col s12">
 								<i class="material-icons prefix">account_circle</i>
-								<input id="icon_prefix" name="firstName" type="text" class="validate">
-								<label for="icon_prefix">First Name</label>
+								<input id="firstName" name="firstName" type="text" class="validate">
+								<label for="firstName">First Name</label>
 							</div>
 							<div class="input-field col s12">
 								<i class="material-icons prefix">account_circle</i>
-								<input id="icon_prefix" name="lastName" type="text" class="validate">
-								<label for="icon_prefix">Last Name</label>
+								<input id="lastName" name="lastName" type="text" class="validate">
+								<label for="lastName">Last Name</label>
 							</div>
 							<div class="input-field col s12">
 								<i class="material-icons prefix">account_circle</i>
-								<input id="icon_prefix" name="username" type="text" class="validate">
-								<label for="icon_prefix">Username</label>
+								<input id="username" name="username" type="text" class="validate">
+								<label for="username">Username</label>
 							</div>
 							<div class="input-field col s12">
 								<i class="material-icons prefix">account_circle</i>
-								<input id="icon_prefix" name="email" type="text" class="validate">
-								<label for="icon_prefix">EMail</label>
+								<input id="email" name="email" type="text" class="validate">
+								<label for="email">EMail</label>
 							</div>
 							<div class="row">
 								<div class="input-field col s12">
 									<i class="material-icons prefix">lock_outline</i>
-									<input id="password" name="password" type="password" class="validate">
-									<label for="password">Password</label>
+									<input id="signUpPassword" name="password" type="password" class="validate">
+									<label for="signUpPassword">Password</label>
 								</div>
 							</div>
 							<div class="row">
 								<div class="input-field col s12">
 									<i class="material-icons prefix">lock_outline</i>
-									<input id="password" name="verifyPassword" type="password" class="validate">
-									<label for="password">Retype Password</label>
+									<input id="verifyPassword" name="verifyPassword" type="password" class="validate">
+									<label for="verifyPassword">Retype Password</label>
 								</div>
 							</div>
+							<input name="signup" type="hidden" value="true">
 							<button class="btn waves-effect waves-light red darken-2 btn-large z-depth-5 " type="submit" name="action">Sign Up</button>
 							<a id="login" class="btn waves-effect waves-light red darken-2 btn-large z-depth-5">Login In</a>
 						</div>
