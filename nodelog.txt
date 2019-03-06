@@ -212,3 +212,10 @@ fwefwefe fwef fwffewf
   sold: false }
 Saved!
 {}
+[33m[nodemon] 1.18.10[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node ./server.js`[39m
+(node:2865) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running on 60005
+Connected to database
