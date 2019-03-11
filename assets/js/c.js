@@ -43,7 +43,7 @@ const c = {
 		console.log(m.productId);
 		
 		let postman = new XMLHttpRequest();
-		postman.open('POST', 'https://aaserver.abbas411.com:60005/api/grabOneProduct');
+		postman.open('POST', 'https://dev.pit.edu:1338/api/grabOneProduct');
 		postman.setRequestHeader( 'productId', m.productId );
 		postman.send();
 		postman.onload = (eo)=>{
@@ -64,7 +64,7 @@ const c = {
 	},
 	
 	async postToNode(){
-		let url = 'https://aaserver.abbas411.com:60005/postproduct'
+		let url = 'https://dev.pit.edu:1338/postproduct'
 		let response = await fetch('GET',url)
 		let data = await response.json()
 		
@@ -116,7 +116,7 @@ const c = {
 		formData.append('sold', sold);
 		
 		//send request using form data
-		fetch('https://aaserver.abbas411.com:60005/api/postProduct', {
+		fetch('https://dev.pit.edu:1338/api/postProduct', {
 			method: 'POST',
 			body: formData,
 		})
@@ -155,7 +155,7 @@ const c = {
 	/////////////////////////////////////////////////////////////////////
 	async grabFiveProducts() {
 		
-		let productsJSON = await fetch('https://aaserver.abbas411.com:60005/api/most-recent',{
+		let productsJSON = await fetch('https://dev.pit.edu:1338/api/most-recent',{
 		method: "GET"});
 		let products = await productsJSON.json();
 		
@@ -164,7 +164,7 @@ const c = {
 	},
 	
 	async grabAllProducts(){
-		let productsJSON = await fetch('https://aaserver.abbas411.com:60005/api/products');
+		let productsJSON = await fetch('https://dev.pit.edu:1338/api/products');
 		let products = await productsJSON.json();
 		
 		console.log(products);
@@ -174,7 +174,7 @@ const c = {
 	grabOneAccount(){
 		return new Promise((resolve, reject)=>{
 			let postman = new XMLHttpRequest();
-			postman.open('GET', 'https://aaserver.abbas411.com:60005/api/user');
+			postman.open('GET', 'https://dev.pit.edu:1338/api/user');
 			postman.setRequestHeader( 'usertoken', m.token );
 			postman.send();
 			postman.onload = (eo)=>{

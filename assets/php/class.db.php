@@ -1,7 +1,7 @@
 <?php
 
-require_once( '/www/vendor/autoload.php' );
-require_once( '/www/authentication.php' );
+require_once( "assets/vendor/autoload.php" );
+require_once( 'assets/authentication.php' );
 
 class db {
 	

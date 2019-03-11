@@ -17,13 +17,13 @@ let express = require('express'),
 cors = require('cors'),
 fs = require('fs'),
 options = {
-	key:    fs.readFileSync( "/etc/letsencrypt/live/aaserver.abbas411.com/privkey.pem" ),
-	cert:   fs.readFileSync( "/etc/letsencrypt/live/aaserver.abbas411.com/cert.pem" ),
-	ca:     fs.readFileSync( "/etc/letsencrypt/live/aaserver.abbas411.com/fullchain.pem" )
+	key:    fs.readFileSync( "/root/ssl/key.key" ),
+	cert:   fs.readFileSync( "/root/ssl/cert.cert" ),
+	ca:     fs.readFileSync( "/root/ssl/cacert.cert" )
 };
 app = express(),
 https = require('https'),
-port = 60005,
+port = 1338,
 path = require('path'),
 bodyParser = require('body-parser'),
 mongoose = require('mongoose'),
