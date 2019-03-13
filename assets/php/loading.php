@@ -10,7 +10,6 @@ class Loading {
 		"ripples",
 		"pistons",
 		"marching_dots",
-		"gooey_circle",
 	);
 	
 	public $color = "000000";

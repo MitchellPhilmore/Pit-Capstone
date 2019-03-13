@@ -81,7 +81,7 @@ if( isset( $_GET["product"] ) ) {
 			</div>
 			<br><hr><br>
 			<div class="center">
-				<button class="btn waves-effect waves-light pit-gold pit-blue-text">Proceed to checkout
+				<button id="checkoutButton" class="btn waves-effect waves-light pit-gold pit-blue-text">Proceed to checkout
 					<!-- Dont forget to send data to checkout.php of what product is being sold -->
 					<a data-json="{}" href="checkout.php"></a>
 					<i class="material-icons right">shopping_cart</i>

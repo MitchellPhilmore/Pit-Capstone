@@ -38,7 +38,6 @@ const c = {
 	
 	productInitialize(){
 		c.baseInitialize();
-		
 		//grab name of product that was clicked in order to be redirected here
 		console.log(m.productId);
 		
@@ -55,12 +54,13 @@ const c = {
 				
 				let prodCardCol = c.createProdCardCol(m.currentProduct[0], m.productPageCardColClasses);
 				v.oneProductRow.replaceChild( prodCardCol, v.oneProductRow.children[0] );
+				
+				v.checkoutButton.addEventListener('click', c.checkoutProduct);
 			}
 		}
 		postman.onerror = (eo)=>{
 			console.log(`There was an error: ${postman.status}`);
 		}
-		
 	},
 	
 	async postToNode(){
@@ -86,10 +86,25 @@ const c = {
 	postProductInitialize(){
 		c.baseInitialize();
 		
+		c.setInputFilter(v.productPrice, (value)=>{return /^\d*$/.test(value)});
 		v.submitProduct.addEventListener('click', c.postProduct);
 	},
 	
-	postProduct(eventObject){
+	thankYouPageInitialize(){
+		c.baseInitialize();
+		
+		
+	},
+	
+	checkoutButton(){
+		//grab currently logged in user
+		
+		//grab user of posted product
+		
+		//contact php script to send email to both, 
+	},
+	
+	async postProduct(eventObject){
 		eventObject.preventDefault();
 		v.submitProduct.disabled = true;
 		console.log('hello?');
@@ -120,10 +135,11 @@ const c = {
 			method: 'POST',
 			body: formData,
 		})
-		.then((response)=>{
+		.then( async (response)=>{
 			console.log('response.text: ' + response.text());
 			//TODO instead of redirecting to the index, redirect to a thank you page, RELATIVELY
-			window.location.assign('https://aaserver.abbas411.com/code/workspace/e-commerce_capstone2019/');
+			v.loadingIconHolder.innerHTML = await c.loading();
+			window.location.assign('https://dev.pit.edu/workspace/e-commerce_capstone2019/thank-you-page.php');
 		})
 		.catch((error)=>{
 			console.log('error.text: ' + error);
@@ -136,7 +152,7 @@ const c = {
 		return new Promise( function( resolve, reject ) {
 			
 			let ajax = new XMLHttpRequest();
-			ajax.open( 'GET', 'https://aaserver.abbas411.com/code/workspace/e-commerce_capstone2019/assets/php/loading.php?color=3161ac' );
+			ajax.open( 'GET', 'https://dev.pit.edu/workspace/e-commerce_capstone2019/assets/php/loading.php?color=3161ac' );
 			ajax.send();
 			
 			ajax.onload = function() {
@@ -309,4 +325,21 @@ const c = {
 		cardDiv.appendChild(userImageDiv);
 		return cardDiv;
 	},
+	
+	//CARGO CULTED CODE FROM => 'https://stackoverflow.com/questions/469357/html-text-input-allow-only-numeric-input'
+	// Restricts input for the given textbox to the given inputFilter.
+	setInputFilter(textbox, inputFilter){
+		["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop"].forEach(function(event) {
+			textbox.addEventListener(event, function() {
+				if (inputFilter(this.value)) {
+					this.oldValue = this.value;
+					this.oldSelectionStart = this.selectionStart;
+					this.oldSelectionEnd = this.selectionEnd;
+				} else if (this.hasOwnProperty("oldValue")) {
+					this.value = this.oldValue;
+					this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+				}
+			});
+		});
+	}
 };

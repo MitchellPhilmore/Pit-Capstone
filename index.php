@@ -6,7 +6,7 @@ require_once( "./assets/php/includes.php" );
 <!DOCTYPE HTML>
 <html>
 	<?php require_once( "./includes/head.php" );?>
-	<body class="grey lighten-4">
+	<body class="grey lighten-3">
 		<?php require_once( "./includes/menu.php" );?>
 		<div id="content" class="container">
 			<!--<ul class="sidenavLargeScreen sidenav-fixed hide-on-med-and-down">

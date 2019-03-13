@@ -207,6 +207,12 @@ nav ul a{
 	background-color: #3161ac;
 }
 
+#loadingIconHolder{
+	margin-left: 25px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
 #addProductIcon{
 	line-height: 100px;
 	font-size: 3.6rem;
@@ -224,4 +230,12 @@ nav ul a{
 .postProductHolder{
 	margin-right: 20px;
 	margin-bottom: 20px;
+}
+
+#thankYouPageLogo{
+	height: 15rem;
+}
+
+#productPrice{
+	width: 7rem;
 }

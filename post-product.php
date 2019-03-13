@@ -94,6 +94,7 @@ require_once( "./assets/php/includes.php" );
 						<button id="submitProduct" class="btn waves-effect waves-light pit-blue" type="submit" name="action">
 							Submit Product <i id="postProductIcon" class="material-icons right">wb_iridescent</i>
 						</button>
+						<div id="loadingIconHolde"></div>
 					</form>
 				</div>
 				<div class="col s12 m12 l5 xl5 right"><br>

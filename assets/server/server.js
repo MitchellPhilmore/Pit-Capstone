@@ -31,13 +31,12 @@ db = require('./config/db'),
 Products = require('./config/Products'),
 Users = require('./config/Users'),
 fileUpload = require('express-fileupload');
-//sanitize = require('sanitize-filename');
+sanitize = require('sanitize-filename');
 
 //Middleware that allows file uploads
 app.use(fileUpload());
 // Middleware that allows cors
 app.use(cors())
-
 // Middleware to parse form data
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
@@ -97,11 +96,15 @@ app.post('/api/postProduct', (request, response)=>{
 	productPrice = decodeURIComponent(productPrice);
 	productDesc = decodeURIComponent(productDesc);
 	console.log(productName, productPrice, productDesc);
-	//let sanitizedImageName = sanitize(imageName);
-
-   let image = request.files.image
-	   image.mv(`../images/${imageName/*sanitizedImageName*/}`);
+	let sanitizedImageName = sanitize(imageName, "_");
 	
+	//check to see if there is already an image in the filesystem with that filename
+	if(fs.existsSync(`../images/${sanitizedImageName}`)){
+		sanitizedImageName = fixFileName(sanitizedImageName);
+	}
+
+	let image = request.files.image
+		image.mv(`../images/${sanitizedImageName}`);
 	
 	//Create new product
 	let newProduct = new Products({
@@ -109,7 +112,7 @@ app.post('/api/postProduct', (request, response)=>{
 		price: productPrice,
 		description: productDesc,
 		timePosted: Date.now(),
-		imageUrl: `./assets/images/${imageName}`,//...and then save the path
+		imageUrl: `./assets/images/${sanitizedImageName}`,//...and then save the path
 		sold:false,
 		//seller: a value we'll easily get from m.token
 	})
@@ -130,6 +133,26 @@ app.post('/api/postProduct', (request, response)=>{
 		console.log(error);
 	}
 })
+
+////////////////////HELPER FUNCTIONS////////////////////
+
+function fixFileName(oldFileName){
+	let newFileName;
+	let beforeExtension;
+	let splitFileName = oldFileName.split('.');
+	for(i=1; i<=100; i++){
+		//split oldFileName string on '.' so that I can add (i) onto the end,
+		//and then concatenate the extension back on.
+		newFileName = `${splitFileName[0]}(${i}).${splitFileName[1]}`
+		if(fs.existsSync(`../images/${newFileName}`)){
+			continue;
+		}
+		else{
+			break;
+		}
+	}
+	return newFileName;
+}
 
 //-----------------------------------------------------------------//
 

@@ -13,8 +13,10 @@
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "express-fileupload": "^1.1.1-alpha.3",
+    "express-sanitizer": "^1.0.5",
     "mongoose": "^5.4.18",
     "nodemon": "^1.18.9",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "sanitize-filename": "^1.6.1"
   }
 }

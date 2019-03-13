@@ -47,31 +47,22 @@ require_once( "./assets/php/includes.php" );
 				</li>
 			</ul> -->
 			<!--------------------------------------------------------------->
-			<h1 id="nameHeader" class="myHeader pit-blue-text">Frank Sinatra<!-- Insert Person's name here --></h1>
-			<div class="row">
-				<div class="col s12 m12 l5 xl5">
-					<h3 class="pit-gold-text">Username
-					<h4 id="usernameHeader">FrankSinatra555
-					<h3 class="pit-gold-text">Email
-					<h4 id="emailHeader">FSinatra@fakeemail.com
-				</div>
-				<div id="userCardCol" class="col s12 m12 l5 xl5 right">
-					<div class="card pit-blue">
-						<div class="productNameAndPrice">
-							<span class="card-title pit-gold-text flow-text">Frank Smith</span>
-						</div>
-						<div class="productImage frankSinatra"></div>
-					</div>
-				</div>
-			</div>
-			<h1 class="myHeader pit-blue-text">Recent Purchases</h1>
+			<h1 class="myHeader pit-blue-text">Thank You!</h1>
 			<!--------------------------------------------------------------->
+			<br>
+			<p class="flow-text">Thank you for posting your product!</p>
+			<p class="flow-text">Your product has been sent to our database, where it can be viewed
+			by any other member of this site. When a customer is interested
+			and they would like to purchase the product, an email will be sent
+			to both users so that a location and time can be arranged for the purchase.</p>
+			<p class="flow-text">This system is in place of the eventual inclusion of credit card
+			payments</p>
+			<div id="" class="center-align">
+				<a id="logo-container" href="index.php" class="brand-logo hide-on-med-and-down">
+					<img id="thankYouPageLogo" src="assets/images/resized_tire_logo.png">
+				</a>
+			</div>
 		</div>
-		<script>/*Global c*/window.onload = ()=>{
-			m.token = `<?php echo 'jdakfjjk323k3849359384589935483'; ?>`
-			//this object will give m.userData all fields from db except for password
-			//m.userData = phpcodeyay;
-			c.accountPageInitialize()
-		}</script>
+		<script>/*Global c*/window.onload = c.thankYouPageInitialize</script>
 	</body>
 </html>
