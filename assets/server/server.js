@@ -54,6 +54,11 @@ mongoose.connect(db.URI).then(() => {
 
 app.use(express.static('public'))
 
+app.get('/api/grabAllProdNames', (request, response)=>{
+	Products.find({_id: 1, productName: 1}, (data)=>{
+		response.json(data);
+	})
+})
 
 app.get('/api/products', (request, response)=>{
 	Products.find({},(err,data)=>{

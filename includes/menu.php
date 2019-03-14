@@ -22,6 +22,11 @@
 				</div>
 			</form>
 		</div>
+		<div class="row hide-on-med-and-down" id="searchResultsHolder">
+			<ul id="searchResultsUl">
+				<!--<li class="pit-gold-text pit-blue">Hello World</li>-->
+			</ul>
+		</div>
 	</div>
 </nav>
 <ul class="sidenav" id="mobile-links">

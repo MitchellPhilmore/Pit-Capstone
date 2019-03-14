@@ -7,9 +7,10 @@ let m = {
 	productId: '',
 	token: '',
 	
-	
 	currentProduct: {},
 	
+	allProductNamesAndIds: [{_id: "oefhwe8fyefh89yf89", productName: "blanket"}, {_id: "oefhwe8fyefh89yf89", productName: "balloon"}, {_id: "oefhwe8fyefh89yf89", productName: "pillow"}, {_id: "oefhwe8fyefh89yf89", productName: "afterglow"}],
+	currentSearchResults: [],
 	allProducts: [],
 	indexCardColClasses: ['productCol', 'col', 'l5', 'xl4', 'm6'],
 	allProductsCardColClasses: ['col', 'l5', 'xl4', 'm6'],

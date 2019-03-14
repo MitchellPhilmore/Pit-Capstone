@@ -13,6 +13,7 @@ html, body{
 	padding-left: 5px;
 	box-shadow: none;
 	border: 1px solid #ffffff38;
+	width: 99.5%;
 }
 
 #search:focus{
@@ -23,6 +24,35 @@ html, body{
 	transition: .3s background-color box-shadow;
 }
 
+#searchResultsHolder{
+	margin-top: 5px;
+	position: absolute;
+	width: 70%;
+	z-index: 1;
+	border-color: #f7cc07;
+	border-style: solid;
+	border-width: 0 2px 2px 2px;
+	transition: height .33s;
+	box-shadow: 0px 0px 20px black;
+	visibility: hidden;
+}
+
+#searchResultsUl > li{
+	float: none;
+	padding-left: 15px;
+	font-size: 20px;
+	font-weight: 600;
+	border: 1px solid #f7cc07;
+	cursor: pointer;
+}
+/*
+.searchLiLinks{
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+*/
 .pit-blue{
 	background-color: #3161ac;
 }
@@ -53,11 +83,6 @@ nav ul a{
 	font-family: 'Faster One', cursive;
 	user-select: none;
 	text-align: center;
-}
-
-#navContainer{
-	padding-left: 25px;
-	padding-left: 25px;
 }
 
 #logo-container{

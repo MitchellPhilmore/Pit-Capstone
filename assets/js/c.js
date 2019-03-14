@@ -2,13 +2,27 @@
 const c = {
 	
 	/////////////////////////////////////////////////////////////////////
-	baseInitialize() {
+	async baseInitialize() {
 		
 		//the initialization that every page must go through
 		L.attachAllElementsById( v );
 		
 		let sidenavElems = document.querySelectorAll( '.sidenav' );
 		let sidenavInstances = M.Sidenav.init( sidenavElems );
+		v.search.addEventListener('input', c.handleSearch);
+		
+		//UNCOMMENT FOR WHEN SERVER IS UPDATED AND READY TO RECEIVE THIS SPECIFIC GET REQUEST
+		/*
+		let response = await fetch('https://dev.pit.edu/api/grabAllProdNames',{
+			method: 'GET',
+		})
+		let parsedResponse = await response.json();
+		console.log(parsedResponse);
+		
+		//save productNames and _ids as an array of objects
+		m.allProductNamesAndIds = parsedResponse;
+		console.log(m.allProductNamesAndIds);
+		*/
 	},
 	
 	async indexInitialize() {
@@ -207,7 +221,6 @@ const c = {
 		})
 	},
 	
-	
 	displayLatestFive(allFiveProducts){
 		let productRow = document.querySelector('.productRow');
 		//iterate through each product..
@@ -324,6 +337,35 @@ const c = {
 			userNameDiv.appendChild(userNameSpan);
 		cardDiv.appendChild(userImageDiv);
 		return cardDiv;
+	},
+	
+	handleSearch(eo){
+		console.log(eo.target.value);
+		if(eo.target.value != ""){
+			m.currentSearchResults = m.allProductNamesAndIds.filter((m,i,a) => {
+				return m.productName.includes(eo.target.value)
+			})
+			console.log(m.currentSearchResults)
+			v.searchResultsHolder.style.visibility = 'visible';
+			c.displaySearchResults(m.currentSearchResults);
+		}
+		else{
+			v.searchResultsHolder.style.visibility = 'hidden';
+		}
+	},
+	
+	displaySearchResults(results){
+		v.searchResultsUl.innerHTML = "";
+		results.forEach((member) => {
+			let li = document.createElement('li');
+			li.innerText = member.productName;
+			li.classList.add('pit-gold-text', 'pit-blue');
+			let onClick = document.createAttribute('onclick');
+			let path = `\./product\.php?product=${member._id}`;
+			onClick.value = `window\.location\.href='${path}'`;
+			li.setAttributeNode(onClick);
+			v.searchResultsUl.appendChild(li);
+		})
 	},
 	
 	//CARGO CULTED CODE FROM => 'https://stackoverflow.com/questions/469357/html-text-input-allow-only-numeric-input'
