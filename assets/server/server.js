@@ -55,7 +55,8 @@ mongoose.connect(db.URI).then(() => {
 app.use(express.static('public'))
 
 app.get('/api/grabAllProdNames', (request, response)=>{
-	Products.find({_id: 1, productName: 1}, (data)=>{
+	Products.find({}, {_id: 1, productName: 1})
+	.then((data)=>{
 		response.json(data);
 	})
 })
@@ -96,7 +97,13 @@ app.post('/api/grabOneProduct', (request, response)=>{
 //attempt to have server recieve postproduct request
 app.post('/api/postProduct', (request, response)=>{
 	console.log(request.body);
-	let {productName,productPrice,imageName,productDesc} = request.body
+	let {productPrice,imageName} = request.body
+	
+ let productName = request.body.productName.toLowerCase()
+ let productDesc = request.body.productDesc.toLowerCase()
+ 
+ 
+	
 	productName = decodeURIComponent(productName);
 	productPrice = decodeURIComponent(productPrice);
 	productDesc = decodeURIComponent(productDesc);
@@ -104,12 +111,12 @@ app.post('/api/postProduct', (request, response)=>{
 	let sanitizedImageName = sanitize(imageName, "_");
 	
 	//check to see if there is already an image in the filesystem with that filename
-	if(fs.existsSync(`../images/${sanitizedImageName}`)){
+	if(fs.existsSync(`../userImages/${sanitizedImageName}`)){
 		sanitizedImageName = fixFileName(sanitizedImageName);
 	}
 
 	let image = request.files.image
-		image.mv(`../images/${sanitizedImageName}`);
+		image.mv(`../userImages/${sanitizedImageName}`);
 	
 	//Create new product
 	let newProduct = new Products({
@@ -117,7 +124,7 @@ app.post('/api/postProduct', (request, response)=>{
 		price: productPrice,
 		description: productDesc,
 		timePosted: Date.now(),
-		imageUrl: `./assets/images/${sanitizedImageName}`,//...and then save the path
+		imageUrl: `./assets/userImages/${sanitizedImageName}`,//...and then save the path
 		sold:false,
 		//seller: a value we'll easily get from m.token
 	})
@@ -149,7 +156,7 @@ function fixFileName(oldFileName){
 		//split oldFileName string on '.' so that I can add (i) onto the end,
 		//and then concatenate the extension back on.
 		newFileName = `${splitFileName[0]}(${i}).${splitFileName[1]}`
-		if(fs.existsSync(`../images/${newFileName}`)){
+		if(fs.existsSync(`../userImages/${newFileName}`)){
 			continue;
 		}
 		else{

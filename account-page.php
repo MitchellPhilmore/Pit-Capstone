@@ -60,18 +60,21 @@ require_once( "./assets/php/includes.php" );
 						<div class="productNameAndPrice">
 							<span class="card-title pit-gold-text flow-text">Frank Smith</span>
 						</div>
-						<div class="productImage frankSinatra"></div>
+						<div class="productImage"></div>
 					</div>
 				</div>
 			</div>
 			<h1 class="myHeader pit-blue-text">Recent Purchases</h1>
 			<!--------------------------------------------------------------->
 		</div>
-		<script>/*Global c*/window.onload = ()=>{
-			m.token = `<?php echo 'jdakfjjk323k3849359384589935483'; ?>`
-			//this object will give m.userData all fields from db except for password
-			//m.userData = phpcodeyay;
-			c.accountPageInitialize()
-		}</script>
+		<script>
+			/*Global c*/
+			window.onload = ()=>{
+				
+				//this object will give m.userData all fields from db except for password
+				//m.userData = phpcodeyay;
+				c.accountPageInitialize()
+			}
+		</script>
 	</body>
 </html>

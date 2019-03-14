@@ -19,7 +19,7 @@ $common->signup();
 	</head>
 	<style type="text/css">
 		html,body{
-			background:url('./assets/images/loginBackground.jpg');
+			background:url('./assets/siteImages/loginBackground.jpg');
 		}
 		.login {
 			
@@ -64,7 +64,7 @@ $common->signup();
 			<div class="row">
 				<div id="login_container" class="login">
 					<div class="col s4"></div>
-					<div class="logo col s4">PS</div>
+					<div class="logo col s4 pit-blue">PS</div>
 					<div class=" col s4"></div>
 					<form class="col s12" method="POST" action="">
 						<div class="row">
@@ -80,8 +80,8 @@ $common->signup();
 									<label for="password">Password</label>
 								</div>
 							</div>
-							<button class="btn waves-effect waves-light red darken-2 btn-large z-depth-5 " type="submit" name="action">Login</button>
-							<a id="signup" class="btn waves-effect waves-light red darken-2 btn-large z-depth-5">Sign Up</a>
+							<button class="btn waves-effect waves-light pit-blue darken-2 btn-large z-depth-5 " type="submit" name="action">Login</button>
+							<a id="signup" class="btn waves-effect waves-light pit-blue darken-2 btn-large z-depth-5">Sign Up</a>
 						</div>
 						<input name="login" type="hidden" value="true">
 					</form>
@@ -110,7 +110,7 @@ $common->signup();
 							<div class="input-field col s12">
 								<i class="material-icons prefix">account_circle</i>
 								<input id="email" name="email" type="text" class="validate">
-								<label for="email">EMail</label>
+								<label for="email">Email</label>
 							</div>
 							<div class="row">
 								<div class="input-field col s12">
@@ -127,8 +127,8 @@ $common->signup();
 								</div>
 							</div>
 							<input name="signup" type="hidden" value="true">
-							<button class="btn waves-effect waves-light red darken-2 btn-large z-depth-5 " type="submit" name="action">Sign Up</button>
-							<a id="login" class="btn waves-effect waves-light red darken-2 btn-large z-depth-5">Login In</a>
+							<button class="btn waves-effect waves-light pit-blue darken-2 btn-large z-depth-5 " type="submit" name="action">Sign Up</button>
+							<a id="login" class="btn waves-effect waves-light pit-blue  darken-2 btn-large z-depth-5">Login In</a>
 						</div>
 					</form>
 				</div>

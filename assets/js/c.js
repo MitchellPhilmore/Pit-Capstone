@@ -12,8 +12,8 @@ const c = {
 		v.search.addEventListener('input', c.handleSearch);
 		
 		//UNCOMMENT FOR WHEN SERVER IS UPDATED AND READY TO RECEIVE THIS SPECIFIC GET REQUEST
-		/*
-		let response = await fetch('https://dev.pit.edu/api/grabAllProdNames',{
+		
+		let response = await fetch('https://dev.pit.edu:1338/api/grabAllProdNames',{
 			method: 'GET',
 		})
 		let parsedResponse = await response.json();
@@ -22,7 +22,7 @@ const c = {
 		//save productNames and _ids as an array of objects
 		m.allProductNamesAndIds = parsedResponse;
 		console.log(m.allProductNamesAndIds);
-		*/
+		
 	},
 	
 	async indexInitialize() {
@@ -88,13 +88,9 @@ const c = {
 	accountPageInitialize(){
 		c.baseInitialize();
 		
-		c.grabOneAccount().then((response)=>{
-			let parsedUser = JSON.parse(response)[0];
-			console.log(parsedUser);
-			c.fillAccountPage(parsedUser);
-			let userCard = c.createUserCard(parsedUser);
+			c.fillAccountPage(m.userData);
+			let userCard = c.createUserCard(m.userData);
 			v.userCardCol.replaceChild( userCard, v.userCardCol.children[0] );
-		})
 	},
 	
 	postProductInitialize(){
@@ -106,8 +102,6 @@ const c = {
 	
 	thankYouPageInitialize(){
 		c.baseInitialize();
-		
-		
 	},
 	
 	checkoutButton(){
@@ -199,26 +193,6 @@ const c = {
 		
 		console.log(products);
 		return products;
-	},
-	
-	grabOneAccount(){
-		return new Promise((resolve, reject)=>{
-			let postman = new XMLHttpRequest();
-			postman.open('GET', 'https://dev.pit.edu:1338/api/user');
-			postman.setRequestHeader( 'usertoken', m.token );
-			postman.send();
-			postman.onload = (eo)=>{
-				if(postman.status === 200 || postman.status === 0){
-					let currentUser = postman.responseText;
-					console.log('currentUser from c.grabOneAccount: ' + currentUser);
-					resolve(currentUser);
-				}
-			}
-			postman.onerror = (eo)=>{
-				console.log(`There was an error: ${postman.status}`);
-				reject(postman.status);
-			}
-		})
 	},
 	
 	displayLatestFive(allFiveProducts){
@@ -330,7 +304,7 @@ const c = {
 		let userImageDiv = document.createElement('div');
 		userImageDiv.classList.add('productImage');
 		//our database doesnt currently have a column for user image
-		userImageDiv.style.backgroundImage = `url(./assets/images/defaultFace.png)`;
+		userImageDiv.style.backgroundImage = `url(./assets/siteImages/defaultFace.png)`;
 		
 		////////////////////////////////////////////
 		cardDiv.appendChild(userNameDiv);
@@ -342,8 +316,9 @@ const c = {
 	handleSearch(eo){
 		console.log(eo.target.value);
 		if(eo.target.value != ""){
+			let searchWords = eo.target.value.toLowerCase();
 			m.currentSearchResults = m.allProductNamesAndIds.filter((m,i,a) => {
-				return m.productName.includes(eo.target.value)
+				return m.productName.includes(searchWords)
 			})
 			console.log(m.currentSearchResults)
 			v.searchResultsHolder.style.visibility = 'visible';

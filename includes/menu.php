@@ -1,6 +1,6 @@
 <nav class="nav-wrapper pit-blue" role="navigation">
 	<a id="logo-container" href="index.php" class="brand-logo pit-blue hide-on-med-and-down">
-		<img id="logoPNG" src="assets/images/resized_tire_logo.png">
+		<img id="logoPNG" src="assets/siteImages/resized_tire_logo.png">
 	</a>
 	<a href="#" class="sidenav-trigger hide-on-large-and-up" data-target="mobile-links">
 		<i class="material-icons" id="menuIcon">menu</i>
@@ -12,7 +12,7 @@
 				<li><a href="./account-page.php">Account</a></li>
 				<li><a href="./all-products.php">Products</a></li>
 				<li><a href="./about-us.php">About Us</a></li>
-				<li><a href="">Sign Out</a></li>
+				<li><a href="./logout.php">Sign Out</a></li>
 			</ul>
 		</div>
 		<div class="row">
@@ -22,7 +22,7 @@
 				</div>
 			</form>
 		</div>
-		<div class="row hide-on-med-and-down" id="searchResultsHolder">
+		<div class="row" id="searchResultsHolder">
 			<ul id="searchResultsUl">
 				<!--<li class="pit-gold-text pit-blue">Hello World</li>-->
 			</ul>

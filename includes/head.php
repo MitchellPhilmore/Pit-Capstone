@@ -10,4 +10,7 @@
 	<script src="./assets/js/materialize.js?v=<?php echo date( "U" );?>"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>PIT Swap</title>
+	<script>
+		m.userData = JSON.parse( '<?php echo json_encode( $_SESSION );?>' );
+	</script>
 </head>

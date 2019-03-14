@@ -71,7 +71,7 @@ if( isset( $_GET["product"] ) ) {
 						
 					</div>
 				</div>
-				<div id="productDescDiv" class="flow-text col s12 m6 l6 xl6">
+				<div id="productDescDiv" class="flow-text col s12 m6 l6 xl6 hoverable">
 					<!-- insert product description here -->
 					This here green planet is one of a kind! located 3 billion light years from our own solar system, this bad boi isnt even in our own galaxy.
 					Flaunting an impressive slew of resources, this one is also covered in lush forests and greenery, making for quite the spectacle, even from space.

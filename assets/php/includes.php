@@ -16,13 +16,15 @@ class common {
 	
 	function __construct() {
 		
+		session_start();
 		$this->db = new db();
 		$this->actual_link = ( isset( $_SERVER['HTTPS'] ) && $_SERVER['HTTPS'] === 'on' ? "https" : "http" ) . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+		$this->check_session();
 	}
 	
 	function check_session() {
 		
-		if( ( ! isset( $_SESSION["user"] ) || ! isset( $_SESSION["token"] ) ) && strpos( $actual_link, "login.php" ) == false ) {
+		if( ( ! isset( $_SESSION["username"] ) || ! isset( $_SESSION["token"] ) ) && strpos( $this->actual_link, "login.php" ) == false ) {
 			
 			$file_info = pathinfo( $actual_link );
 			
@@ -31,9 +33,9 @@ class common {
 				str_replace( $file_info['filename'] . "." . $file_info['extension'], "", $url );
 			}
 			
-			//header( "Location: {$actual_link}login.php" );
-			//die();
-		} else {
+			header( "Location: {$actual_link}login.php" );
+			die();
+		} elseif( strpos( $this->actual_link, "login.php" ) == false ) {
 			
 			$this->check_token();
 		}
@@ -41,17 +43,7 @@ class common {
 	
 	function check_token() {
 		
-		$connection = $this->db->connect();
-		$filter = array(
-			'username' => (string)$_SESSION["username"],
-			'token' => (string)$_SESSION["token"]
-		);
-		$result = $this->db->find( "users", $filter );
 		
-		if( ! empty( $result ) ) {
-			
-			
-		}
 	}
 	
 	function encrypt( $string ) {
@@ -70,24 +62,61 @@ class common {
 			
 			$username = $this->escape( $_POST["username"] );
 			$password = $this->encrypt( $_POST["password"] );
+			$token = mb_strtoupper( strval( bin2hex( openssl_random_pseudo_bytes( 16 ) ) ) );
 			
-			$filter = array(
-				'username' => (string)$username,
-				'password' => (string)$password
+			$connection = $this->db->connect();
+			$query = new MongoDB\Driver\Query(
+				array(
+					'username' => (string)$username,
+					'password' => (string)$password
+				),
+				array()
 			);
+			$results = $connection->executeQuery( 'e-commerce.users', $query );
+			$users = array();
 			
-			$result = $this->db->find( "users", $filter );
-			
-			print( "<pre>" . print_r( $result, true ) . "</pre>" );
-			die();
-			
-			if( ! empty( $result ) ) {
+			foreach( $results as $r ) {
 				
-				$_SESSION["user"] = '';
-				$_SESSION["token"] = "";
+				unset( $r->password );
+				array_push( $users, $r );
+			}
+			
+			if( count( $users ) == 1 ) {
+				
+				$bulk = new MongoDB\Driver\BulkWrite;
+				$bulk->update(
+					array(
+						'username' => (string)$username,
+						'password' => (string)$password
+					),
+					array(
+						'$set' => array( 'token' => (string)$token )
+					),
+					
+					array(
+						'multi' => false,
+						'upsert' => false
+					)
+				);
+				
+				$_SESSION["id"] = $users[0]->_id;
+				$_SESSION["username"] = (string)$username;
+				$_SESSION["firstname"] = $users[0]->firstname;
+				$_SESSION["lastname"] = $users[0]->lastname;
+				$_SESSION["email"] = $users[0]->email;
+				$_SESSION["token"] = (string)$token;
+				header('Location: index.php');
 			} else {
 				
-				$token = mb_strtoupper( strval( bin2hex( openssl_random_pseudo_bytes( 16 ) ) ) );
+				$_SESSION["username"] = "";
+				$_SESSION["token"] = "";
+				?>
+				<p>Error, Failed to login</p>
+				<?php
+				echo "<pre>" . print_r( $results, true ) . "</pre>";
+				echo "<pre>" . print_r( $users, true ) . "</pre>";
+				echo count( $users );
+				return;
 			}
 		}
 	}
@@ -112,22 +141,26 @@ class common {
 				$username,
 			);
 			
-			if( ! $signUpPassword === $verifyPassword ) {
+			if( ! $signUpPassword == $verifyPassword ) {
 				
 				?>
-				
+				<p>Error, The passwords are not the same</p>
 				<?php
 				return;
 			}
 			
-			if( ! empty( $result ) ) {
-				
-				$_SESSION["user"] = '';
-				$_SESSION["token"] = "";
-			} else {
-				
-				$token = mb_strtoupper( strval( bin2hex( openssl_random_pseudo_bytes( 16 ) ) ) );
-			}
+			$connection = $this->db->connect();
+			$bulk = new MongoDB\Driver\BulkWrite;
+			$document1 = [
+				'firstname' => (string)$firstName,
+				'lastname' => (string)$lastName,
+				'email' => (string)$email,
+				'username' => (string)$username, 
+				'password' => (string)$signUpPassword,
+				'token' => (string)'',
+			];
+			$bulk->insert($document1);
+			$result = $connection->executeBulkWrite( 'e-commerce.users', $bulk );
 		}
 	}
 	
