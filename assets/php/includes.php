@@ -125,6 +125,14 @@ class common {
 		
 		if( isset( $_POST["signup"] ) && isset( $_POST["username"] ) && isset( $_POST["password"] ) ) {
 			
+			if( $_POST["firstName"] == "" || $_POST["lastName"] == "" || $_POST["email"] == "" || $_POST["password"] == "" || $_POST["verifyPassword"] == "" || $_POST["username"] == "" ) {
+				
+				?>
+				<p>Error, you must fill out all fields</p>
+				<?php
+				return;
+			}
+			
 			$firstName = $this->escape( $_POST["firstName"] );
 			$lastName = $this->escape( $_POST["lastName"] );
 			$email = $this->escape( $_POST["email"] );

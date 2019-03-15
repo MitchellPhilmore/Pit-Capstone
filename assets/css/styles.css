@@ -181,19 +181,7 @@ nav ul a{
 }
 /*****************/
 #greenPlanet{
-	background-image: url("../images/green_planet2.jpg");
-}
-
-#psychiatryTextbook{
-	background-image: url("../images/textbookExample.jpg");
-}
-
-.integratedIridologyTextbook{
-	background-image: url("../images/verticalTextbookExample.jpg");
-}
-
-.frankSinatra{
-	background-image: url('../images/frankSinatra.jpg');
+	background-image: url("../siteImages/green-planet.jpg");
 }
 /*****************/
 

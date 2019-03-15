@@ -156,7 +156,7 @@ function fixFileName(oldFileName){
 		//split oldFileName string on '.' so that I can add (i) onto the end,
 		//and then concatenate the extension back on.
 		newFileName = `${splitFileName[0]}(${i}).${splitFileName[1]}`
-		if(fs.existsSync(`../userImages/${newFileName}`)){
+		if(fs.existsSync(`../umages/${newFileName}`)){
 			continue;
 		}
 		else{

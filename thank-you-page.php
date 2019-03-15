@@ -59,7 +59,7 @@ require_once( "./assets/php/includes.php" );
 			payments</p>
 			<div id="" class="center-align">
 				<a id="logo-container" href="index.php" class="brand-logo hide-on-med-and-down">
-					<img id="thankYouPageLogo" src="assets/images/resized_tire_logo.png">
+					<img id="thankYouPageLogo" src="assets/siteImages/resized_tire_logo.png">
 				</a>
 			</div>
 		</div>

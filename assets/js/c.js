@@ -78,9 +78,9 @@ const c = {
 	},
 	
 	async postToNode(){
-		let url = 'https://dev.pit.edu:1338/postproduct'
-		let response = await fetch('GET',url)
-		let data = await response.json()
+		let url = 'https://dev.pit.edu:1338/postproduct';
+		let response = await fetch('GET',url);
+		let data = await response.json();
 		
 		console.log(data)
 	},
