@@ -4,7 +4,7 @@ ini_set( 'display_errors', 1 );
 ini_set( 'display_startup_errors', 1 );
 error_reporting( E_ALL );
 
-require_once( "assets/vendor/autoload.php" );
+require_once( __DIR__ . "/../vendor/autoload.php" );
 require_once( "class.db.php" );
 require_once( "config.php" );
 
@@ -59,6 +59,14 @@ class common {
 	function login() {
 		
 		if( isset( $_POST["login"] ) && isset( $_POST["username"] ) && isset( $_POST["password"] ) ) {
+			
+			if( $_POST["username"] == "" || $_POST["password"] == "" ) {
+				
+				?>
+				<p>Error, you must fill out all fields</p>
+				<?php
+				return;
+			}
 			
 			$username = $this->escape( $_POST["username"] );
 			$password = $this->encrypt( $_POST["password"] );

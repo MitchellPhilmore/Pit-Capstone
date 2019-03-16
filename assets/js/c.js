@@ -104,12 +104,8 @@ const c = {
 		c.baseInitialize();
 	},
 	
-	checkoutButton(){
-		//grab currently logged in user
-		
-		//grab user of posted product
-		
-		//contact php script to send email to both, 
+	buyConfirmationInitialize(){
+		c.baseInitialize();
 	},
 	
 	async postProduct(eventObject){
@@ -137,6 +133,7 @@ const c = {
 		formData.append('productDesc', productDesc);
 		formData.append('timePosted', timePosted);
 		formData.append('sold', sold);
+		formData.append('userName', m.userData.username);
 		
 		//send request using form data
 		fetch('https://dev.pit.edu:1338/api/postProduct', {
@@ -266,7 +263,7 @@ const c = {
 					
 						let prodPriceSpan = document.createElement('span');
 						prodPriceSpan.classList.add(...m.nameAndPriceSpanClasses);
-						prodPriceSpan.innerText = product.price;
+						prodPriceSpan.innerText = `$${product.price}`;
 		
 		////////////////////////////////////////////
 		colDiv.appendChild(cardDiv);
@@ -311,6 +308,24 @@ const c = {
 			userNameDiv.appendChild(userNameSpan);
 		cardDiv.appendChild(userImageDiv);
 		return cardDiv;
+	},
+	
+	checkoutProduct(){
+		let ajax = new XMLHttpRequest();
+		ajax.open('GET', `./assets/php/api.php?buyer=${m.userData.username}&seller=${m.currentProduct[0].seller}`);
+		ajax.send();
+		
+		ajax.onload = ()=>{
+			console.log(`ajax responseText: ${ajax.responseText}`);
+			//window.location.assign( './buy-confirmation.php' );
+			let postman = new XMLHttpRequest();
+			postman.open('POST', 'https://dev.pit.edu:1338/api/updateSoldProduct');
+			postman.setRequestHeader(`productid`, m.currentProduct[0]._id);
+			postman.send();
+		}
+		ajax.onerror = ()=>{
+			console.log(`error: ${ajax.statusText}`);
+		}
 	},
 	
 	handleSearch(eo){

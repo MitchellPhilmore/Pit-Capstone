@@ -53,15 +53,7 @@ require_once( "./assets/php/includes.php" );
 				
 			</div>
 			<!--------------------------------------------------------------->
-			<h1 class="myHeader pit-blue-text">Recent Purchases</h1>
-			<!--------------------------------------------------------------->
-			<div class="row">
-				<div class="productCol col l5 xl4 m6">
-					
-				</div>
-			</div>
-			<!--------------------------------------------------------------->
-			<!--<h1 class="myHeader pit-blue-text">New Sellers</h1>-->
+			<h1 class="myHeader pit-blue-text">New Sellers</h1>
 			<!--------------------------------------------------------------->
 			<!--
 			<div class="row">

@@ -1,7 +1,6 @@
 <?php
 
-require_once( "assets/vendor/autoload.php" );
-require_once( 'assets/authentication.php' );
+require_once( __DIR__ . '/../authentication.php' );
 
 class db {
 	

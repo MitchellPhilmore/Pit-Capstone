@@ -23,7 +23,7 @@ options = {
 };
 app = express(),
 https = require('https'),
-port = 1338,
+port = 1338, 
 path = require('path'),
 bodyParser = require('body-parser'),
 mongoose = require('mongoose'),
@@ -62,13 +62,13 @@ app.get('/api/grabAllProdNames', (request, response)=>{
 })
 
 app.get('/api/products', (request, response)=>{
-	Products.find({},(err,data)=>{
+	Products.find({sold: false},(err,data)=>{
 		response.json(data)
 	})
 })
 
 app.get('/api/most-recent', (request, response)=>{
-	Products.find().sort( { timePosted: -1 } )
+	Products.find({sold: false}).sort( { timePosted: -1 } )
 	.then(data=>{
 		let mostRecentFive = [...data.splice(0,6)]
 		response.json(mostRecentFive)
@@ -97,10 +97,10 @@ app.post('/api/grabOneProduct', (request, response)=>{
 //attempt to have server recieve postproduct request
 app.post('/api/postProduct', (request, response)=>{
 	console.log(request.body);
-	let {productPrice,imageName} = request.body
+	let {productPrice,imageName,userName} = request.body
 	
- let productName = request.body.productName.toLowerCase()
- let productDesc = request.body.productDesc.toLowerCase()
+	let productName = request.body.productName.toLowerCase()
+	let productDesc = request.body.productDesc.toLowerCase()
  
  
 	
@@ -126,7 +126,7 @@ app.post('/api/postProduct', (request, response)=>{
 		timePosted: Date.now(),
 		imageUrl: `./assets/userImages/${sanitizedImageName}`,//...and then save the path
 		sold:false,
-		//seller: a value we'll easily get from m.token
+		seller: userName
 	})
 	console.log(newProduct);
 	
@@ -138,12 +138,20 @@ app.post('/api/postProduct', (request, response)=>{
 		})
 		.catch(err=>{
 			console.log(JSON.stringify(err))
-			response.send(`product was not saved, error: ${JSON.stringify(err)}`)
+			response.send(`product was not saved, error: ${JSON.stringify(err)}`);
 		})
 	}
 	catch(error){
 		console.log(error);
 	}
+})
+
+app.post('/api/updateSoldProduct', (request, response)=>{
+	let productid = request.headers.productid;
+	Products.updateOne({_id: {$eq: productid}}, {$set: {sold: true}})
+	.then((res/*ponse*/)=>{
+		response.send(res);
+	});
 })
 
 ////////////////////HELPER FUNCTIONS////////////////////
@@ -156,7 +164,7 @@ function fixFileName(oldFileName){
 		//split oldFileName string on '.' so that I can add (i) onto the end,
 		//and then concatenate the extension back on.
 		newFileName = `${splitFileName[0]}(${i}).${splitFileName[1]}`
-		if(fs.existsSync(`../umages/${newFileName}`)){
+		if(fs.existsSync(`../userImages/${newFileName}`)){
 			continue;
 		}
 		else{

@@ -27,7 +27,10 @@ let productSchema = new Schema({
 		type:Boolean,
 		required:true
 	},
-	//add field for who's selling
+	seller:{
+		type:String,
+		required:true
+	}
 })
 
 module.exports = Products = mongoose.model('products',productSchema) 
