@@ -18,6 +18,9 @@ require_once( "./assets/php/includes.php" );
 			<p class="flow-text">From this point forth, we have no control over
 			further negotiations of pricing, and cannot be held responsible for
 			anything. Whatever happens is between the buyer and the seller.</p>
+			<p class="flow-text">If you do not receive an email within the next couple minutes,
+			ensure the email you registered your account under is the correct one,
+			and make sure the email is not in your spam folder.</p>
 			<p class="flow-text">Thank you for swapping at Pit Swap!</p>
 			<!--------------------------------------------------------------->
 			<div id="" class="center-align">

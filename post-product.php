@@ -78,7 +78,7 @@ require_once( "./assets/php/includes.php" );
 						<div class="file-field input-field">
 							<div class="btn pit-blue">
 								<span>Image</span>
-								<input id="imageChooser" type="file" name="image" accept="image/*">
+								<input id="imageChooser" type="file" name="image" accept="i.jpg, .jpeg, .png">
 							</div>
 							<div class="file-path-wrapper">
 								<input class="file-path validate" type="text">
@@ -87,7 +87,7 @@ require_once( "./assets/php/includes.php" );
 						<br>
 						<h5>Please describe your product, detailing any information the buyer will need to know</h5>
 						<div class="input-field">
-							<textarea id="productDesc" class="materialize-textarea" name="p"></textarea>
+							<textarea id="productDesc" class="materialize-textarea" name="p" required></textarea>
 							<label for="description">Description</label>
 						</div>
 						<br><br>

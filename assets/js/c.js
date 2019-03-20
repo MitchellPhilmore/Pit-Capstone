@@ -55,6 +55,7 @@ const c = {
 		//grab name of product that was clicked in order to be redirected here
 		console.log(m.productId);
 		
+		
 		let postman = new XMLHttpRequest();
 		postman.open('POST', 'https://dev.pit.edu:1338/api/grabOneProduct');
 		postman.setRequestHeader( 'productId', m.productId );
@@ -65,10 +66,16 @@ const c = {
 				console.log(m.currentProduct);
 				v.productPageTitle.innerText = m.currentProduct[0].productName;
 				v.productDescDiv.innerText = m.currentProduct[0].description;
+				v.sellerSignature.innerText = `-${m.currentProduct[0].seller}`;
 				
 				let prodCardCol = c.createProdCardCol(m.currentProduct[0], m.productPageCardColClasses);
 				v.oneProductRow.replaceChild( prodCardCol, v.oneProductRow.children[0] );
 				
+				//check if sold value is true, and if so,
+				//gray out checkoutButton and give attr of disabled
+				if(m.currentProduct[0].sold){
+					v.checkoutButton.setAttribute('disabled', 'disabled');
+				}
 				v.checkoutButton.addEventListener('click', c.checkoutProduct);
 			}
 		}
@@ -110,46 +117,51 @@ const c = {
 	
 	async postProduct(eventObject){
 		eventObject.preventDefault();
-		v.submitProduct.disabled = true;
-		console.log('hello?');
-		
-		let timePosted = Date.now();
-		let sold = false;
-		
-		let reader = new FileReader();
-		let postman = new XMLHttpRequest();
-		let formData = new FormData();
-		
-		let image = v.imageChooser.files[0];
-		let imageName = image.name;
-		let productName = escape(v.productName.value);
-		let productPrice = escape(v.productPrice.value);
-		let productDesc = escape(v.productDesc.value);
-		
-		formData.append('productName', productName);
-		formData.append('productPrice', productPrice);
-		formData.append('image', image);
-		formData.append('imageName', imageName);
-		formData.append('productDesc', productDesc);
-		formData.append('timePosted', timePosted);
-		formData.append('sold', sold);
-		formData.append('userName', m.userData.username);
-		
-		//send request using form data
-		fetch('https://dev.pit.edu:1338/api/postProduct', {
-			method: 'POST',
-			body: formData,
-		})
-		.then( async (response)=>{
-			console.log('response.text: ' + response.text());
-			//TODO instead of redirecting to the index, redirect to a thank you page, RELATIVELY
-			v.loadingIconHolder.innerHTML = await c.loading();
-			window.location.assign('https://dev.pit.edu/workspace/e-commerce_capstone2019/thank-you-page.php');
-		})
-		.catch((error)=>{
-			console.log('error.text: ' + error);
-			window.location.reload();
-		})
+		if(v.productName === "" || v.productPrice === "" || v.productDesc === "" || v.imageChooser.files[0] === undefined){
+			alert('Please fill in all fields');
+		}
+		else{
+			v.submitProduct.disabled = true;
+			console.log('hello?');
+			
+			let timePosted = Date.now();
+			let sold = false;
+			
+			let reader = new FileReader();
+			let postman = new XMLHttpRequest();
+			let formData = new FormData();
+			
+			let image = v.imageChooser.files[0];
+			let imageName = image.name;
+			let productName = escape(v.productName.value);
+			let productPrice = escape(v.productPrice.value);
+			let productDesc = escape(v.productDesc.value);
+			
+			formData.append('productName', productName);
+			formData.append('productPrice', productPrice);
+			formData.append('image', image);
+			formData.append('imageName', imageName);
+			formData.append('productDesc', productDesc);
+			formData.append('timePosted', timePosted);
+			formData.append('sold', sold);
+			formData.append('userName', m.userData.username);
+			
+			//send request using form data
+			fetch('https://dev.pit.edu:1338/api/postProduct', {
+				method: 'POST',
+				body: formData,
+			})
+			.then( async (response)=>{
+				console.log('response.text: ' + response.text());
+				//TODO instead of redirecting to the index, redirect to a thank you page, RELATIVELY
+				v.loadingIconHolder.innerHTML = await c.loading();
+				window.location.assign('https://dev.pit.edu/workspace/e-commerce_capstone2019/thank-you-page.php');
+			})
+			.catch((error)=>{
+				console.log('error.text: ' + error);
+				window.location.reload();
+			})
+		}
 	},
 	
 	async loading() {
@@ -311,17 +323,28 @@ const c = {
 	},
 	
 	checkoutProduct(){
+		v.checkoutButton.setAttribute('disabled', 'disabled');
+		//trigger loading beside checkoutButton
+		
 		let ajax = new XMLHttpRequest();
-		ajax.open('GET', `./assets/php/api.php?buyer=${m.userData.username}&seller=${m.currentProduct[0].seller}`);
+		ajax.open('GET', `./assets/php/api.php?buyer=${m.userData.username}&seller=${m.currentProduct[0].seller}&action=sendSwappedEmails&product=${m.currentProduct[0]._id}`);
 		ajax.send();
 		
 		ajax.onload = ()=>{
+			
 			console.log(`ajax responseText: ${ajax.responseText}`);
-			//window.location.assign( './buy-confirmation.php' );
 			let postman = new XMLHttpRequest();
 			postman.open('POST', 'https://dev.pit.edu:1338/api/updateSoldProduct');
 			postman.setRequestHeader(`productid`, m.currentProduct[0]._id);
 			postman.send();
+			
+			postman.onload = ()=>{
+				window.location.assign( './buy-confirmation.php' );
+			}
+			
+			postman.onerror = (error)=>{
+				console.log('server error: ' + error);
+			}
 		}
 		ajax.onerror = ()=>{
 			console.log(`error: ${ajax.statusText}`);
