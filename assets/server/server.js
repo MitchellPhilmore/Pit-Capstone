@@ -84,6 +84,20 @@ app.get('/api/user', (request, response)=>{
 	})
 })
 
+app.post('/api/getAccountInfo', (request, response)=>{
+	let userName = request.body.username;
+	let resArr = [];
+	Products.find({ $and: [{sold: true}, {buyer: userName}] })//recentPurchased first...
+	.then((recentPurchased) =>{
+		resArr.push(recentPurchased);
+		Products.find({seller: userName}).sort({ timePosted: -1})//...then recentPosted
+		.then((recentPosted)=>{
+			resArr.push(recentPosted);
+			response.json(resArr);
+		})
+	})
+})
+
 app.post('/api/grabOneProduct', (request, response)=>{
 	console.log('node: heres the id: ' + request.headers.productid);
 	Products.find({_id: request.headers.productid})
@@ -126,7 +140,8 @@ app.post('/api/postProduct', (request, response)=>{
 		timePosted: Date.now(),
 		imageUrl: `./assets/userImages/${sanitizedImageName}`,//...and then save the path
 		sold:false,
-		seller: userName
+		seller: userName,
+		buyer: 'null'
 	})
 	console.log(newProduct);
 	
@@ -148,7 +163,8 @@ app.post('/api/postProduct', (request, response)=>{
 
 app.post('/api/updateSoldProduct', (request, response)=>{
 	let productid = request.headers.productid;
-	Products.updateOne({_id: {$eq: productid}}, {$set: {sold: true}})
+	let buyerName = request.headers.buyername;
+	Products.updateOne({_id: {$eq: productid}}, {$set: {sold: true, buyer: buyerName}})
 	.then((res/*ponse*/)=>{
 		response.send(res);
 	});

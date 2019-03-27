@@ -30,6 +30,10 @@ let productSchema = new Schema({
 	seller:{
 		type:String,
 		required:true
+	},
+	buyer:{
+		type:String,
+		required:true
 	}
 })
 

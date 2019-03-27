@@ -65,15 +65,18 @@ require_once( "./assets/php/includes.php" );
 				</div>
 			</div>
 			<h1 class="myHeader pit-blue-text">Recent Purchases</h1>
+			<div id="recentlyPurchasedRow" class="productRow">
+				
+			</div>
 			<!--------------------------------------------------------------->
 			<h1 class="myHeader pit-blue-text">Recently Posted</h1>
+			<div id="recentlyPostedRow" class="productRow">
+				
+			</div>
 		</div>
 		<script>
 			/*Global c*/
 			window.onload = ()=>{
-				
-				//this object will give m.userData all fields from db except for password
-				//m.userData = phpcodeyay;
 				c.accountPageInitialize()
 			}
 		</script>

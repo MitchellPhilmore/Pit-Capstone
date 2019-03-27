@@ -203,10 +203,9 @@ const c = {
 		//iterate through each product..
 		allFiveProducts.forEach((member,i,a)=>{
 			//..and create a card filled with the data for each
-			let prodCardCol = c.createProdCardCol(member, m.indexCardColClasses);
+			let prodCardCol = c.createProdCardCol(member, m.horScrollCardColClasses);
 			
 			productRow.appendChild(prodCardCol);
-			
 		})
 	},
 	
@@ -250,25 +249,28 @@ const c = {
 					let prodNameDiv = document.createElement('div');
 					prodNameDiv.classList.add('productNameAndPrice');
 					
+					cardDiv.appendChild(prodNameDiv);
+					
 						let prodNameSpan = document.createElement('span');
 						prodNameSpan.classList.add(...m.nameAndPriceSpanClasses);
 						prodNameSpan.innerText = product.productName;
 						
-						cardDiv.appendChild(prodNameDiv);
 						prodNameDiv.appendChild(prodNameSpan);
 						
 					let prodLink = document.createElement('a');
 						let prodLinkHref = document.createAttribute('href');
 						prodLinkHref.value = './product.php?product=' + product._id;
 					prodLink.setAttributeNode(prodLinkHref);
-						
+					
+					cardDiv.appendChild(prodLink);
+					
 						let prodImageDiv = document.createElement('div');
 						prodImageDiv.classList.add('productImage');
 						if(product.imageUrl != undefined){
 							prodImageDiv.style.backgroundImage = `url(${product.imageUrl})`;
+							console.log('success')
 						}
 						
-						cardDiv.appendChild(prodLink);
 						prodLink.appendChild(prodImageDiv);
 						
 						if(product.seller === m.userData.username){
@@ -286,33 +288,18 @@ const c = {
 					let prodPriceDiv = document.createElement('div');
 					prodPriceDiv.classList.add('productNameAndPrice');
 					
+					cardDiv.appendChild(prodPriceDiv);
+					
 						let prodPriceSpan = document.createElement('span');
 						prodPriceSpan.classList.add(...m.nameAndPriceSpanClasses);
 						prodPriceSpan.innerText = `$${product.price}`;
 						
-						cardDiv.appendChild(prodPriceDiv);
 						prodPriceDiv.appendChild(prodPriceSpan);
-		
-		////////////////////////////////////////////
-		/*
-		
-		colDiv.appendChild(cardDiv);
-			cardDiv.appendChild(prodNameDiv);
-				prodNameDiv.appendChild(prodNameSpan);
-			cardDiv.appendChild(prodLink);
-				prodLink.appendChild(prodImageDiv);
-			if(product.seller === m.userData.username){
-				cardDiv.appendChild(fab);
-					fab.appendChild(deleteIcon);
-			}
-			cardDiv.appendChild(prodPriceDiv);
-				prodPriceDiv.appendChild(prodPriceSpan);
-				
-		*/
+						
 		return colDiv;
 	},
 	
-	fillAccountPage(user){
+	async fillAccountPage(user){
 		v.nameHeader.innerText = "";
 		v.nameHeader.innerText = `${user.firstname} ${user.lastname}`;
 		
@@ -321,6 +308,27 @@ const c = {
 		
 		v.emailHeader.innerText = "";
 		v.emailHeader.innerText = `${user.email}`;
+		
+		let formData = new FormData();
+		formData.append('username', user.username);//user name
+		let fetchRequest = fetch('https://dev.pit.edu:1338/api/getAccountInfo', {
+				method: 'POST',
+				body: formData,
+			})
+			.then((response)=>{
+				response.json()
+				.then((data)=>{
+					//console.log(data[0][0]) = first purchased product
+					data[0].forEach((product)=>{
+						let recentPurchasedCardCol = c.createProdCardCol(product, m.horScrollCardColClasses);
+						v.recentlyPurchasedRow.append(recentPurchasedCardCol);
+					})
+					data[1].forEach((product)=>{
+						let recentPostedCardCol = c.createProdCardCol(product, m.horScrollCardColClasses);
+						v.recentlyPostedRow.append(recentPostedCardCol);
+					})
+				})
+			})
 	},
 	
 	createUserCard(user){
@@ -360,6 +368,7 @@ const c = {
 			let postman = new XMLHttpRequest();
 			postman.open('POST', 'https://dev.pit.edu:1338/api/updateSoldProduct');
 			postman.setRequestHeader(`productid`, m.currentProduct[0]._id);
+			postman.setRequestHeader(`buyername`, m.userData.username);
 			postman.send();
 			
 			postman.onload = ()=>{
