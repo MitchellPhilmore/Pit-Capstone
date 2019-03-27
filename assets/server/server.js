@@ -55,7 +55,7 @@ mongoose.connect(db.URI).then(() => {
 app.use(express.static('public'))
 
 app.get('/api/grabAllProdNames', (request, response)=>{
-	Products.find({}, {_id: 1, productName: 1})
+	Products.find({sold: false}, {_id: 1, productName: 1})
 	.then((data)=>{
 		response.json(data);
 	})
@@ -152,6 +152,15 @@ app.post('/api/updateSoldProduct', (request, response)=>{
 	.then((res/*ponse*/)=>{
 		response.send(res);
 	});
+})
+
+app.get('/api/deleteProduct', (request, response)=>{
+	let productid = request.headers.productid;
+	//delete product from db
+	Products.deleteOne({_id: {$eq: productid}})
+	.then((res)=>{
+		response.send(res);
+	})
 })
 
 ////////////////////HELPER FUNCTIONS////////////////////

@@ -66,6 +66,7 @@ require_once( "./assets/php/includes.php" );
 			</div>
 			<h1 class="myHeader pit-blue-text">Recent Purchases</h1>
 			<!--------------------------------------------------------------->
+			<h1 class="myHeader pit-blue-text">Recently Posted</h1>
 		</div>
 		<script>
 			/*Global c*/

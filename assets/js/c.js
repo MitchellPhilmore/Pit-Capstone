@@ -9,19 +9,13 @@ const c = {
 		
 		let sidenavElems = document.querySelectorAll( '.sidenav' );
 		let sidenavInstances = M.Sidenav.init( sidenavElems );
-		v.search.addEventListener('input', c.handleSearch);
-		
-		//UNCOMMENT FOR WHEN SERVER IS UPDATED AND READY TO RECEIVE THIS SPECIFIC GET REQUEST
 		
 		let response = await fetch('https://dev.pit.edu:1338/api/grabAllProdNames',{
 			method: 'GET',
 		})
 		let parsedResponse = await response.json();
-		console.log(parsedResponse);
-		
-		//save productNames and _ids as an array of objects
 		m.allProductNamesAndIds = parsedResponse;
-		console.log(m.allProductNamesAndIds);
+		v.search.addEventListener('input', c.handleSearch);
 		
 	},
 	
@@ -73,7 +67,7 @@ const c = {
 				
 				//check if sold value is true, and if so,
 				//gray out checkoutButton and give attr of disabled
-				if(m.currentProduct[0].sold){
+				if(m.currentProduct[0].sold || m.currentProduct[0].seller === m.userData.username){
 					v.checkoutButton.setAttribute('disabled', 'disabled');
 				}
 				v.checkoutButton.addEventListener('click', c.checkoutProduct);
@@ -251,12 +245,17 @@ const c = {
 				let cardDiv = document.createElement('div');
 				cardDiv.classList.add(...m.cardClasses);
 				
+				colDiv.appendChild(cardDiv);
+				
 					let prodNameDiv = document.createElement('div');
 					prodNameDiv.classList.add('productNameAndPrice');
 					
 						let prodNameSpan = document.createElement('span');
 						prodNameSpan.classList.add(...m.nameAndPriceSpanClasses);
 						prodNameSpan.innerText = product.productName;
+						
+						cardDiv.appendChild(prodNameDiv);
+						prodNameDiv.appendChild(prodNameSpan);
 						
 					let prodLink = document.createElement('a');
 						let prodLinkHref = document.createAttribute('href');
@@ -269,6 +268,20 @@ const c = {
 							prodImageDiv.style.backgroundImage = `url(${product.imageUrl})`;
 						}
 						
+						cardDiv.appendChild(prodLink);
+						prodLink.appendChild(prodImageDiv);
+						
+						if(product.seller === m.userData.username){
+							let fab = document.createElement('a');
+							fab.classList.add(...m.deleteFAB);
+								let deleteIcon = document.createElement('i');
+								deleteIcon.classList.add('material-icons', 'deleteIcon');
+								deleteIcon.innerText = '-';
+								
+								cardDiv.appendChild(fab);
+								fab.appendChild(deleteIcon);
+								fab.addEventListener('click', c.deleteProduct);
+						}
 					
 					let prodPriceDiv = document.createElement('div');
 					prodPriceDiv.classList.add('productNameAndPrice');
@@ -276,15 +289,26 @@ const c = {
 						let prodPriceSpan = document.createElement('span');
 						prodPriceSpan.classList.add(...m.nameAndPriceSpanClasses);
 						prodPriceSpan.innerText = `$${product.price}`;
+						
+						cardDiv.appendChild(prodPriceDiv);
+						prodPriceDiv.appendChild(prodPriceSpan);
 		
 		////////////////////////////////////////////
+		/*
+		
 		colDiv.appendChild(cardDiv);
 			cardDiv.appendChild(prodNameDiv);
 				prodNameDiv.appendChild(prodNameSpan);
 			cardDiv.appendChild(prodLink);
 				prodLink.appendChild(prodImageDiv);
+			if(product.seller === m.userData.username){
+				cardDiv.appendChild(fab);
+					fab.appendChild(deleteIcon);
+			}
 			cardDiv.appendChild(prodPriceDiv);
 				prodPriceDiv.appendChild(prodPriceSpan);
+				
+		*/
 		return colDiv;
 	},
 	
@@ -322,10 +346,10 @@ const c = {
 		return cardDiv;
 	},
 	
-	checkoutProduct(){
+	async checkoutProduct(){
 		v.checkoutButton.setAttribute('disabled', 'disabled');
 		//trigger loading beside checkoutButton
-		
+		document.querySelector('.center').innerHTML = await c.loading();
 		let ajax = new XMLHttpRequest();
 		ajax.open('GET', `./assets/php/api.php?buyer=${m.userData.username}&seller=${m.currentProduct[0].seller}&action=sendSwappedEmails&product=${m.currentProduct[0]._id}`);
 		ajax.send();
@@ -379,6 +403,25 @@ const c = {
 			li.setAttributeNode(onClick);
 			v.searchResultsUl.appendChild(li);
 		})
+	},
+	
+	async deleteProduct(e){
+		e.target.parentNode.innerHTML = await c.loading();
+		let currentId = e.target.parentNode.parentNode.children[1].href.split('=')[1];
+		console.log(currentId);
+		//yeeaaa I know...
+		let ajax = new XMLHttpRequest();
+		ajax.open('GET', 'https://dev.pit.edu:1338/api/deleteProduct');
+		ajax.setRequestHeader('productid', currentId);
+		//ajax.send();
+		
+		ajax.onload = ()=>{
+			console.log(ajax.resonseText);
+		}
+		
+		ajax.onerror = (error)=>{
+			console.log('Error: ' + error)
+		}
 	},
 	
 	//CARGO CULTED CODE FROM => 'https://stackoverflow.com/questions/469357/html-text-input-allow-only-numeric-input'

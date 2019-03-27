@@ -17,4 +17,5 @@ let m = {
 	accountPageCardColClasses: ['col', 's12', 'm12', 'l5', 'xl5', 'right'],
 	cardClasses: ['card', 'pit-blue', 'hoverable'],
 	nameAndPriceSpanClasses: ['card-title', 'pit-gold-text', 'flow-text'],
+	deleteFAB: ['btn-floating', 'halfway-fab', 'waves-effect', 'waves-light', 'red', 'deleteProductBtn'],
 }

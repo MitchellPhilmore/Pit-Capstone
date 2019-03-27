@@ -78,7 +78,7 @@ require_once( "./assets/php/includes.php" );
 						<div class="file-field input-field">
 							<div class="btn pit-blue">
 								<span>Image</span>
-								<input id="imageChooser" type="file" name="image" accept="i.jpg, .jpeg, .png">
+								<input id="imageChooser" type="file" name="image" accept=".jpg, .jpeg, .png">
 							</div>
 							<div class="file-path-wrapper">
 								<input class="file-path validate" type="text">
